@@ -1,7 +1,148 @@
-.input-container{
-    height: 40px;
+body {
+    background-image: url(/Img/bg6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-.input-field{
-    height: 25px;
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aliceblue; */
+}
+
+.WhiteTittleFrame {
+    background-color: #f5f6fa;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 50px;
+    margin-top: 50px;
+    width: 90%;
+}
+
+.WhiteTittleFrame p {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+    color: #192a56;
+}
+
+.BlueGlass {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 128, 255, 0.5);
+    height: 620px;
+    width: 90%;
+}
+
+/*el contenedor de todos los datos dentro del glass azul*/
+.MainContainerBox{
+    display: flex;
+    margin-top: 40px;
+}
+
+.LeftContainer{
+    display: flex;
+    flex-direction: column;
+ margin-left: 20px;
+    align-items: center;
+   
+    margin-right: 10px;
+   
+    
+}
+.LeftContainer table{
+
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+
+
+.Table {
+   
+      margin-bottom: 20px;
+ 
+}
+
+.RowContainer{
+  
+    width: 350px;
+    border: 1px solid #273c75;
+    
+    background-color: #f5f6fa;
+    text-align: left;
+    height: 40px;
+  
+}
+.Table .RowContainer{
+    background-color: #f5f6fa;
+    
+ 
+}
+
+/*/filas y columnas transparentes para dar espaciado. margin no funcionaba.*/
+.ThTransparent{
+    background-color: transparent;
+    color: transparent;
+}
+
+.TrTranparent{
+    background-color: transparent;
+    color: transparent;
+    height: 10px;
+    font-size: 5px;
+}
+
+.RowContainer select{
+    width: 350px;
+    height:40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.RowContainer p{
+    margin-top: 12px;
+    margin-left: 5px;
+}
+
+.RightContainer{
+    display: flex;
+    flex-direction: column;
+ margin-left: 20px;
+    align-items: center;
+   
+    margin-right: 10px;
+}
+
+.RightContainer table{
+
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+/* estilos del grafico de cines*/ 
+
+.GraficoCine{
+    border:2px solid red;
+    background-color: #f5f6fa;
+    background: #f5f6fa;
+    width: 350px;
+}
+
+.Barra{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    border: 2px solid blue;
+    padding: 5px;
+}
+.GraficoGanancias{
+    background-color: #f5f6fa;
+    width: 480px;
 }

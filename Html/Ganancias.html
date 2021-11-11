@@ -12,145 +12,164 @@
 </head>
 <body>
 
-
-    <!--    inicio de la seccion header -->
+    
     <header class="topnav" id="myTopnav">
         <!-- insertar la imagen del logo dentro del a img -->
                     <div class="logo-container">
                         <a href="#"><img src="/Img/Logo.png" alt=""></a>
                     </div>
-        
+            
                     <nav>
-                        <a href="#home" class="active">Inicio</a>
+                        <a href="/index.html" class="active">Inicio</a>
                         <a href="#news">Cines</a>
                         <a href="#contact">Peliculas</a>
-                        <a href="/Html/Iniciar_Sesion.html">Ingresar</a>
+                        <a href="#">Ingresar</a>
                         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                             <i class="fa fa-bars"></i>
                         </a>
                     </nav>
-        
-                </header>
-
-
-
-
-    <!--    inicio de la seccion principal  -->
-    <main>
-        <div class="tittle">
-            <h1>Ganancias</h1>
-
-
-        </div>
-        <section class="MainContainer">
             
-            <form > 
-                <div class="input-container">
-                    
-                    <label for="mayor-cadena">Cadena de Cines con Mayor Ganancia</label>
-                    <input type="text" id="mayor-cadena" class="input-field" required>
-
-                </div>
-
-                <div class="input-container">
-                    
-                    <label for="mayor-cadena">Cadena de Cines con Mayor Ganancia</label>
-                    <Select name="input-id" id="input-id" class="input-field" required>
-                        <option value="">Seleccione el tipo de Id</option>
-                        <option value="cedula">Cédula Nacional</option>
-                        <option value="Pasaporte">Pasaporte</option>
-
-
-                    </Select>
-
-                </div>
-
-
-
-                <div class="input-container">
-                    
-                    <label for="mayor-cadena">Cadena de Cines con Mayor Ganancia</label>
-                    <input type="text" id="mayor-cadena" class="input-field" required>
-
-                </div>
-
-
-
-                <div class="input-container">
-                    
-                    <label for="mayor-cadena">Cadena de Cines con Mayor Ganancia</label>
-                    <input type="text" id="mayor-cadena" class="input-field" required>
-
-                </div>
-
-            </form>
-           
-
-        </section>
-
-
-
-
-    </main>
-
-
-
-
-
-
-
-
-
-
-    <!--    inicio de la seccion footer. -->
-    <footer class="Footer">
-
-        <div class="LeftFooter">
-            <ul>
-                <li><a href="#">Acerca de Ticket+</a></li>
-                <li><a href="#">Preguntas Frecuentes</a></li>
-                <li><a href="#">Trabaja con Nosotros</a></li>
-            </ul>
-
-        </div>
-
-        <div class="MiddleFooter">
-            <div>
-            <a href="#">Desarrollado por Klad Technologies</a>
-            </div>
-        </div>
-
-        <div class="RightFooter">
-
-            <div id='tittle' >
-                <h2>Redes Sociales:</h2>
-                
-            </div>
-
-            <div class="ItemList"> 
-                <ul class="social-icons">
-                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
-              </ul>
-            </div>
-
-        </div>
-        
-
-
-    </footer>
-
-
-
-
-
-
-
+    </header>
 
     
-</body>
+    <main>
+        <div class="main-container">
+            <div class="WhiteTittleFrame">
+                <p>Ganancias</p> 
+            </div>
 
+          
+            
+
+         
+          
+          
+            <div class="BlueGlass">
+                <div class="MainContainerBox">
+                    <div class="LeftContainer" id="ganancias-cines">
+                        <table class="Table">
+                            <tr class="row">
+                                <th class="RowContainer"><p>Cadena de Cine con Mayor Ganancia</p></th>
+                                <th class="ThTransparent"></th>
+                                <th class="RowContainer"><p>Insertar la cadena de cine con mayor ganancia</p></th>
+                            </tr>
+                            <tr class="TrTranparent"><th>.</th></tr>
+                            <tr  class="row">
+                                <th class="RowContainer" ><p> Cadenas de cine
+
+                                </p> </th>
+                                <th class="ThTransparent"></th>
+                                <th class="RowContainer"><select name="cadenasCine" id="select-cadena-cine">
+                                    <option value="">Seleccionar cadena de cine</option>
+                                    <option value="1">cinemark</option>
+                                    <option value="2">CCM</option>
+                                    <option value="3">Cinepolis</option>
+                                </select> </th>
+                            </tr>
+                            <tr class="TrTranparent"><th>.</th></tr>
+                            <tr  class="row">
+                                <th class="RowContainer"><p>Ganancia total de la cadena de cine</p></th>
+                                <th class="ThTransparent"></th>
+                                <th class="RowContainer"><p>888888888</p></th>
+                            </tr>
+                            <tr class="TrTranparent"><th>.</th></tr>
+                            <tr  class="row">
+                                <th class="RowContainer"><p>Cantidad de entradas vendidas</p></th>
+                                <th class="ThTransparent">.</th>
+                                <th class="RowContainer"><p>88888888888</p></th>
+                            </tr>
+        
+                        </table>
+                    <div class="GraficoGanancias">
+                        <canvas id="GraficoCine">
+                           
+                        </canvas>
+                    </div>
+        
+                    </div>
+                    <div class="RightContainer" id="ganancias-peliculas">
+                          <table class="Table">
+                            <tr class="row">
+                                <th class="RowContainer"><p>Película con Mayor Ganancia</p></th>
+                                <th class="ThTransparent"></th>
+                                <th class="RowContainer"><p>Insertar la Pelicula con mayor ganancia</p></th>
+                            </tr>
+                            <tr class="TrTranparent"><th>.</th></tr>
+                            <tr  class="row">
+                                <th class="RowContainer" ><p> Película
+
+                                </p> </th>
+                                <th class="ThTransparent"></th>
+                                <th class="RowContainer"><select name="cadenasCine" id="select-cadena-cine">
+                                    <option value="">Seleccionar Película</option>
+                                    <option value="1">Venom</option>
+                                    <option value="2">Harry Potter</option>
+                                    <option value="3">Cruela</option>
+                                </select> </th>
+                            </tr>
+                            <tr class="TrTranparent"><th>.</th></tr>
+                            <tr  class="row">
+                                <th class="RowContainer"><p>Ganancia total de la Película</p></th>
+                                <th class="ThTransparent"></th>
+                                <th class="RowContainer"><p>324.120</p></th>
+                            </tr>
+                            <tr class="TrTranparent"><th>.</th></tr>
+                            <tr  class="row">
+                                <th class="RowContainer"><p>Cantidad de entradas vendidas</p></th>
+                                <th class="ThTransparent">.</th>
+                                <th class="RowContainer"><p>254.521</p></th>
+                            </tr>
+        
+                        </table>
+                       
+                        <div class="GraficoGanancias">
+                            <canvas id="GraficoPeliculas">
+                             
+                            </canvas>
+                        </div>
+        
+                    </div>
+                 
+                   
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    
+   <footer class="Footer">
+    <div class="LeftFooter">
+        <ul>
+            <li><a href="#">Acerca de Ticket+</a></li>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+            <li><a href="#">Trabaja con Nosotros</a></li>
+        </ul>
+    </div>
+    <div class="MiddleFooter">
+        <div>
+        <a href="#">Desarrollado por Klad Technologies</a>
+        </div>
+    </div>
+    <div class="RightFooter">
+        <div id='tittle' >
+            <h2>Redes Sociales:</h2>
+        </div>
+        <div class="ItemList"> 
+            <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+    </div>
+
+</footer>
+    
+</body>
 <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/JS/Ganancias.js"></script>
+  <script src="/JS/GananciasPeliculas.js"></script> 
 </html>

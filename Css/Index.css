@@ -264,3 +264,24 @@
             font-weight: 600;
     
         }
+
+
+        /*boton de encontrar funcion que esta en el slider.*/
+        .ButtonBuscarFuncion{
+   
+         position: absolute;
+         z-index: 5;
+         margin-bottom: 150px;
+        }
+
+        .ButtonBuscarFuncion a{
+          color: #f5f6fa;
+        }
+      
+/*este centra el boton de encontrar funcion*/
+        #centering{
+          display: flex;
+     
+         align-items: center;
+         justify-content: center;
+        }
