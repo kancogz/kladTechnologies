@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="/Css/Reset.css">
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="/Css/General.css">
+        <link rel="stylesheet" href="/Css/Iniciar_Sesion.css">
+
+    </head>
+    <body>
+
+        <header></header>
+    </body>
+    <body>
+
+        <header class="topnav" id="myTopnav">
+<!-- insertar la imagen del logo dentro del a img -->
+            <div class="logo-container">
+                <a href="#"><img src="/Img/Logo.png" alt=""></a>
+            </div>
+    
+            <nav>
+                <a href="/index.html" >Inicio</a>
+                <a href="#news">Cines</a>
+                <a href="#contact">Peliculas</a>
+                <a href="#about" class="active">Ingresar</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+    
+        </header>
+
+        <div class="Section1">
+
+            <div class="MainContainer">
+
+               
+
+                <div class="MainContainerBackground"></div>
+
+                <!-- seccion del formulario de iniciar sesion-->
+                <div class="LeftContainer">
+
+                    <div id="form-tittle">
+                        <h1>Iniciar Sesión</h1>
+                    </div>
+
+                    <div class="FormContainer">
+                        <form class="form" id="form">                            
+                            <div class="input-container "  >
+                                <input type="email" id="input-correo" class="input-field" onkeydown="labelFunction()" required>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small id="small">Error message</small>
+                                <label for="input-correo">Correo Electrónico</label>
+                            </div>
+
+                            <div class="input-container " >
+                                <input type="password" id="Password" class="input-field" required><i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                                <label for="Password">Contraseña</label>
+                                <i class="bi bi-eye-slash" id="togglePassword"></i>
+                            </div>
+                            <div id="button-box">
+                                <button type="button" id="btn-confirm" class="BlueButton">
+                                    Ingresar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <!--  FIN seccion del formulario de iniciar sesion-->
+
+
+
+
+                <div class="RightContainer">
+
+                    <div id="tittle-left"><h1>¿Aún no tiene una cuenta?</h1></div>
+                    <div id="p-left"><p>Registrese para iniciar sesión</p> </div>
+                    
+
+                    <div id="btn-iniciar-sesion">
+                         <button type="button" class="TransparentButton">
+                        <a href="/Html/Registrar_Usuario.html">Registrarse</a>
+                    </button> </div>
+                   
+
+                </div>
+
+            </div>
+
+        </div>
+
+        
+    <footer class="Footer">
+
+        <div class="LeftFooter">
+            <ul>
+                <li><a href="#">Acerca de Ticket+</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="#">Trabaja con Nosotros</a></li>
+            </ul>
+
+        </div>
+
+        <div class="MiddleFooter">
+            <div>
+            <a href="#">Desarrollado por Klad Technologies</a>
+            </div>
+        </div>
+
+        <div class="RightFooter">
+
+            <div id='tittle' >
+                <h2>Redes Sociales:</h2>
+                
+            </div>
+
+            <div class="ItemList"> 
+                <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+              </ul>
+            </div>
+
+        </div>
+        
+
+
+    </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <!-- 
+    <script src="/JS/Validar_Iniciar_Sesion.js"></script>-->
+    <script src="/JS/Validar_Iniciar_Sesion.js"></script>
+    </body>
+</html>

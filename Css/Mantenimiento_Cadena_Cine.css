@@ -1,0 +1,41 @@
+body {
+    background-image: url(/Img/bg6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aliceblue; */
+}
+
+.WhiteTittleFrame {
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 50px;
+    margin-top: 50px;
+    width: 60%;
+}
+
+.WhiteTittleFrame p {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+    color: #192a56;
+}
+
+.BlueGlass {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 128, 255, 0.5);
+    height: 620px;
+    width: 60%;
+}

@@ -1,0 +1,128 @@
+body {
+    background-image: url(/Img/bg6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aliceblue; */
+}
+
+.section-container {
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 50px;
+    margin-top: 50px;
+    width: 60%;
+}
+
+.section-container p {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+    color: #192a56;
+}
+
+.table-section {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 128, 255, 0.5);
+    height: 620px;
+    width: 60%;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.table table, th, td{
+    text-align: left;
+    padding: 10px;
+    border: 2px solid gray;
+}
+
+.table th {
+    background-color: rgb(132, 181, 230);
+    color: rgb(54, 54, 54);
+}
+
+.table td {
+    background-color: rgb(226, 226, 226);
+    width: 200px;
+}
+
+.filter-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.filter-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10.5%;
+}
+
+.modify-container {
+    margin-top: 1.5%;
+    margin-left: 10.5%;
+}
+
+#filter-text {
+    height: 30px;
+}
+
+#filter-btn {
+    border: none;
+    background-color: rgb(91, 178, 228);
+    color: white;
+    height: 35px;
+    width: 150px;
+    cursor: pointer;
+}
+
+#modify-btn {
+    border: none;
+    background-color: rgb(91, 178, 228);
+    color: white;
+    height: 35px;
+    width: 150px;
+    cursor: pointer;
+}
+
+#delete-btn {
+    border: none;
+    background-color: rgb(91, 178, 228);
+    color: white;
+    height: 35px;
+    width: 150px;
+    margin-left: 2.2%;
+    cursor: pointer;
+}
+
+#register-btn {
+    border: none;
+    background-color: rgb(91, 178, 228);
+    color: white;
+    height: 35px;
+    width: 150px;
+    margin-left: 2.2%;
+    cursor: pointer;
+}
+
+#button-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

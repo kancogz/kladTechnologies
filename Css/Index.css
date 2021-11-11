@@ -1,0 +1,266 @@
+
+
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+    
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+  
+  
+  
+  
+  
+  /*este contiene el boton de iniciar sesion de la seccion*/
+  .containerblock{
+      display:flex;
+      width: 100%;
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  
+  }
+
+
+  .containerblock a{
+    color: #f5f6fa;
+    font-size: 18px;
+    font-family: inherit;
+  }
+  
+    .btn-registrar{
+      background-color: #40739e; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 50px;
+  
+      text-decoration: none;
+  
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      max-height: 30%; }
+  
+  
+    .button2:hover, .button3:hover {
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+ 
+
+  /*estilos para el tamaño y responsive de logos de cines. */
+    .Cinelogos{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      margin-top: 40px;
+      }
+
+      .CineRow{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+      }
+
+      .CineImg{
+          margin: 20px;
+          width: 420px;
+          
+
+      }
+
+      .CineImg img{
+          max-width: 100%;
+      }
+
+      
+      
+      /* Fin seccion estilos logos cine*/
+  
+  
+  
+  
+  
+      .Carousel{
+          width: 100%;
+          margin: 0px ;
+          margin-top: 40px;
+        }
+        .Carousel h2{
+          font-size: 26px;
+          line-height: 38px;
+          padding-bottom: 24px;
+          opacity: .9;
+          text-transform: uppercase;
+          letter-spacing: 10px;
+          text-align: center;
+        }
+        
+        /* Slick e hace referencia al carrusel final donde es una lista grande con imagenes pequeñas
+         */
+        
+        .slick-list{
+          position: relative;
+          display: flex;
+          align-items: center;
+          width: fit-content;
+          height: 304px;
+          padding: 10px 0px;
+          margin: 0px auto;
+          max-width: 90vw;
+          overflow: hidden;
+        }
+        .slick-track{
+          position: relative;
+          top: 0;
+          left: 0;
+          display: flex;
+          justify-content: center;
+          transition: .5s ease-in-out;
+        }
+        .slick{
+          position: relative;
+          width: 275px;
+          padding: 0 18px;
+          float: left;
+          box-sizing: border-box;
+          display: flex;
+          height: 100%;
+        }
+        .slick h4{
+          position: absolute;
+          z-index: 1;
+          font-size: 22px;
+          line-height: 23px;
+          color: #f5f6fa;
+          padding: 15px;
+        }
+        .slick h4 small{
+          font-size: 15px;
+          display: block;
+        }
+        .slick a img{
+          object-fit: cover;
+          height: 300px;
+          width: 100%;
+          border-radius: 4px;
+          box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
+          transition: .3s ease-in-out;
+        }
+        .slick a img:hover{
+          opacity: .85;
+        }
+        
+        /* fin de seccion de slick
+         */
+        
+
+         /* estilos para flechas del carrusel slick*/
+        .slick-arrow{
+          border-radius: 30px;
+          background-color: #f5f6fa;
+          position: absolute;
+          z-index: 4;
+          width: 48px;
+          height: 48px;
+          text-align: center;
+          box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+          border: 0;
+          cursor: pointer;
+        }
+        .slick-arrow:focus{
+          outline: 0;
+        }
+        .slick-arrow svg{
+          width: 12px;
+          height: 100%;
+          color: rgba(0,0,0,.7);
+        }
+        .slick-prev{
+          left: 0px;
+        }
+        .slick-next{
+          right: 0px;
+        }
+  
+        /* Fin seccion */
+  
+  
+  
+        .contenedor_covid{
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          margin-top: 20px;
+          gap: 20px;
+  
+       }
+  
+  
+        .covidimg {
+          max-width: 100%;
+          height: auto;
+          margin: 20px;
+        }
+  
+  
+  
+  
+        .texto {
+          display: grid;  
+          grid-template-columns: 1;
+          grid-template-rows: 3;
+          
+          padding: 8px;
+          width: 80%;
+          margin: 20px;
+        }
+        
+        
+        p {
+          
+          text-indent: 50px;
+          text-align: justify;
+          letter-spacing: 3px;
+        }
+  
+        
+  
+      .parrafo1{
+          
+          grid-row-start: 2;
+          
+      }
+  
+  
+  
+      
+  
+  
+       
+        /*estilos de section 3 proximamente en cine*/
+        .Section3{
+            background-color: #3b5998;
+            padding: 20px;
+        }
+
+        .titulo3{
+            display: flex;
+            justify-content: center;
+            color: #f5f6fa;
+           
+            font-size: 24px;
+            font-weight: 600;
+    
+        }
