@@ -317,6 +317,17 @@ color: #46A2FD;
 }
 
 /*boton de fondo blanco*/
+#WhiteButtonFixed {
+  padding: 10px 40px;
+  border: none;
+  font-size: 14px;
+  background: #f5f6fa;
+  font-weight: 600;
+  cursor: pointer;
+  color: #46A2FD;
+  outline: none;
+}
+
 .WhiteButton{
   padding: 10px 40px;
     margin-top: 40px;
