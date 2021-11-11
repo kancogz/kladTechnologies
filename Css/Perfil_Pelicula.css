@@ -1,0 +1,42 @@
+body {
+    background-image: url(/Img/bg6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aliceblue; */
+}
+
+.section-title {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: 50px;
+    width: 70%;
+}
+
+.section-title p {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+    color: #192a56;
+}
+
+.section-content {
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 128, 255, 0.5);
+    height: 90vh;
+    width: 70%;
+}
