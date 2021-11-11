@@ -35,8 +35,116 @@ body {
 .section-content {
     -webkit-backdrop-filter: blur(10px);
     display: flex;
+    flex-direction: column;
     backdrop-filter: blur(10px);
     background-color: rgba(0, 128, 255, 0.5);
-    height: 90vh;
+    height: 1550px;
     width: 70%;
+}
+
+.movie-banner {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin-top: 3%;
+    margin-left: 5%;
+    height: 50vh;
+    width: 90%;
+    max-height: 400px;
+}
+
+.movie-banner img {
+    height: auto;
+    width: 100%;
+}
+
+.movie-information {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin-top: 3%;
+    margin-left: 5%;
+    height: 250px;
+    width: 90%;
+}
+
+.movie-informationleft {
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+    border: 2px solid grey;
+    height: auto;
+    width: 50%;
+}
+
+.movie-informationright {
+    background-color: whitesmoke;
+    border: 2px solid grey;
+    height: auto;
+    width: 50%;
+}
+
+.movie-information-textleft {
+    margin-top: 5%;
+    margin-left: 5%;
+    height: 180px;
+    width: 90%;
+}
+
+.movie-information-textleft h1 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.movie-information-textleft p {
+    font-size: 16px;
+    padding-top: 15px;
+}
+
+.movie-information-textleft img {
+    height: auto;
+    width: 20%;
+    padding-top: 5px;
+}
+
+.movie-information-textright {
+    margin-top: 5%;
+    margin-left: 5%;
+    height: 180px;
+    width: 90%;
+    minw
+}
+
+.movie-information-textright h1 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.movie-information-textright p {
+    font-size: 16px;
+    padding-top: 15px;
+    line-height: 20px;
+}
+
+.search-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    margin-left: 5%;
+    height: 60px;
+    width: 90%;
+}
+
+.WhiteButtonCustom {
+    height: 100%;
+    width: 30%;
+}
+
+.video-frame {
+    background-color: white;
+    margin-top: 3%;
+    margin-left: 5%;
+    height: 600px;
+    width: 90%;
 }
