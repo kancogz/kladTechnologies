@@ -1,0 +1,129 @@
+body {
+    background-image: url(/Img/bg6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1%;
+    
+    /* background-color: aliceblue; */
+}
+
+.WhiteTittleFrame {
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 50px;
+    margin-top: 50px;
+    width: 60%;
+}
+
+.WhiteTittleFrame p {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+    color: #192a56;
+}
+
+.BlueGlass {
+    display:grid;
+    gap: 1rem;
+    grid-auto-flow: dense;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax( min(100%, 25rem), 1fr));
+    
+    align-items: center;
+    justify-items: center;
+    
+  
+
+
+
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 128, 255, 0.5);
+    height: 620px;
+    width: 60%;
+  
+    
+    
+    
+    
+    
+}
+
+.tarjeta{
+   
+  grid-column-start: 1;
+  grid-column-end: -1;
+    display: flex; 
+    border: 3px solid black;
+    background-color: white;
+    width: 60%;
+   
+    height: max-content;
+    font-weight: 1000;
+    font-size: larger;
+    text-align: center;
+    justify-content: space-between;
+    background-image: url(/img/ticket.png);
+    background-size: 100% 100%;  
+    
+}
+#contenido{
+    
+    display: grid;
+    align-content: space-around;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    width: 40%;
+    
+  
+   
+    
+ 
+    
+}
+
+
+
+
+
+
+
+.detalle{
+
+     grid-column-start: 1;
+    grid-column-end: -1;
+    
+    text-align: center;
+    color: #f5f6fa;
+    
+    border: #2f3640;
+    padding:30px;
+    margin:50px;
+    background-color: #2f3640;
+    border-radius: 10px;
+    margin-bottom: 20%;
+    font-size: 20px;
+    
+   
+ 
+}
+
+
+
+
+
+
+
+
