@@ -1,0 +1,118 @@
+/* Body Section */
+body {
+    background-image: url(/Img/bg6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+/*-----------------------------------------*/
+
+/* Contenedor Azul Centrado */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .section-title {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: 50px;
+    width: 60%;
+  }
+  
+  .section-title p {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+    color: #192a56;
+  }
+  
+  .section-content {
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 128, 255, 0.5);
+    height: auto;
+    width: 60%;
+  }
+/*-----------------------------------------*/
+
+/* Contenedor completo cines */
+.all-theaters-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.473);
+    margin: 2%;
+    height: auto;
+    width: 90%;
+    border-radius: 1%;
+}
+
+/* Contenedor individual cine */
+.theater-container {
+    background-color: white;
+    margin: 2%;
+    height: 250px;
+    width: 200px;
+    border-radius: 5%;
+}
+
+.theater-container-img {
+    /* background-color: lightcoral; */
+    height: 29%;
+    width: auto;
+}
+
+.theater-container-img img {
+    height: auto;
+    width: 100%;
+    border-radius: 5% 5% 0 0;
+}
+
+.theater-container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(80, 80, 80, 0.1);
+    height: 40%;
+    width: auto;
+}
+
+.theater-container-text h1 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 35px;
+    text-align: center;
+    color: #2b4588;
+}
+
+.theater-container-text p {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 35px;
+    text-align: center;
+    color: rgb(121, 121, 121)
+}
+
+.theater-container-btn {
+    /* background-color: lightgreen;  */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    width: auto;
+}
+/*-----------------------------------------*/
