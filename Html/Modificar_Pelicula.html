@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/Reset.css">
+    <link rel="stylesheet" href="../Css/General.css">
+    <link rel="stylesheet" href="../Css/Agregar_Pelicula.css">
+    <link rel="stylesheet" href="../Css/Perfil_Pelicula.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <title>Modificar Película</title>
+</head>
+<body>
+    <header class="topnav" id="myTopnav">
+        <div class="logo-container">
+            <a href="#"><img src="../Img/Logo.png" alt="ticketsplus"></a>
+        </div>
+
+        <nav>
+            <a href="#home" class="active">Inicio</a>
+                <a href="#">Cines</a>
+                <a href="#">Películas</a>
+                <a href="#">Ingresar</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <div class="section-title">
+                <p>Modificar Película</p> 
+            </div>
+            <div class="section-content">
+                <div class="movie-banner">
+                    <img src="../Img/venom.png" alt="venom_banner">
+                </div>
+                <div class="movie-data">
+                    <div class="input-data">
+                        <h1>Nombre Película</h1>
+                        <input type="text" value="Venom">
+                    </div>
+                    <div class="input-data">
+                        <h1>Categoría Película</h1>
+                        <input type="text" value="Acción">
+                    </div>
+                    <div class="input-data">
+                        <h1>Duración</h1>
+                        <input type="text" value="120 minutos">
+                    </div>
+                    <div class="input-data">
+                        <h1>Clasificación por Edad</h1>
+                        <input type="text" value="M-18">
+                    </div>
+                    <div class="input-data">
+                        <h1>Tipo de Película</h1>
+                        <input type="text" value="Subtitulada">
+                    </div>
+                    <div class="input-data">
+                        <h1>Imagen de Película</h1>
+                        <input type="file" id="img" name="img" accept="image/*">
+                    </div>
+                    <div class="input-data">
+                        <button class="BlueButton"> Confirmar Datos</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="Footer">
+        <div class="LeftFooter">
+            <ul>
+                <li><a href="#">Acerca de Ticket+</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="#">Trabaja con Nosotros</a></li>
+            </ul>
+
+        </div>
+
+        <div class="MiddleFooter">
+            <div>
+            <a href="#">Desarrollado por Klad Technologies</a>
+            </div>
+        </div>
+
+        <div class="RightFooter">
+
+            <div id='tittle' >
+                <h2>Redes Sociales:</h2>
+
+            </div>
+
+            <div class="ItemList"> 
+                <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+              </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
