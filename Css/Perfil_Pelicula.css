@@ -36,9 +36,10 @@ body {
     -webkit-backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
+    align-items: center;
     backdrop-filter: blur(10px);
     background-color: rgba(0, 128, 255, 0.5);
-    height: 1550px;
+    height: auto;
     width: 70%;
 }
 
@@ -47,7 +48,6 @@ body {
     justify-content: center;
     background-color: white;
     margin-top: 3%;
-    margin-left: 5%;
     height: 50vh;
     width: 90%;
     max-height: 400px;
@@ -63,7 +63,6 @@ body {
     flex-direction: row;
     background-color: white;
     margin-top: 3%;
-    margin-left: 5%;
     height: 250px;
     width: 90%;
 }
@@ -71,6 +70,8 @@ body {
 .movie-informationleft {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background-color: whitesmoke;
     border: 2px solid grey;
     height: auto;
@@ -78,6 +79,10 @@ body {
 }
 
 .movie-informationright {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background-color: whitesmoke;
     border: 2px solid grey;
     height: auto;
@@ -85,8 +90,6 @@ body {
 }
 
 .movie-information-textleft {
-    margin-top: 5%;
-    margin-left: 5%;
     height: 180px;
     width: 90%;
 }
@@ -108,8 +111,6 @@ body {
 }
 
 .movie-information-textright {
-    margin-top: 5%;
-    margin-left: 5%;
     height: 180px;
     width: 90%;
 }
@@ -130,7 +131,6 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 3%;
-    margin-left: 5%;
     height: 60px;
     width: 90%;
 }
@@ -143,7 +143,7 @@ body {
 .video-frame {
     background-color: white;
     margin-top: 3%;
-    margin-left: 5%;
+    margin-bottom: 3%;
     height: 600px;
     width: 90%;
 }
