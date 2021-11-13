@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontrar Función </title>
+    <link rel="stylesheet" href="/Css/Encontrar_Funcion.css" />
+    <link rel="stylesheet" href="/Css/Reset.css">
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+    <header class="topnav" id="myTopnav">
+        <!-- insertar la imagen del logo dentro del a img -->
+                    <div class="logo-container">
+                        <a href="#"><img src="/Img/Logo.png" alt=""></a>
+                    </div>
+        
+                    <nav>
+                        <a href="#home" class="active">Inicio</a>
+                        <a href="#news">Cines</a>
+                        <a href="#contact">Peliculas</a>
+                        <a href="#about">Ingresar</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </nav>
+        
+                </header>
+    <main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="tituloAgregarSala">
+        <h1 class="agregarSalaCine">Encontrar Función</h1>
+</div>
+
+
+
+
+<div class="main-container">
+
+
+
+
+    <div class="input-containerCadenadeCIne" id="cadenaCineSelect">
+        
+        <input type="text" id="cadenaCineSelect" class="inputCadenaCineSelect" placeholder="Cine" list="cinesSelec" required>
+        <datalist id="cinesSelec" >
+            <option>Cinepolis</option>
+            <option>CineMark</option>
+            <option>CCM Cinemas</option>
+        </datalist>
+        <label for="CadenaCineEncontrarFuncion" class="labCadenaCineEncFunc">Seleccionar cadena de Cine:</label>
+    
+    </div>
+
+
+
+    <div class="input-containerUbicacion" id="encontrarFuncUbicacion">
+        <input type="text" id="encontrarFuncUbicacion" class="inputUbicacionFuncion" placeholder="Ubicación" list="provinciasUbicaciones" required>
+        <datalist id="provinciasUbicaciones" >
+            <option>San José</option>
+            <option>Heredia</option>
+            <option>Alajuela</option>
+            <option>Cartago</option>
+            <option>Limón</option>
+            <option>Puntarenas</option>
+            <option>Guanacaste</option>
+        </datalist>
+        <label for="ubicacionFuncion" class="labFuncionUbicacionSelec">Seleccionar Ubicación:</label>
+    </div>
+
+
+   
+    <div class="divboton">
+        <button class="btnSeleccionarAsientos" type="button" id="btnSelecAsientosFunc">Seleccionar Asientos</button>
+    </div>
+
+
+
+    <div class="input-containerNumAsiento" id="encontrarFuncAsientos">
+        <input type="text" id="encontrarFuncAsientos" class="inputNumAsientoEnc" placeholder="# Asiento" required>
+        <label for="numeroDeAsientoFuncion" class="labNumeroAsientoEncFunc">Asiento:</label>
+    </div>
+
+
+
+    <div class="divboton">
+        <button class="btnVerificarCompra" type="button" id="btnVerCompEncFunc">Verificar Compra</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+    </main>
+</body>
+
+
+<footer class="Footer">
+
+    <div class="LeftFooter">
+        <ul>
+            <li><a href="#">Acerca de Ticket+</a></li>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+            <li><a href="#">Trabaja con Nosotros</a></li>
+        </ul>
+
+    </div>
+
+    <div class="MiddleFooter">
+        <div>
+        <a href="#">Desarrollado por Klad Technologies</a>
+        </div>
+    </div>
+
+    <div class="RightFooter">
+
+        <div id='tittle' >
+            <h2>Redes Sociales:</h2>
+
+        </div>
+
+        <div class="ItemList"> 
+            <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+
+
+
+    </div>
+
+
+
+</footer>
+
+
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/JS/Encontrar_Funcion.js"></script>
+</html>
