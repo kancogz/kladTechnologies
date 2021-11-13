@@ -13,11 +13,14 @@ const validar = () => {
 
    if (input.value == '' ) {
        error = true;
-       input.classList.add('input-error');
+       /*se reemplaza input-error po solamente error */
+       input.classList.add('error');
        
     
    } else {
-    input.classList.remove('input-error');
+       
+       /*se reemplaza input-error po solamente error */
+    input.classList.remove('error');
     
    }
 

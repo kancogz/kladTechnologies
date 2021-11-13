@@ -269,13 +269,8 @@ a{
   border-radius:100%;
   background-color:#33353d
 }
-/*estilos para resaltar cajas de errores*/
-.error  {
-  border: 2px solid #e74c3c;
-}
-.success  {
-  border: 2px solid green;
-}
+
+
 /*boton azul*/ 
 .BlueButton{
   padding: 10px 40px;
@@ -402,4 +397,11 @@ form i {
   top: 32px;
   color:#e84118 ;
 
+}
+/*estilos para resaltar cajas de errores*/
+.error  {
+  border: 2px solid #e74c3c;
+}
+.success  {
+  border: 2px solid green;
 }
