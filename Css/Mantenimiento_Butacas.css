@@ -1,0 +1,1371 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+  }
+  
+
+  body{
+    background-image: url(Img/bg6.jpg);
+    background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+     
+  }
+
+
+
+  .divTitulo{
+      display: flex;
+      background-color:#f5f6fa ;
+      width: 70%;
+      min-width: 800px;
+      height: 30px;
+      justify-content: center;
+      margin-left: 280px;
+      margin-top: 100px;
+
+  }
+
+  #tituloSelecAsientos{
+      color: #273c75;
+
+  }
+
+
+
+
+
+
+  .main-container{
+    background-color: rgba(0, 128, 255, 0.5);
+    width: 70%;
+    min-width: 800px;
+    margin-top: 0px;
+    margin-left: 280px;
+    opacity: 100%;
+    height: 1500px;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+align-content: space-around;
+    
+
+
+   
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .opcionesMantenimientoSala{
+    display: flex;
+    position: relative;
+    top: 250px;
+    left: 0px;
+    
+
+    
+  }
+
+
+
+  .cineAsientosM{
+  
+    background-color: #273c75;
+    color:#f5f6fa ;
+    font-size: 25px;
+  
+  }
+  
+  
+  .inputCinesMantx{
+    font-size: 20px;
+  
+  }
+
+
+  .SalaAsientosM{
+  
+    background-color: #273c75;
+    color:#f5f6fa ;
+    font-size: 25px;
+  
+  }
+  
+  
+  .inputSalaMant{
+    font-size: 20px;
+    position: relative;
+  
+  }
+
+
+  .tipoAsientosM{
+  
+    background-color: #273c75;
+    color:#f5f6fa ;
+    font-size: 25px;
+    position: relative;
+    top: 160px;
+    right: 520px;
+  
+  }
+  
+  
+  .inputTiposMant{
+    font-size: 20px;
+    position: relative;
+    top: 160px;
+    right: 520px;
+  
+  }
+
+
+
+
+  .nuevoAsientosM{
+  
+    background-color: #273c75;
+    color:#f5f6fa ;
+    font-size: 25px;
+    position: relative;
+   
+    right: 100px;
+  
+  }
+  
+  
+  .inputNuevoMant{
+    font-size: 20px;
+    position: relative;
+    right: 100px;
+  
+  }
+
+
+
+
+  .precioAsientosM{
+  
+    background-color: #273c75;
+    color:#f5f6fa ;
+    font-size: 25px;
+    position: relative;
+    right: 340px;
+    top: 80px;
+  
+  }
+  
+  
+  .inputPrecioMant{
+    font-size: 20px;
+    position: relative;
+    right: 340px;
+    top: 80px;
+  
+  }
+
+
+
+
+
+
+
+
+  .input-containerCine{
+    position: relative;
+    bottom: 80px;
+    left: 260px;
+  }
+
+
+
+.input-containerSalaTipo{
+  position: relative;
+    bottom: 80px;
+    left: 260px;
+}
+
+
+
+
+
+#marcoSala{
+    background-color:#f5f6fa ;
+    border: 15px solid #2f3640;
+    width: 60%;
+    min-width: 800px;
+    height: 600px;
+    display: flex;
+    margin-top: 400px;
+    margin-left: 250px;
+    flex-direction: column;
+
+ 
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+#pantalla{
+    color: #2f3640 ;
+  text-align: center;
+  background-color:#9c88ff ;
+  min-width: 800px;
+}
+
+#letraFila{
+    font-size: 30px;
+    margin-right: 15px;
+    color: #273c75;
+}
+.filaA{
+    display: flex;
+flex-direction: row;
+position: relative;
+left: 150px;
+top: 40px;
+font-size: 40px;
+
+}
+.filaB{
+    display: flex;
+flex-direction: row;
+position: relative;
+left: 150px;
+top: 60px;
+font-size: 40px;
+}
+.filaC{
+    display: flex;
+flex-direction: row;
+position: relative;
+left: 150px;
+top: 80px;
+font-size: 40px;
+}
+.filaD{
+    display: flex;
+flex-direction: row;
+position: relative;
+left: 150px;
+top: 100px;
+font-size: 40px;
+}
+.filaE{
+    display: flex;
+flex-direction: row;
+position: relative;
+left: 150px;
+top: 120px;
+font-size: 40px;
+}
+.filaF{
+    display: flex;
+flex-direction: row;
+position: relative;
+left: 150px;
+top: 140px;
+font-size: 40px;
+}
+
+
+
+.iconify{
+    color: #7f8fa6;
+}
+
+.numerosColumnas{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 500px;
+    font-size: 25px;
+    justify-content: space-around;
+    top:150px;
+    left: 170px;
+    color: #29aafe;
+    
+}
+
+
+
+.input-error{
+    border: 6px solid #e84118;
+}
+
+
+
+
+
+#SillaD1{
+    color: #00a8ff;
+  }
+  
+  #SillaD12{
+    color: #00a8ff;
+  }
+
+
+
+
+#SillaF1{
+    color:#e1b12c;
+  
+  }
+  
+  #SillaF2{
+    color:#e1b12c;
+  
+  }
+  
+  #SillaF3{
+    color:#e1b12c;
+  
+  }
+  
+  #SillaF4{
+    color:#e1b12c;
+  
+  }
+  
+  #SillaF5{
+    color:#e1b12c;
+  
+  }
+  
+  #SillaF6{
+    color:#e1b12c;
+  
+  }
+  
+  
+  #SillaF7{
+    color:#e1b12c;
+  
+  }
+  
+  
+  #SillaF8{
+    color:#e1b12c;
+  
+  }
+  
+  
+  #SillaF9{
+    color:#e1b12c;
+  
+  }
+  
+  #SillaF10{
+    color:#e1b12c;
+  
+  }
+  
+  #SillaF11{
+    color:#e1b12c;
+  
+  }
+  
+  #SillaF12{
+    color:#e1b12c;
+  
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.num1{
+    position: relative;
+    left: 10px;
+    
+  
+  }
+  
+  .num2{
+    position: relative;
+    left: 15px;
+    
+  
+  }
+  
+  
+  .num3{
+    position: relative;
+    left: 16px;
+    
+  
+  }
+  
+  
+  
+  
+  .num4{
+    position: relative;
+    left: 16px;
+    
+  
+  }
+  
+  .num5{
+    position: relative;
+    left: 17px;
+    
+  
+  }
+  
+  
+  
+  
+  
+  
+  .num6{
+    position: relative;
+    left:19px;
+    
+  
+  }
+  
+  
+  
+  
+  .num7{
+    position: relative;
+    left: 20px;
+    
+    
+  
+  }
+  
+  
+  .num8{
+    position: relative;
+    left: 22px;
+  
+  }
+  
+  
+  
+  .num9{
+    position: relative;
+    left: 25px;
+    
+  
+  }
+  
+  
+  
+  
+  
+  
+  .num10{
+    position: relative;
+    left: 20px;
+    
+  
+  }
+  
+  
+  
+  .num11{
+    position: relative;
+    left: 10px;
+  
+  }
+  
+  .num12{
+    position: relative;
+    left: px;
+   
+  
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.asientosCineSelec{
+    display: flex;
+    position: relative;
+    left: 100px;
+}
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ejemplos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-left:20px ;
+
+    
+    
+    
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#p7600{
+  
+    color: #f5f6fa ;
+    font-size: 20px;
+    background-color:#00a8ff ;
+   
+    
+  }
+  
+  
+  #silla7600Ej{
+    color: #00a8ff;
+    font-size: 30px;
+ 
+  }
+  
+  
+  #pLibre{
+   
+    color: #f5f6fa ;
+    font-size: 20px;
+    background-color:#7f8fa6 ;
+   
+  }
+  
+  #sillaLibreEj{
+    color: #7f8fa6;
+    font-size: 30px;
+  
+  }
+  
+  #pOcupado{
+   
+    color: #f5f6fa ;
+    font-size: 20px;
+    background-color:#e84118 ;
+ 
+  }
+  
+  #sillaOcupadoEj{
+    color: #e84118;
+    font-size: 30px;
+
+  }
+  
+  #pVip{
+    
+    color: #f5f6fa ;
+    font-size: 20px;
+    background-color:#e1b12c ;
+  
+  }
+  
+  #sillaVipEj{
+    color: #e1b12c;
+    font-size: 30px;
+   
+  }
+  
+  #pSeleccionado{
+    
+    color: #f5f6fa ;
+    font-size: 20px;
+    background-color:#4cd137 ;
+  
+  }
+  
+  #sillaSeleccionadoEj{
+    font-size: 30px;
+    color: #4cd137;
+   
+  }
+  
+
+.inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+    margin: 10px;
+    margin-top: 50px;
+    margin-left:20px ;
+
+    
+   
+
+}
+
+
+
+
+
+
+.input-container{
+    font-size: 25px;
+   
+  
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.input-container{
+  
+    font-size: 20px;
+    
+  
+  
+  }
+  
+  .labSalaS{
+  
+    background-color: #273c75;
+    color:#f5f6fa ;
+    font-size: 25px;
+  
+  }
+  
+  
+  .inputSala{
+    font-size: 20px;
+  
+  }
+  
+  
+  
+  
+  
+  
+  .asientoS{
+    background-color: #273c75;
+    color:#f5f6fa ;
+    font-size: 25px;
+    
+  }
+  
+
+
+  
+  .inputAsientoTipo{
+    font-size: 20px;
+  
+  }
+  
+  
+  
+
+  .asientoSelec{
+    background-color: #273c75;
+    color:#f5f6fa ;
+    font-size: 25px;
+
+  }
+  
+  
+  .numSeat{
+    background-color: #273c75;
+    color:#f5f6fa ;
+    font-size: 25px;
+  }
+  
+  
+  .inputAsientoNum{
+    font-size: 20px;
+  }
+  
+  
+  .precioT{
+    background-color: #273c75;
+    color:#f5f6fa ;
+    font-size: 25px;
+  }
+  
+  
+  .inpuPrecio{
+   
+    font-size: 20px;
+ 
+  
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.botones{
+    display: flex;
+    position: relative;
+    left: 100px;
+    top: 50px;
+    justify-content: space-evenly;
+    
+ 
+    
+}
+
+
+
+
+.btnEditar{
+  
+  
+   
+    color:#f5f6fa ;
+      background-color:#2f3640 ;
+      width: 164px;
+      height: 64px;
+      font-size: 25px;
+      border-radius: 10px;
+      margin-left: 100px;
+      
+  
+  
+  }
+  
+  .btnGuardar{
+    
+    
+    
+    color:#f5f6fa ;
+      background-color:#2f3640 ;
+      width: 164px;
+      height: 64px;
+      font-size: 25px;
+      border-radius: 10px;
+      margin-right:400px;
+  
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Estilos del header*/
+
+.topnav {
+    background-color: #192a56;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /*contenedor del logo*/
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+      height: 60px;
+      width: 250px;
+      /*insertar aca la imagen del logo a utilizar*/
+      
+  
+  }
+  
+  .logo-container a{
+    width: 140px;
+  }
+  .logo-container  a img{
+    height: 60px;
+    width: 190px;
+    margin-top: -23px;
+    margin-left: -30px;
+  
+  }
+  /*fin de contenedor del logo*/
+  
+  
+  
+  .topnav nav  { 
+    width: 50%;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: right;
+    display: block;
+    color: #f5f6fa;
+    text-align: center;
+    padding: 22px 30px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #273c75;
+    color: white;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #273c75;
+    color: #f5f6fa;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 1000px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  /* fin estilos de header*/
+  
+  
+  
+  
+  
+  
+  
+  
+  /*footer estilos */
+  .Footer {
+    margin-top: 40px;
+    background-color: #2f3640;
+    height: 100px;
+    padding: 20px;
+    width: auto;
+    text-align: center;
+    color: #f5f6fa;
+    display: flex;
+  }
+  
+  .LeftFooter{
+      display: flex;
+      justify-content: left;
+      text-align: left;
+      flex-grow: 1;
+      padding: 10px;
+  }
+  
+  .LeftFooter ul li{
+      margin: 10px;
+  }
+  .LeftFooter ul li a{
+    color:#f5f6fa ;
+  }
+  
+  /*estilos de la columna central de footer*/
+  .MiddleFooter{
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+      align-items: flex-end;
+  
+    }
+  
+    .MiddleFooter div{
+        margin-bottom: 10px;
+    }
+  
+    .MiddleFooter a{
+        color: #f5f6fa;
+    }
+  
+    /* codigo de la columna derecha de footer*/
+  .RightFooter{
+      flex-grow: 1;
+  }
+  
+  .RightFooter #tittle{
+      margin-bottom: 20px;
+  }
+  
+  .ItemList{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .ItemList a{
+    color: #f5f6fa;
+  }
+  
+  
+  /* iconos sociales*/
+  .social-icons
+  {
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+  }
+  .social-icons li
+  {
+  display:inline-block;
+  margin-bottom:4px
+  }
+  
+  .social-icons a{
+  background-color:transparent;
+  color:#f5f6fa;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+  }
+  .social-icons a:active,.social-icons a:focus,.social-icons a:hover
+  {
+  color:#fff;
+  background-color:#29aafe
+  }
+  .social-icons.size-sm a
+  {
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+  }
+  .social-icons a.facebook:hover
+  {
+  background-color:#3b5998
+  }
+  .social-icons a.twitter:hover
+  {
+  background-color:#00aced
+  }
+  .social-icons a.linkedin:hover
+  {
+  background-color:#007bb6
+  }
+  .social-icons a.dribbble:hover
+  {
+  background-color:#ea4c89
+  }
+  
+  .site-footer .social-icons
+  {
+  text-align:right
+  }
+  .site-footer .social-icons a
+  {
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+  }
+  
+  .error  {
+  border: 2px solid #e74c3c;
+  }
+  .success  {
+  border: 2px solid green;
+  }
+  
+  
+  
+  
+  
+  /* iconos sociales*/
+  .social-icons
+  {
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+  }
+  .social-icons li
+  {
+  display:inline-block;
+  margin-bottom:4px
+  }
+  
+  .social-icons a{
+  background-color:transparent;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+  }
+  .social-icons a:active,.social-icons a:focus,.social-icons a:hover
+  {
+  color:#fff;
+  background-color:#29aafe
+  }
+  .social-icons.size-sm a
+  {
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+  }
+  .social-icons a.facebook:hover
+  {
+  background-color:#3b5998
+  }
+  .social-icons a.twitter:hover
+  {
+  background-color:#00aced
+  }
+  .social-icons a.linkedin:hover
+  {
+  background-color:#007bb6
+  }
+  .social-icons a.dribbble:hover
+  {
+  background-color:#ea4c89
+  }
+  
+  .site-footer .social-icons
+  {
+  text-align:right
+  }
+  .site-footer .social-icons a
+  {
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+  }
+  /*fin estilos footer*/
