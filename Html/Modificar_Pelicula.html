@@ -40,30 +40,30 @@
                 <div class="movie-data">
                     <div class="input-data">
                         <h1>Nombre Película</h1>
-                        <input type="text" value="Venom">
+                        <input type="text" value="Venom" class="input-field" required><i class="fas fa-exclamation-circle"></i>
                     </div>
                     <div class="input-data">
                         <h1>Categoría Película</h1>
-                        <input type="text" value="Acción">
+                        <input type="text" value="Acción" class="input-field" required><i class="fas fa-exclamation-circle"></i>
                     </div>
                     <div class="input-data">
                         <h1>Duración</h1>
-                        <input type="text" value="120 minutos">
+                        <input type="text" value="120 minutos" class="input-field" required><i class="fas fa-exclamation-circle"></i>
                     </div>
                     <div class="input-data">
                         <h1>Clasificación por Edad</h1>
-                        <input type="text" value="M-18">
+                        <input type="text" value="M-18" class="input-field" required><i class="fas fa-exclamation-circle"></i>
                     </div>
                     <div class="input-data">
                         <h1>Tipo de Película</h1>
-                        <input type="text" value="Subtitulada">
+                        <input type="text" value="Subtitulada" class="input-field" required><i class="fas fa-exclamation-circle"></i>
                     </div>
                     <div class="input-data">
                         <h1>Imagen de Película</h1>
-                        <input type="file" id="img" name="img" accept="image/*">
+                        <input type="file" id="img" name="img" accept="image/*"  class="input-field" required><i class="fas fa-exclamation-circle"></i>
                     </div>
                     <div class="input-data">
-                        <button class="BlueButton"> Confirmar Datos</button>
+                        <button class="BlueButton" id="btn-confirmar"> Confirmar Datos</button>
                     </div>
                 </div>
             </div>
@@ -103,6 +103,8 @@
             </div>
         </div>
     </footer>
+    <script src="../JS/Modificar_Pelicula.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
 </html>
