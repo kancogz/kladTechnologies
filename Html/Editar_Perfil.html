@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Css/Reset.css">
+    <link rel="stylesheet" href="/Css/General.css">
+    <link rel="stylesheet" href="css/Editar_Perfil.css">
+
+</head>
+
+
+<body>
+    <header class="topnav" id="myTopnav">
+        <!-- insertar la imagen del logo dentro del a img -->
+                    <div class="logo-container">
+                        <a href="#"><img src="img/logo+.png" alt=""></a>
+                    </div>
+        
+                    <nav>
+                        <a href="#home" class="active">Inicio</a>
+                        <a href="#news">Cines</a>
+                        <a href="#contact">Peliculas</a>
+                        <a href="#about">Ingresar</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </nav>
+        
+                </header>
+    <main>
+        <div class="container1"> 
+            
+                <div id="titulo1"><h1>Hola, Fulanito</h1></div>
+
+                <div class="foto">
+                <img id="contenedorfoto" src="img/avatar1.jpg" alt="">
+                </div>
+
+                <div id="opcionAvatar">
+
+                  <h2 >Edita tu avatar </h1>
+                   
+                </div>
+                <div class="opciones">
+                <select name="TipoId" id="TipoId" onchange="cambiar(value)" required >	
+                  <option value=""  >Seleccione una opcion:</option>
+                  <option value="1" >Opcion 1</option>
+                  <option value="2">Opcion 2</option>
+                  <option value="3">Opcion 3</option>
+        
+                </select> 
+              </div>
+
+               
+
+
+                <div id="container2">
+                
+
+                      <form  action="" id="container4" class="container4">
+
+                        <h1 id="lista" > <input type="text" id="Input-Nombre" class="input-field" required autocomplete="off" placeholder="Nombre"> </h1>
+
+                        <h1 id="lista" > <input type="text" id="inputApellido" maxlength="10" required autocomplete="off" placeholder="Apellidos"> </h1>
+
+                        <h1 id="lista" >
+                          
+                          <select name="TipoId" id="TipoId" required >	
+                          <option value="">Tipo Id:</option>
+                          <option value="1">Nacional</option>
+                          <option value="2">Extranjero</option>
+                          <option value="3">Residente</option>
+                
+                         </select> </h1>
+                       
+                        <div id="lista" > <input type="text" id="Input-Numero-Id"  required   placeholder="Numero de ID"></div>
+
+                        <h1 id="lista" > 
+                          
+                          
+                          <input type="email" id="input-correo" class="input-field" onkeydown="myFunction()"  required  placeholder="Correo electronico">
+                        
+                        </h1>
+                                   
+                        <h1 id="lista" > <input type="text" id="inputContraseña" maxlength="8" required autocomplete="off" placeholder="Contraseña"></h1>
+
+                        <h1 id="lista" > <input type="text" id="inputConfirmarContraseña" maxlength="8" required autocomplete="off" placeholder="Confirmar contraseña"></h1>
+
+                         <div id="enlace">
+                        <a href="#" >Editar métodos de pago</a>
+                      </div>
+
+                        <div id="botones">
+
+
+                          <button type="button" class="btnGuard" id="btnCancelar">Cancelar</button>
+
+                          <button type="button" class="btnGuard" id="btnGuard">Guardar</button>
+  
+                          
+                        </div>
+
+                      </form>
+
+
+                </div>
+
+
+
+               
+
+        </div>
+
+    </main>
+ <!-- Footer -->
+ <footer class="Footer">
+
+	<div class="LeftFooter">
+		<ul>
+			<li><a href="#">Acerca de Ticket+</a></li>
+			<li><a href="#">Preguntas Frecuentes</a></li>
+			<li><a href="#">Trabaja con Nosotros</a></li>
+		</ul>
+
+	</div>
+
+	<div class="MiddleFooter">
+		<div>
+		<a href="#">Desarrollado por Klad Technologies</a>
+		</div>
+	</div>
+
+	<div class="RightFooter">
+
+		<div id='tittle' >
+			<h2>Redes Sociales:</h2>
+
+		</div>
+
+		<div class="ItemList"> 
+			<ul class="social-icons">
+				<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+				<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+			  </ul>
+		</div>
+
+	</div>
+
+
+
+</footer>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+
+    
+</body>
+
+
+</html>
