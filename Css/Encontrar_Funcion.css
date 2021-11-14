@@ -288,7 +288,11 @@ color: #f5f6fa  ;
   visibility: visible;
   margin-top:3px;
 }
+/*se agrega esta clase porque el largo de la pagina no permite llegar al final en pantallas altas*/
+.Footer{
+  position: fixed;
 
+}
 
 
 

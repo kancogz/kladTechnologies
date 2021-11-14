@@ -139,7 +139,8 @@ a{
     text-align: center;
     color: #f5f6fa;
     display: flex;
-    width: 100%
+    width: 100%;
+    bottom: 0px;
   }
 
   .LeftFooter{
@@ -282,6 +283,10 @@ a{
     color: #f5f6fa;
     outline: none; 
     cursor: pointer;
+}
+
+.BlueButton a{
+  color:#f5f6fa ;
 }
 
 
