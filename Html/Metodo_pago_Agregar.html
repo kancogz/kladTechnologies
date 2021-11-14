@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Agregar metodo de pago</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+	integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="/Css/reset.css">
+	<link rel="stylesheet" href="/Css/Metodo_Pago_Agregar.css">
+	<link rel="stylesheet" href="/Css/General.css">
+	
+	
+
+	
+	
+
+</head>
+
+
+<header class="topnav" id="myTopnav">
+
+				<div class="logo-container">
+					<a href="#"><img src="Img/logo+.png" alt=""></a>
+				</div>
+	
+				<nav>
+					<a href="#home" class="active">Inicio</a>
+					<a href="#news">Cines</a>
+					<a href="#contact">Peliculas</a>
+					<a href="#about">Ingresar</a>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						<i class="fa fa-bars"></i>
+					</a>
+				</nav>
+	
+			</header>
+
+<body>
+
+
+	<div class="contenedor">
+
+		<!-- Tarjeta -->
+		<section class="tarjeta" id="tarjeta">
+			<div class="delantera">
+				<div class="logo-marca" id="logo-marca">
+					 <img src="Img/visa.png" alt=""> 
+				</div>
+				<img src="Img/chip-tarjeta.png" class="chip" alt="">
+				<div class="datos">
+					<div class="grupo" id="numero">
+						<p class="label">Número Tarjeta</p>
+						<p class="numero">#### #### #### ####</p>
+					</div>
+					<div class="flexbox">
+						<div class="grupo" id="nombre">
+							<p class="label">Nombre Tarjeta</p>
+							<p class="nombre"></p>
+						</div>
+
+						<div class="grupo" id="expiracion">
+							<p class="label">Expiracion</p>
+							<p class="expiracion"><span class="mes">MM</span> / <span class="year">AA</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="trasera">
+				<div class="barra-magnetica"></div>
+				<div class="datos">
+					<div class="grupo" id="firma">
+						<p class="label">Firma</p>
+						<div class="firma"><p></p></div>
+					</div>
+					<div class="grupo" id="ccv">
+						<p class="label">CCV</p>
+						<p class="ccv"></p>
+					</div>
+				</div>
+				<p class="leyenda">El CVV o código valor de verificación o validación ( Card Verification Value) es el grupo de tres o cuatro dígitos ubicado en la parte posterior de la tarjeta.</p>
+				<a href="#" class="link-banco">www.tickets+.com</a>
+			</div>
+		</section>
+
+		<!-- Contenedor Boton Abrir Formulario -->
+		<div class="contenedor-btn">
+			<button class="btn-abrir-formulario" id="btn-abrir-formulario">
+				<i class="fas fa-plus"></i>
+			</button>
+		</div>
+
+		<!-- Formulario -->
+		<form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+			<div class="grupo">
+				<label for="inputNumero">Número Tarjeta</label>
+				<input type="text" id="inputNumero"  pattern=".{19,23}" maxlength="23" required autocomplete="off">
+			</div>
+			<div class="grupo">
+				<label for="inputNombre">Nombre</label>
+				<input type="text" id="inputNombre" maxlength="19" required autocomplete="off">
+			</div>
+			<div class="flexbox">
+				<div class="grupo expira">
+					
+					<div class="flexbox">
+						<div class="grupo-select">
+							<label for="selectMes">Mes de expiración</label>
+							<select name="mes" id="selectMes" required>
+								<option disabled selected ></option>
+							</select>
+							<i class="fas fa-angle-down"></i>
+						</div>
+						<div class="grupo-select">
+							<label for="selectMes">Año de expiración</label>
+							<select name="year" id="selectYear" required >	
+								<option disabled selected ></option>
+							</select>
+							<i class="fas fa-angle-down"></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="grupo ccv">
+					<label for="inputCCV">CCV</label>
+					<input type="text" id="inputCCV" maxlength="3" required>
+				</div>
+			</div>
+			<button type="submit" class="btn-enviar" id= "btn-enviar">Enviar</button>
+			<button type="button" class="btn-enviar" id= "">Cancelar</button>
+		</form>
+
+	</div>
+
+	<!-- Footer -->
+<footer class="Footer">
+
+	<div class="LeftFooter">
+		<ul>
+			<li><a href="#">Acerca de Ticket+</a></li>
+			<li><a href="#">Preguntas Frecuentes</a></li>
+			<li><a href="#">Trabaja con Nosotros</a></li>
+		</ul>
+
+	</div>
+
+	<div class="MiddleFooter">
+		<div>
+		<a href="#">Desarrollado por Klad Technologies</a>
+		</div>
+	</div>
+
+	<div class="RightFooter">
+
+		<div id='tittle' >
+			<h2>Redes Sociales:</h2>
+
+		</div>
+
+		<div class="ItemList"> 
+			<ul class="social-icons">
+				<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+				<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+			  </ul>
+		</div>
+
+	</div>
+
+
+
+</footer>
+
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+<script src="js/Metodo_Pago_Agregar.js"></script>
+
+</body>
+
+
+
+
+</html>
