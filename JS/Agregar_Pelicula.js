@@ -1,0 +1,52 @@
+'use strict'
+
+// const inputNombrePelicula = document.querySelector('#input-nombre');
+// const inputCategoriaPelicula = document.querySelector('#input-categoria');
+// const inputDuracionPelicula = document.querySelector('#input-duracion');
+// const inputClasificacionPelicula = document.querySelector('#input-clasificacion');
+// const inputTipoPelicula = document.querySelector('#input-tipo');
+// const inputImagenPelicula = document.querySelector('#input-imagen');
+
+const btnConfirmar = document.querySelector('#btn-confirmar')
+
+let inputsRequeridos = document.querySelectorAll('input:required');
+
+const validar = () => {
+    let error = false;
+    let inputsRequeridos = document.querySelectorAll('input:required');
+
+    inputsRequeridos.forEach(input=>{
+        if (input.value == '') {
+            error = true;
+            input.classList.add('error');
+        } 
+        else {
+            input.classList.remove('error');
+        }
+    });
+
+    /*codigo para sweet alert*/
+    if (error == true) {
+        Swal.fire({
+            'icon':'warning',
+            'title':'Ha Ocurrido un Error',
+            'text':'Por favor revise los campos resaltados'
+        });
+    
+        
+    } else {
+       
+        Swal.fire({
+            'icon':'success',
+            'title':'Datos añadidos exitosamente!',
+            'text':'Los datos han sido añadidos al sistema con éxito.'
+        });
+       
+      
+    
+    }
+    /* termina swal */
+}
+
+
+btnConfirmar.addEventListener('click', validar );

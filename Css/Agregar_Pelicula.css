@@ -66,6 +66,12 @@ body {
     flex-direction: column;
 }
 
+.input-data i{
+    visibility: hidden;
+    margin-top: -23px;
+    margin-left: 235px;
+  }
+
 .input-data h1 {
     color: #192a56;
     font-size: 18px;
