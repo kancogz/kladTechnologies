@@ -6,7 +6,7 @@ body {
     background-attachment: fixed;
 }
 
-.main-container {
+.main-container2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,14 +14,13 @@ body {
     /* background-color: aliceblue; */
 }
 
-.WhiteTittleFrame {
+.WhiteTittleFrame2 {
     background-color: whitesmoke;
     justify-content: center;
     align-items: center;
     display: flex;
     height: 50px;
-    margin-top: 50px;
-    width: 60%;
+    width: 100%;
 }
 
 .WhiteTittleFrame p {
@@ -62,18 +61,20 @@ body {
 }
 
 .GraficoSala{
-    background-color: green;
+    background-color: #353b48;
   
     align-items: center;
     justify-content: center;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
  
 }
 
 .asientos{
-    background-color: grey;
+    background-color: #718093;
     height: 15px;
     width: 25px;
-    border: 2px solid red;
     margin: 3px;
 border-top-left-radius: 20px;
 border-top-right-radius: 20px;
@@ -89,7 +90,7 @@ border-top-right-radius: 20px;
 }
 
 .asientos.selected{
-    background-color: greenyellow;
+    background-color: #4cd137;
 }
 
 .asientos.occupied{
@@ -111,12 +112,24 @@ border-top-right-radius: 20px;
 
 }
 
+.centradoPantalla{
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 15px ;
+    
+    perspective: 1000px;
+}
 .Pantalla{
     background-color: white;
-    height: 7px;
-    width: 80%;
-   
-    display: flex;
+    height: 100px;
+ width: 60%;
+ transform: rotatex(-45deg);
+ box-shadow: 0 3px 10px rgba(255, 255, 255, 1);
 
 }
 
+
+#btnConfirmarAsiento{
+    margin-top: 20px;
+}

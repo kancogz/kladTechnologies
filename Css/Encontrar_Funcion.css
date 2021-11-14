@@ -20,6 +20,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+    padding-bottom: 50px;
   }
 
   /*se modifican propiedades ya que no ocupa un left o top una vez dentro del div main container ya que este tiene las propiedades de las distancias. se le agrega una altura de 50 px al div del titulo*/
@@ -288,19 +289,21 @@ color: #f5f6fa  ;
   visibility: visible;
   margin-top:3px;
 }
-/*se agrega esta clase porque el largo de la pagina no permite llegar al final en pantallas altas*/
-.Footer{
-  position: fixed;
+
+
+
+
+
+.popupshow {
+  visibility: hidden;
 
 }
 
-
-
-
-
-
-
-
+.main-container2{
+  visibility: hidden;
+  z-index: 5;
+  position: absolute;
+}
 
 
 

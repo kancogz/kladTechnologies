@@ -8,6 +8,7 @@
       <link rel="stylesheet" href="/Css/Reset.css">
       <link rel="stylesheet" href="/Css/General.css">
     <link rel="stylesheet" href="/Css/Encontrar_Funcion.css" />
+    <link rel="stylesheet" href="/Css/graficoAsientos.css">
 
 
 </head>
@@ -54,73 +55,248 @@
 
             <div class="main-container">
                 
-        <div class="tituloAgregarSala">
-            <h1 class="agregarSalaCine">Encontrar Función</h1>
-        </div>  
+                <div class="tituloAgregarSala">
+                    <h1 class="agregarSalaCine">Encontrar Función</h1>
+                </div>  
 
 
-             
-            <div class="BlueGlass">
-                <!-- Se elimina la clase y id y se agregan 2 clases nuevas -->
-                <div class="input-container InputDistance"  >
-                      <!--   se agrega la clase input-field dentro de input y se agrega el simbolo i luego del input.  -->
-                    <input type="text" id="cadenaCineSelect" class="inputCadenaCineSelect input-field"  list="cinesSelec" required>  <i class="fas fa-exclamation-circle"></i>
-                  <!--   se tiene que cambiar el datalist por un select. al validar da errores porque no esta vacio. o tiene que hacer que haga match con las opciones disponibles.  -->
-            <!--       que hace el id cinceselec? -->
-                    <datalist id="cinesSelec" >
-                        <option>Cinepolis</option>
-                        <option>CineMark</option>
-                        <option>CCM Cinemas</option>
-                    </datalist>
-                    <label for="CadenaCineEncontrarFuncion" class="labCadenaCineEncFunc">Seleccionar cadena de Cine:</label>
-                
-                </div>
+                    
+                    <div class="BlueGlass">
+                        <!-- Se elimina la clase y id y se agregan 2 clases nuevas -->
+                        <div class="input-container InputDistance"  >
+                            <!--   se agrega la clase input-field dentro de input y se agrega el simbolo i luego del input.  -->
+                            <input type="text" id="cadenaCineSelect" class="inputCadenaCineSelect input-field"  list="cinesSelec" required>  <i class="fas fa-exclamation-circle"></i>
+                        <!--   se tiene que cambiar el datalist por un select. al validar da errores porque no esta vacio. o tiene que hacer que haga match con las opciones disponibles.  -->
+                    <!--       que hace el id cinceselec? -->
+                            <datalist id="cinesSelec" >
+                                <option>Cinepolis</option>
+                                <option>CineMark</option>
+                                <option>CCM Cinemas</option>
+                            </datalist>
+                            <label for="CadenaCineEncontrarFuncion" class="labCadenaCineEncFunc" >Seleccionar cadena de Cine:</label>
+                        
+                        </div>
 
 
-                <div class="input-container InputDistance" >
-                  <!--   se agrega la clase input-field dentro de input y se agrega el simbolo i luego del input.  -->
-                    <input type="text" id="encontrarFuncUbicacion" class="inputUbicacionFuncion input-field "  list="provinciasUbicaciones" required>  <i class="fas fa-exclamation-circle"></i>
-                    <datalist id="provinciasUbicaciones" >
-                        <option>San José</option>
-                        <option>Heredia</option>
-                        <option>Alajuela</option>
-                        <option>Cartago</option>
-                        <option>Limón</option>
-                        <option>Puntarenas</option>
-                        <option>Guanacaste</option>
-                    </datalist>
-                    <label for="ubicacionFuncion" class="labFuncionUbicacionSelec">Seleccionar Ubicación:</label>
-                </div>
+                        <div class="input-container InputDistance" >
+                        <!--   se agrega la clase input-field dentro de input y se agrega el simbolo i luego del input.  -->
+                            <input type="text" id="encontrarFuncUbicacion" class="inputUbicacionFuncion input-field "  list="provinciasUbicaciones" required>  <i class="fas fa-exclamation-circle"></i>
+                            <datalist id="provinciasUbicaciones" >
+                                <option>San José</option>
+                                <option>Heredia</option>
+                                <option>Alajuela</option>
+                                <option>Cartago</option>
+                                <option>Limón</option>
+                                <option>Puntarenas</option>
+                                <option>Guanacaste</option>
+                            </datalist>
+                            <label for="ubicacionFuncion" class="labFuncionUbicacionSelec">Seleccionar Ubicación:</label>
+                        </div>
 
 
+                    
+                        <div class="divboton">
+                            <button class="BlueButton" type="button" id="btnSelecAsientosFunc" onclick="popup()"><p>Seleccionar Asientos</p></button>
+                        </div>
+
+
+
+                        <div class="input-container InputDistance " id="asientos">
+                            <!--   se agrega la clase input-field dentro de input y se agrega el simbolo i luego del input.  -->
+                            <input type="text"  class="inputNumAsientoEnc input-field" required  id="count">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <label for="numeroDeAsientoFuncion" class="InputEffect" > <p>Asiento:</p> </label>
+                        </div>
+
+
+
+                        <div class="divboton">
+                            <button class="BlueButton" type="button" id="btnVerCompEncFunc">Verificar Compra</button>
+                        </div>
+
+                        </div>
             
-                <div class="divboton">
-                    <button class="BlueButton" type="button" id="btnSelecAsientosFunc"><a href="/Html/Seleccionar_Asientos.html"><p>Seleccionar Asientos</p> </a></button>
+
+
+
+
+
+
+
+
+
+
+
+            <div class="main-container2">
+                <div class="WhiteTittleFrame2">
+                    <p >Seleccionar Asientos</p>
                 </div>
-
-
-
-                <div class="input-container InputDistance " >
-                      <!--   se agrega la clase input-field dentro de input y se agrega el simbolo i luego del input.  -->
-                    <input type="text" id="encontrarFuncAsientos" class="inputNumAsientoEnc input-field" required>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <label for="numeroDeAsientoFuncion" class="InputEffect" > <p>Asiento:</p> </label>
+              
+                <!-- <div id="button-box">
+                    <button type="button" id="register-btn">Registrar Usuarios</button>
+                </div> -->
+                <div class="BlueGlass">
+    
+                    <div class="GraficoSala"> 
+    
+                        <div class="centradoPantalla">
+    
+                            <div class="Pantalla"> 
+    
+                            </div>
+                        
+                         </div>
+    
+                        <div class="row"> 
+    
+    
+                            <div class="asientos" > </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos occupied">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            
+    
+                        </div>
+                        <div class="row"> 
+    
+    
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos occupied">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            
+    
+                        </div>
+                        <div class="row"> 
+    
+    
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            
+    
+                        </div>
+                        <div class="row"> 
+    
+    
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            
+    
+                        </div>
+                        <div class="row"> 
+    
+    
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                           
+                            
+    
+                        </div>
+                        <div class="row"> 
+    
+    
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                            <div class="asientos">    </div>
+                           
+                            
+    
+                        </div>
+               
+                   
+    
+    
                 </div>
-
-
-
-                <div class="divboton">
-                    <button class="BlueButton" type="button" id="btnVerCompEncFunc">Verificar Compra</button>
+               
+    
+                <div class="Boton">
+                    <button type="button" class="BlueButton" onclick="popout()" id="btnConfirmarAsiento"><p>Confirmar</p></button>
+    
                 </div>
-
+            
+    
+                    
+                   
+                    
                 </div>
             </div>
+            
 
 
 
 
 
 
+
+
+        </div>
 
 
     </main>
@@ -171,4 +347,5 @@
 
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="/JS/Encontrar_Funcion.js"></script>
+<script src="/JS/graficoasientos.js"></script>
 </html>
