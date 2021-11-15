@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registrar Usuarios Admin</title>
+        <link rel="stylesheet" href="/Css/Reset.css">
+        <link rel="stylesheet" href="/Css/General.css">
+        <link rel="stylesheet" href="/Css/Registrar_Usuarios_Admin.css">
+    </head>
+    <body>
+
+        <header
+            class="topnav" id="myTopnav">
+            <!-- insertar la imagen del logo dentro del a img -->
+            <div class="logo-container">
+                <a href="/index.html"><img src="/Img/Logo.png" alt=""></a>
+            </div>
+
+            <nav>
+                <a href="/index.html">Inicio</a>
+                <a href="/Html/Cines.html">Cines</a>
+                <a href="/Html/Peliculas.html">Peliculas</a>
+                <a href="/Html/Iniciar_Sesion.html">Ingresar</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+
+        </header>
+
+
+        <main>
+            <div class="main-container">
+                <div class="section-title">
+                    <p>Registrar Usuarios</p>
+                </div>
+                <div class="section-content">
+              
+                        <div class="FormContainer">
+                            <form class="form">
+                                <div class="input-container">
+                                    <Select name="input-id" id="input-rol" class="input-field" required>
+                                        <option value="">Tipo de Usuario</option>
+                                        <option value="1">Cliente</option>
+                                        <option value="2">Soporte</option>
+    
+    
+                                    </Select>
+    
+                                </div>
+    
+                                <div class="input-container">
+                                    <input type="text" id="Input-Nombre" class="input-field" required><i class="fas fa-exclamation-circle"></i>
+    
+                                    <label for="Input-Nombre">Nombre Completo</label>
+                                </div>
+                                <div class="input-container">
+                                    <input type="text" id="Input-Apellidos" class="input-field" required><i class="fas fa-exclamation-circle"></i>
+    
+                                    <label for="Input-Apellidos">Apellidos</label>
+                                </div>
+                                <div class="input-container">
+                                    <Select name="input-id" id="input-id" class="input-field" required>
+                                        <option value="">Tipo de Id</option>
+                                        <option value="1">Nacional</option>
+                                        <option value="2">Pasaporte</option>
+    
+    
+                                    </Select>
+    
+                                </div>
+                                <div class="input-container">
+    
+                                    <input type="text"  class="input-field" onkeydown="labelFunction()"  required><i class="fas fa-exclamation-circle"></i>
+                                    <label for="none">Número de Id</label>
+                                </div>
+                                
+    
+                                <div class="input-container">
+    
+                                    <input type="mail" id="input-correo" class="input-field" required><i class="fas fa-exclamation-circle"></i>
+                                    <label for="Input-Numero-Id">Correo Electrónico</label>
+                                </div>
+    
+                                <div id="button-box">
+                                    <button type="button" id="btn-confirm" class="BlueButton">
+                                        Registrar</button>
+                                </div>
+    
+                            </form>
+                        </div>
+                   
+                     
+                   
+                   
+                </div>
+            </div>
+        </main>
+
+
+        <footer class="Footer">
+            <div class="LeftFooter">
+                <ul>
+                    <li><a href="#">Acerca de Ticket+</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Trabaja con Nosotros</a></li>
+                </ul>
+            </div>
+            <div class="MiddleFooter">
+                <div>
+                    <a href="#">Desarrollado por Klad Technologies</a>
+                </div>
+            </div>
+            <div class="RightFooter">
+                <div id='tittle'>
+                    <h2>Redes Sociales:</h2>
+                </div>
+                <div class="ItemList">
+                    <ul class="social-icons">
+                        <li>
+                            <a class="facebook" href="#">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="twitter" href="#">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dribbble" href="#">
+                                <i class="fa fa-dribbble"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="linkedin" href="#">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </footer>
+
+    </body>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+   <!--  hay que hacer el script que corresponda solamtene a registrar de admin -->
+    <script src="/JS/Registrar_Usuarios_Admin.js"></script>
+</html>
