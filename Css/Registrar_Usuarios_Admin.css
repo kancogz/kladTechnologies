@@ -1,6 +1,7 @@
 /* Body Section */
 body {
     background-image: url(/Img/bg6.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -261,7 +262,9 @@ color: whitesmoke;
   
 }
 
-
+main{
+    margin-bottom: 230px;
+}
 
 
 
