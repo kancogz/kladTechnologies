@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contáctenos</title>
-    <link rel="stylesheet" href="/Css/contactenosEstilos_Tarea_A.css" />
+    
     <link rel="stylesheet" href="/Css/Reset.css">
+    
+    <link rel="stylesheet" href="/Css/General.css">
+    <link rel="stylesheet" href="/Css/contactenosEstilos_Tarea_A.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 </head>
 <body>
@@ -37,57 +40,63 @@
 
 
 
-
-
-<main>
-
-<div class= "titulo">
-    <h1>Contáctanos</h1>
-</div>
-
-
-
-
-
-
-<div class="divcontactanos" name=dcontactanos>
-   
-
-
-<form class="formcontactanos" name="fcontactanos" id="formulario" >
+  
+                <main>
+                    <div class="main-container">
+                        <div class="WhiteTittleFrame">
+                            <p>Administración de Usuar</p> 
+                        </div>
+                      
+                        <!-- <div id="button-box">
+                            <button type="button" id="register-btn">Registrar Usuarios</button>
+                        </div> -->
+                        <div class="BlueGlass">
+     <div class="form-section">                      
+<form class="form" name="fcontactanos" id="formulario" >
 
 
 
 
 
     <div class="input-container" id="divnombre">
-        <input type="text" id="nombre" class="inputNombre" placeholder="Nombre Completo" required>
+        <input type="text" id="nombre" class="input-field"  required>
+        <i class="fas fa-exclamation-circle"></i>
         <label for="nombre" class="labNombre">Nombre Completo</label>
     </div>
 
     <div class="input-container" id="divcorreo">
-        <input type="email" id="correo" class="inputCorreo" placeholder="Correo Electrónico" required>
+        <input type="email" id="correo" class="input-field"  required>
+        <i class="fas fa-exclamation-circle"></i>
         <label for="correo" class="labCorreo">Correo Electrónico</label>
     </div>
 
 
-    <div class="input-container"  id="divmensaje">
+    <div class="input-container"    >
         
-        <textarea id="mensaje" class="inputmensaje" placeholder="Mensaje" required></textarea>
+        <textarea id="mensaje" class="input-field"  required></textarea>
+        
               <label for="mensaje" class="labMensaje">Mensaje</label>
             </div>
 
-           <div class="divboton">
-            <button class="btn" type="button" id="btnEnviar">Enviar</button>
+           <div class="btnCenter Confirm"  >
+            <button class="BlueButton "  type="button" id="btnconfirm">Enviar</button>
         </div>
 
         </form>
+    </div>
+                            
+                        </div>
+                    </div>
+                </main>
 
-    
-</div>
 
-</div>
-</main>
+
+
+
+
+
+
+
 
 
 
