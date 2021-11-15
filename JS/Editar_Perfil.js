@@ -83,8 +83,8 @@ const validar = () => {
    }else{
     Swal.fire({
         'icon': 'success',
-        'title': 'Se ha modificado su sala exitosamente.',
-        'text': 'Puede volver a editar la sala en cualquier momento.',
+        'title': 'Se ha modificado su perfil exitosamente.',
+        'text': 'Puede volver a editar el perfil en cualquier momento.',
 
    });
 
