@@ -8,7 +8,7 @@ const petsData = [
     },
 
     {
-        name: "Fulanito Benjamin",
+        name: "Carlos Benjamin",
         ExpYear: "10/2027",
         digitos: "4850",
         photo: 'img/cc.jpg',
