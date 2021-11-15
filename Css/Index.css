@@ -93,7 +93,7 @@
   
   
       .Carousel{
-          width: 100%;
+          width: 90%;
           margin: 0px ;
           margin-top: 40px;
         }
@@ -284,4 +284,18 @@
      
          align-items: center;
          justify-content: center;
+        }
+
+        footer{
+          width: 500px;
+        }
+
+
+        .NagivationBtn{
+          display: flex;
+          justify-content: center;
+          padding: -50;
+          
+          justify-content: center;
+
         }
