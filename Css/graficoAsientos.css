@@ -37,7 +37,7 @@ body {
     background-color: rgba(0, 128, 255, 0.5);
     height: 620px;
     width: 60%;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 
@@ -98,6 +98,10 @@ border-top-right-radius: 20px;
 
 }
 
+.asientos.Ley7600{
+    background-color: #00a8ff;
+}
+
 .asientos:nth-of-type(4){
     margin-right: 30px;
 }
@@ -131,5 +135,56 @@ border-top-right-radius: 20px;
 
 
 #btnConfirmarAsiento{
-    margin-top: 20px;
+    margin-top: 10px;
 }
+
+
+.showcase .seat:not(.occupied):hover {
+    cursor: default;
+    transform: scale(1);
+  }
+  .showcase .seat:not(.vacio):hover {
+    cursor: default;
+    transform: scale(1);
+  }
+  
+  .showcase {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #777;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .showcase li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+  }
+  
+  .showcase li small {
+    margin-left: 10px;
+  }
+
+
+  .DivAsientoPrecio{
+      display: flex;
+      margin-top: 20px;
+
+  }
+
+  #precioTotal{
+      background-color: honeydew;
+      height: 22px;
+      display: flex;
+      align-items: center;
+      margin-top: -6px;
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+
+  

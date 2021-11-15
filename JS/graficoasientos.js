@@ -6,6 +6,8 @@ const ContainerCine=document.querySelector('.GraficoSala');
 const asientos =document.querySelectorAll('.row .asientos:not(occupied)');
 
 const count =document.querySelector('#asientos #count');
+const maincount=document.querySelector('#precioTotal .count');
+
 
 
 
@@ -22,13 +24,14 @@ function updateSelectedAsientos(){
 
     count.value=asientosIndex;
 
+
 }
 
 
 ContainerCine.addEventListener('click', (e) => {
 
     if (e.target.classList.contains('asientos') && !e.target.classList.contains('occupied')) {
-       
+        
         e.target.classList.toggle('selected');
         
     }

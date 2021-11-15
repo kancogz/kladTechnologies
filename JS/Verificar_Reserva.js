@@ -1,27 +1,24 @@
 'use strict';
 
-const botonIngresar = document.querySelector('#btnCOnfirmarCompra');
+const botonIngresar = document.querySelector('.ConfirmButton');
 
 
 
 const validar = () => {
 
    let error =false;
-   let inputsRequeridos = document.querySelectorAll('input:required');
+   let selectRequeridos=document.querySelectorAll('select:required');
 
-   inputsRequeridos.forEach(input=> {
-
-   if (input.value == '' ) {
-       error = true;
-       input.classList.add('input-error');
-       
-    
-   } else {
-    input.classList.remove('input-error');
-    
-   }
-
-   });
+ 
+    selectRequeridos.forEach(select=>{
+        if(select.value==''){ 
+        error=true;
+        select.classList.add('error');
+         }
+        else{
+            select.classList.remove('error');
+        }
+    });
 
    if (error == true) {
        Swal.fire({

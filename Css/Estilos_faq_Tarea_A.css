@@ -18,7 +18,7 @@
   
   .titulo{
     color: #f5f6fa ;
-    width: 1500px;
+    width: 90%;
     border:  #2f3640;
     padding: 30px;
     margin: 50px;
@@ -44,7 +44,7 @@
 
   .respuestas{
     color: #f5f6fa ;
-    width: 1200px;
+    width: 90%;
     border:  #273c75;
     padding: 40px;
     margin: 50px;
