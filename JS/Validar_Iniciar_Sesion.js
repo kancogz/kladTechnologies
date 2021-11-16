@@ -60,8 +60,8 @@ if (error==true) {
    
     Swal.fire({
         'icon':'success',
-        'title':'Recuperacion de Contraseña Solicitada',
-        'text':'Revise Su Correo Electrónico Para Confirmar'
+        'title':'Ha Ingresado con Exito'
+       
     });
    
   
