@@ -1,152 +1,163 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Registrarse  </title>
-        <link rel="stylesheet" href="/Css/Reset.css">
-        <link rel="stylesheet" href="/Css/General.css">
-        <link rel="stylesheet" href="/Css/Registrar_Usuario.css">
-    </head>
-    <body>
 
-        <header></header>
-    </body>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse </title>
+    <link rel="stylesheet" href="/Css/Reset.css">
+    <link rel="stylesheet" href="/Css/General.css">
+    <link rel="stylesheet" href="/Css/Registrar_Usuario.css">
+</head>
+
+<body>
 
 
-        <header class="topnav" id="myTopnav">
-            
-                        <div class="logo-container">
-                            <a href="/index.html"><img src="/Img/Logo.png" alt=""></a>
-                        </div>
-                
-                        <nav>
-                            <a href="/index.html" >Inicio</a>
-                            <a href="/Html/Cines.html">Cines</a>
-                            <a href="/Html/Peliculas.html">Peliculas</a>
-                            <a href="/Html/Iniciar_Sesion.html" >Ingresar</a>
-                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                                <i class="fa fa-bars"></i>
-                            </a>
-                        </nav>
-                
-                    </header>
+    <header class="topnav" id="myTopnav">
 
-        <div class="Section1">
+        <div class="logo-container">
+            <a href="/index.html"><img src="/Img/Logo.png" alt=""></a>
+        </div>
 
-            <div class="MainContainer">
+        <nav>
+            <a href="/index.html">Inicio</a>
+            <a href="/Html/Cines.html">Cines</a>
+            <a href="/Html/Peliculas.html">Peliculas</a>
+            <a href="/Html/Iniciar_Sesion.html">Ingresar</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
 
-                <div class="LeftContainer">
+    </header>
 
-                    <div id="tittle-left"><h1>¿Ya Tienes Una Cuenta?</h1></div>
-                    <div id="p-left"><p>Inicia sesión para reservar entradas</p> </div>
-                    
+    <main>
 
-                    <div id="btn-iniciar-sesion"> <button type="button" class="LightButton">
+    <div class="Section1">
+
+        <div class="MainContainer">
+
+            <div class="LeftContainer">
+
+                <div id="tittle-left">
+                    <h1>¿Ya Tienes Una Cuenta?</h1>
+                </div>
+                <div id="p-left">
+                    <p>Inicia sesión para reservar entradas</p>
+                </div>
+
+
+                <div id="btn-iniciar-sesion"> <button type="button" class="LightButton">
                         <a href="/Html/Iniciar_Sesion.html">Iniciar Sesión</a>
                     </button> </div>
-                   
 
+
+            </div>
+
+            <div class="RightBackground"></div>
+
+            <div class="RightContainer">
+
+                <div id="form-tittle">
+                    <h1>Registrarse</h1>
                 </div>
 
-                <div class="RightBackground"></div>
+                <div class="FormContainer">
+                    <form class="form">
 
-                <div class="RightContainer">
+                        <div class="input-container">
+                            <input type="text" id="Input-Nombre" class="input-field" required><i
+                                class="fas fa-exclamation-circle"></i>
 
-                    <div id="form-tittle">
-                        <h1>Registrarse</h1>
-                    </div>
+                            <label for="Input-Nombre">Nombre Completo</label>
+                        </div>
+                        <div class="input-container">
+                            <input type="text" id="Input-Apellidos" class="input-field" required><i
+                                class="fas fa-exclamation-circle"></i>
 
-                    <div class="FormContainer">
-                        <form class="form">
+                            <label for="Input-Apellidos">Apellidos</label>
+                        </div>
+                        <div class="input-container">
 
-                            <div class="input-container">
-                                <input type="text" id="Input-Nombre" class="input-field" required><i class="fas fa-exclamation-circle"></i>
-
-                                <label for="Input-Nombre">Nombre Completo</label>
-                            </div>
-                            <div class="input-container">
-                                <input type="text" id="Input-Apellidos" class="input-field" required><i class="fas fa-exclamation-circle"></i>
-
-                                <label for="Input-Apellidos">Apellidos</label>
-                            </div>
-                            <div class="input-container">
-
-                                <input type="email" id="input-correo" class="input-field" onkeydown="labelFunction()"  required><i class="fas fa-exclamation-circle"></i>
-                                <label for="input-correo">Correo Electrónico</label>
-                            </div>
-                            <div class="input-container">
-                                <Select name="input-id" id="input-id" class="input-field" required>
-                                    <option value="">Seleccione el tipo de Id</option>
-                                    <option value="cedula">Cédula Nacional</option>
-                                    <option value="Pasaporte">Pasaporte</option>
+                            <input type="email" id="input-correo" class="input-field" onkeydown="labelFunction()"
+                                required><i class="fas fa-exclamation-circle"></i>
+                            <label for="input-correo">Correo Electrónico</label>
+                        </div>
+                        <div class="input-container">
+                            <Select name="input-id" id="input-id" class="input-field" required>
+                                <option value="">Seleccione el tipo de Id</option>
+                                <option value="cedula">Cédula Nacional</option>
+                                <option value="Pasaporte">Pasaporte</option>
 
 
-                                </Select>
+                            </Select>
 
-                            </div>
+                        </div>
 
-                            <div class="input-container">
+                        <div class="input-container">
 
-                                <input type="text" id="Input-Numero-Id" class="input-field" required><i class="fas fa-exclamation-circle"></i>
-                                <label for="Input-Numero-Id">Numero de Id</label>
-                            </div>
+                            <input type="text" id="Input-Numero-Id" class="input-field" required><i
+                                class="fas fa-exclamation-circle"></i>
+                            <label for="Input-Numero-Id">Numero de Id</label>
+                        </div>
 
-                            <div id="button-box">
-                                <button type="button" id="btn-confirm" class="BlueButton">
-                                    Ingresar</button>
-                            </div>
+                        <div id="button-box">
+                            <button type="button" id="btn-confirm" class="BlueButton">
+                                Ingresar</button>
+                        </div>
 
-                        </form>
-                    </div>
-
+                    </form>
                 </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</main>
+
+
+    <footer class="Footer">
+
+        <div class="LeftFooter">
+            <ul>
+                <li><a href="/Html/Faq_Tarea_A.html">Preguntas Frecuentes</a></li>
+                <li><a href="/Html/contactenos_Tarea_A.html">Trabaja con Nosotros</a></li>
+            </ul>
+
+        </div>
+
+        <div class="MiddleFooter">
+            <div>
+                <a href="/Html/kladtech_Tarea_A.html">Desarrollado por Klad Technologies</a>
+            </div>
+        </div>
+
+        <div class="RightFooter">
+
+            <div id='tittle'>
+                <h2>Redes Sociales:</h2>
+
+            </div>
+
+            <div class="ItemList">
+                <ul class="social-icons">
+                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
             </div>
 
         </div>
 
-        
-        <footer class="Footer">
 
-            <div class="LeftFooter">
-                <ul>
-                    <li><a href="/Html/Faq_Tarea_A.html">Preguntas Frecuentes</a></li>
-                    <li><a href="/Html/contactenos_Tarea_A.html">Trabaja con Nosotros</a></li>
-                </ul>
-    
-            </div>
-    
-            <div class="MiddleFooter">
-                <div>
-                <a href="/Html/kladtech_Tarea_A.html">Desarrollado por Klad Technologies</a>
-                </div>
-            </div>
-    
-            <div class="RightFooter">
-    
-                <div id='tittle' >
-                    <h2>Redes Sociales:</h2>
-                    
-                </div>
-    
-                <div class="ItemList"> 
-                    <ul class="social-icons">
-                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
-                  </ul>
-                </div>
-    
-            </div>
-            
-    
-    
-        </footer>
+
+    </footer>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     <script src="/JS/Validar_Registrar_Usuario.js"></script>
-    </body>
+</body>
+
 </html>
