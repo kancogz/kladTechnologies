@@ -4,7 +4,7 @@ function cambiar (sw) {
 
     if( sw ==0 ){
 
-        pic= "img/avatar1.jpg"
+        pic= "Img/avatar1.jpg"
     }
 
     if( sw ==1 ){
