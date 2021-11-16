@@ -128,7 +128,7 @@ margin-top: 25px;
 
     .imgtickets{
         background-color:#273c75 ;
-        width: 500px;
+        width: 520px;
       height: 250px;
     
       }
@@ -169,13 +169,18 @@ margin-top: 25px;
     
 }
 
-
+.pproyecto{
+  margin-left: 50px;
+}
 
 
   .botontickets{
  
     color: transparent;
-    
+    width: 520px;
+      height: 250px;
+      border: transparent;
+      margin-left: 50px;
   }
 
 
