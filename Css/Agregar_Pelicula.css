@@ -60,6 +60,12 @@ body {
     margin-bottom: 3%;
 }
 
+.movie-banner{
+
+    border: 3px solid rgb(119, 115, 115);
+
+}
+
 .input-data {
     margin: 3%;
     display: flex;
