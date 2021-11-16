@@ -69,19 +69,19 @@ formulario.inputNumero.addEventListener('keyup', (e) => {
 	if(valorInput[0] == 4){
 		logoMarca.innerHTML = '';
 		const imagen = document.createElement('img');
-		imagen.src = 'img/visa.png';
+		imagen.src = '../Img/visa.png';
 		logoMarca.appendChild(imagen);
 	} else if(valorInput[0] == 5){
 		logoMarca.innerHTML = '';
 		const imagen = document.createElement('img');
-		imagen.src = 'img/mastercard.png';
+		imagen.src = '../img/mastercard.png';
 		logoMarca.appendChild(imagen);
 	}
 
 	else if(valorInput[0] == 3){
 		logoMarca.innerHTML = '';
 		const imagen = document.createElement('img');
-		imagen.src = 'img/amex.png';
+		imagen.src = '../img/amex.png';
 		logoMarca.appendChild(imagen);
 	}
 

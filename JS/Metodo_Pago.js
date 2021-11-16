@@ -3,23 +3,23 @@ const petsData = [
       name: "Luis Picado",
       ExpYear: "10/2023",
       digitos: "2350",
-      photo: 'img/cc.jpg',
-      tarjeta: "img/Mc.jpg"
+      photo: '../img/cc.jpg',
+      tarjeta: "../img/Mc.jpg"
     },
 
     {
         name: "Carlos Benjamin",
         ExpYear: "10/2027",
         digitos: "4850",
-        photo: 'img/cc.jpg',
-        tarjeta: "img/visa.png"
+        photo: '../img/cc.jpg',
+        tarjeta: "../img/visa.png"
     },
     {
         name: "Luis Picado",
         ExpYear: "10/2023",
         digitos: "2350",
-        photo: 'img/cc.jpg',
-        tarjeta: "img/Mc.jpg"
+        photo: '../img/cc.jpg',
+        tarjeta: "../img/Mc.jpg"
     }
   ];
   

@@ -4,22 +4,22 @@ function cambiar (sw) {
 
     if( sw ==0 ){
 
-        pic= "Img/avatar1.jpg"
+        pic= "../Img/avatar1.jpg"
     }
 
     if( sw ==1 ){
 
-        pic= "img/avatar1.jpg"
+        pic= "../Img/avatar1.jpg"
     }
 
     if( sw ==2 ){
 
-        pic= "img/avatar2.jpg"
+        pic= "../Img/avatar2.jpg"
     }
 
     if( sw ==3 ){
 
-        pic= "img/avatar3.jpg"
+        pic= "../Img/avatar3.jpg"
     }
 
     
