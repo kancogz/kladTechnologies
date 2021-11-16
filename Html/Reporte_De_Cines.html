@@ -1,304 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reporte de Cines</title>
-    <link rel="stylesheet" href="/Css/Reset.css">
-      <link rel="stylesheet" href="/Css/general.css">
-    <link rel="stylesheet" href="/Css/Reporte_De_Cines.css" />
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reporte de Cines</title>
+        <link rel="stylesheet" href="/Css/Reset.css">
+        <link rel="stylesheet" href="/Css/general.css">
+        <link rel="stylesheet" href="/Css/Reporte_De_Cines.css"/>
+    </head>
 
-<body>
+    <body>
 
-    <header class="topnav" id="myTopnav">
-        <!-- insertar la imagen del logo dentro del a img -->
-                    <div class="logo-container">
-                        <a href="/index.html"><img src="/Img/Logo.png" alt=""></a>
+        <header
+            class="topnav" id="myTopnav">
+            <!-- insertar la imagen del logo dentro del a img -->
+            <div class="logo-container">
+                <a href="/index.html"><img src="/Img/Logo.png" alt=""></a>
+            </div>
+
+            <nav>
+                <a href="/index.html">Inicio</a>
+                <a href="/Html/Cines.html">Cines</a>
+                <a href="/Html/Peliculas.html">Peliculas</a>
+                <a href="/Html/Iniciar_Sesion.html">Ingresar</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+
+        </header>
+
+        <main>
+
+
+            <div class="main-container">
+
+
+                <div class="BlueGlass">
+
+
+                    <div class="top-container">
+
+                        <div class="tituloAgregarSala">
+                            <h1 class="agregarSalaCine">Reporte de Cines</h1>
+                        </div>
+
                     </div>
-            
-                    <nav>
-                        <a href="/index.html" >Inicio</a>
-                        <a href="/Html/Cines.html">Cines</a>
-                        <a href="/Html/Peliculas.html">Peliculas</a>
-                        <a href="/Html/Iniciar_Sesion.html" >Ingresar</a>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="fa fa-bars"></i>
-                        </a>
-                    </nav>
-            
-                </header>
 
-                <main>
 
+                    <div class="middleContainer1">
 
 
+                        <div class="divReportesInputs">
+                            <div class="divLabelReporte">
+                                <label for="usuarioaModificar" class="labelReporte">
+                                    <p>Seleccionar Cine:</p>
+                                </label>
+                            </div>
+                            <div class="input-container InputDistance ">
 
-                    <div class="main-container">
-                
-                     
-                        <div class="BlueGlass">
-                        
-                               
 
+                                <input type="text" id="metodoPagoVerif" class="inputNumAsientoEnc input-field" placeholder="Cine" list="cinesReportesCines" required>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <datalist id="cinesReportesCines">
+                                    <option>Cinépolis</option>
+                                    <option>CCM Cinemas</option>
+                                    <option>CineMark</option>
 
+                                </datalist>
+                            </div>
+                        </div>
 
 
+                        <div class="divReportesInputs">
+                            <div class="divLabelReporte">
+                                <label for="usuarioaModificar" class="labelReporte">
+                                    <p>Ganancia Total:</p>
+                                </label>
+                            </div>
+                            <div class="input-container InputDistance ">
 
-
-<div class="top-container">
-
-    <div class="tituloAgregarSala">
-        <h1 class="agregarSalaCine">Reporte de Cines</h1>
-    </div>  
-
-</div>
-
-
-<div class="middleContainer1">
-
-
-
-<div class="divReportesInputs">
-    <div class="divLabelReporte">
-        <label for="usuarioaModificar" class="labelReporte" > <p>Seleccionar Cine:</p> </label>
-    </div>
-    <div class="input-container InputDistance " >
-                            
-        
-        
-        
-    <input type="text" id="metodoPagoVerif" class="inputNumAsientoEnc input-field" placeholder="Cine" list="cinesReportesCines" required>
-    <i class="fas fa-exclamation-circle"></i>
-    <datalist id="cinesReportesCines" >
-        <option>Cinépolis</option>
-        <option>CCM Cinemas</option>
-        <option>CineMark</option>
-      
-    </datalist>
-    </div>
-</div>
-
-
-
-
-
-<div class="divReportesInputs">
-    <div class="divLabelReporte">
-        <label for="usuarioaModificar" class="labelReporte" > <p>Ganancia Total:</p> </label>
-    </div>
-    <div class="input-container InputDistance " >
-                            
-        <input type="text" id="encontrarFuncAsientos" class="inputNumAsientoEnc input-field" required>
-        <i class="fas fa-exclamation-circle"></i>
-        
-    </div>
-</div>
-
-
-
-
-    <div class="divReportesInputs">
-  <div class="divLabelReporte">
-    <label for="usuarioaModificar" class="labelReporte" > <p>Total de entradas vendidas:</p> </label>
-</div>
-    <div class="input-container InputDistance " >
-                            
-        <input type="text" id="encontrarFuncAsientos" class="inputNumAsientoEnc input-field" required>
-        <i class="fas fa-exclamation-circle"></i>
-        
-    </div>
-</div>
-
-
-
-</div>
-<div class="middleContainer2">
-
-    <div class="tituloAgregarSala">
-        <h2 class="agregarSalaCine">Desglose Entradas por Tipo</h2>
-    </div>  
-
-</div>
-
-
-
-<div class="bottom-container">
-
-
-    <div class="divReportesInputs">
-    <div class="divLabelReporte">
-        <label for="usuarioaModificar" class="labelReporte" > <p>Regular:</p> </label>
-    </div>
-    <div class="input-container InputDistance " >
-                            
-        <input type="text" id="encontrarFuncAsientos" class="inputNumAsientoEnc input-field" required>
-        <i class="fas fa-exclamation-circle"></i>
-        
-    </div>
-</div>
-
-
-
-
-    <div class="divReportesInputs">
-    <div class="divLabelReporte">
-        <label for="usuarioaModificar" class="labelReporte" > <p>Menores:</p> </label>
-    </div>
-    <div class="input-container InputDistance " >
-                            
-        <input type="text" id="encontrarFuncAsientos" class="inputNumAsientoEnc input-field" required>
-        <i class="fas fa-exclamation-circle"></i>
-        
-    </div>
-</div>
-
-
-
-    <div class="divReportesInputs">
-  <div class="divLabelReporte">
-    <label for="usuarioaModificar" class="labelReporte" > <p>Ley 7600:</p> </label>
-</div>
-    <div class="input-container InputDistance " >
-                            
-        <input type="text" id="encontrarFuncAsientos" class="inputNumAsientoEnc input-field" required>
-        <i class="fas fa-exclamation-circle"></i>
-        
-    </div>
-</div>
-
-<div class="divReportesInputs">
-    <div class="divLabelReporte">
-      <label for="usuarioaModificar" class="labelReporte" > <p>Vip:</p> </label>
-  </div>
-      <div class="input-container InputDistance " >
-                              
-          <input type="text" id="encontrarFuncAsientos" class="inputNumAsientoEnc input-field" required>
-          <i class="fas fa-exclamation-circle"></i>
-          
-      </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-
-
-
-
-
+                                <input type="text" id="encontrarFuncAsientos" class="inputNumAsientoEnc input-field" required>
+                                <i class="fas fa-exclamation-circle"></i>
 
                             </div>
+                        </div>
+
+
+                        <div class="divReportesInputs">
+                            <div class="divLabelReporte">
+                                <label for="usuarioaModificar" class="labelReporte">
+                                    <p>Total de entradas vendidas:</p>
+                                </label>
+                            </div>
+                            <div class="input-container InputDistance ">
+
+                                <input type="text" id="encontrarFuncAsientos" class="inputNumAsientoEnc input-field" required>
+                                <i class="fas fa-exclamation-circle"></i>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="middleContainer2">
+
+                        <div class="tituloAgregarSala">
+                            <h2 class="agregarSalaCine">Desglose Entradas por Tipo</h2>
+                        </div>
+
+                    </div>
+
+
+                    <div class="bottom-container">
+
+
+                        <div class="divReportesInputs">
+                            <div class="divLabelReporte">
+                                <label for="usuarioaModificar" class="labelReporte">
+                                    <p>Regular:</p>
+                                </label>
+                            </div>
+                            <div class="input-container InputDistance ">
+
+                                <input type="text" id="encontrarFuncAsientos" class="inputNumAsientoEnc input-field" required>
+                                <i class="fas fa-exclamation-circle"></i>
+
+                            </div>
+                        </div>
+
+
+                        <div class="divReportesInputs">
+                            <div class="divLabelReporte">
+                                <label for="usuarioaModificar" class="labelReporte">
+                                    <p>Menores:</p>
+                                </label>
+                            </div>
+                            <div class="input-container InputDistance ">
+
+                                <input type="text" id="encontrarFuncAsientos" class="inputNumAsientoEnc input-field" required>
+                                <i class="fas fa-exclamation-circle"></i>
+
+                            </div>
+                        </div>
+
+
+                        <div class="divReportesInputs">
+                            <div class="divLabelReporte">
+                                <label for="usuarioaModificar" class="labelReporte">
+                                    <p>Ley 7600:</p>
+                                </label>
+                            </div>
+                            <div class="input-container InputDistance ">
+
+                                <input type="text" id="encontrarFuncAsientos" class="inputNumAsientoEnc input-field" required>
+                                <i class="fas fa-exclamation-circle"></i>
+
+                            </div>
+                        </div>
+
+                        <div class="divReportesInputs">
+                            <div class="divLabelReporte">
+                                <label for="usuarioaModificar" class="labelReporte">
+                                    <p>Vip:</p>
+                                </label>
+                            </div>
+                            <div class="input-container InputDistance ">
+
+                                <input type="text" id="encontrarFuncAsientos" class="inputNumAsientoEnc input-field" required>
+                                <i class="fas fa-exclamation-circle"></i>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
                 </div>
-                
-                
-                
-                
-                
-                
+            </div>
 
 
+        </main>
 
+    </body>
 
+    <footer class="Footer">
 
-
-
-
-
-
-                </main>
-    
-</body>
-       
-
-
-
-
-
-
-
-
-
-<footer class="Footer">
-
-    <div class="LeftFooter">
-        <ul>
-            <li><a href="#">Acerca de Ticket+</a></li>
-            <li><a href="#">Preguntas Frecuentes</a></li>
-            <li><a href="#">Trabaja con Nosotros</a></li>
-        </ul>
-
-    </div>
-
-    <div class="MiddleFooter">
-        <div>
-        <a href="#">Desarrollado por Klad Technologies</a>
-        </div>
-    </div>
-
-    <div class="RightFooter">
-
-        <div id='tittle' >
-            <h2>Redes Sociales:</h2>
+        <div class="LeftFooter">
+            <ul>
+                <li><a href="/Html/Faq_Tarea_A.html">Preguntas Frecuentes</a></li>
+                <li><a href="/Html/contactenos_Tarea_A.html">Trabaja con Nosotros</a></li>
+            </ul>
 
         </div>
 
-        <div class="ItemList"> 
-            <ul class="social-icons">
-            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
-          </ul>
+        <div class="MiddleFooter">
+            <div>
+            <a href="/Html/kladtech_Tarea_A.html">Desarrollado por Klad Technologies</a>
+            </div>
         </div>
 
+        <div class="RightFooter">
+
+            <div id='tittle' >
+                <h2>Redes Sociales:</h2>
+                
+            </div>
+
+            <div class="ItemList"> 
+                <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+              </ul>
+            </div>
+
+        </div>
+        
 
 
-    </div>
+    </footer>
 
 
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 
-</footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="/JS/Reporte_De_Cines.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/JS/Reporte_De_Cines.js"></script>
 
 </html>

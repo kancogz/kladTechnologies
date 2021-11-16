@@ -1,203 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar Sala de Cine</title>
-    <link rel="stylesheet" href="/Css/Reset.css">
-    <link rel="stylesheet" href="/Css/RegistrarSalaDeCine_Estilos_Tarea_A.css" />
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registrar Sala de Cine</title>
+        <link rel="stylesheet" href="/Css/Reset.css">
+        <link rel="stylesheet" href="/Css/RegistrarSalaDeCine_Estilos_Tarea_A.css"/>
+    </head>
+    <body>
 
 
+        <header
+            class="topnav" id="myTopnav">
+            <!-- insertar la imagen del logo dentro del a img -->
+            <div class="logo-container">
+                <a href="/index.html"><img src="/Img/Logo.png" alt=""></a>
+            </div>
 
+            <nav>
+                <a href="/index.html">Inicio</a>
+                <a href="/Html/Cines.html">Cines</a>
+                <a href="/Html/Peliculas.html">Peliculas</a>
+                <a href="/Html/Iniciar_Sesion.html">Ingresar</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
 
+        </header>
+        <main>
 
 
+            <div class="tituloAgregarSala">
+                <h1 class="agregarSalaCine">Registrar Sala de Cine</h1>
+            </div>
 
 
+            <div class="main-container">
 
 
+                <div class="input-containerSalaSelecAgregar" id="agregarSalaSelect">
+                    <input type="text" id="agregarSalaSelect" class="inputSalaSelAgr" placeholder="Número de Sala" required>
+                    <label for="SalaSelAgr" class="labSalaSelAgr">Sala Seleccionada:</label>
+                </div>
 
-    <header class="topnav" id="myTopnav">
-        <!-- insertar la imagen del logo dentro del a img -->
-                    <div class="logo-container">
-                        <a href="/index.html"><img src="/Img/Logo.png" alt=""></a>
-                    </div>
-            
-                    <nav>
-                        <a href="/index.html" >Inicio</a>
-                        <a href="/Html/Cines.html">Cines</a>
-                        <a href="/Html/Peliculas.html">Peliculas</a>
-                        <a href="/Html/Iniciar_Sesion.html" >Ingresar</a>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="fa fa-bars"></i>
-                        </a>
-                    </nav>
-            
-                </header>
-    <main>
 
+                <div class="input-containerTipoDeSala" id="salaTipoAgr">
+                    <input type="text" id="salaTipoAgr" class="inputSalaTipoAgr" placeholder="Tipo de Sala" required>
+                    <label for="SalaTipo" class="labSalaTipoAgr">Tipo de Sala:</label>
+                </div>
 
 
+                <div class="input-containerEstadoAgregarSala" id="salaEstadoAgr">
+                    <input type="text" id="salaEstadoAgr" class="inputsalaEstadoAgr" placeholder="Estado" required>
+                    <label for="SalaAforoAgr" class="labSalaEstadoAgr">Estado:</label>
+                </div>
 
 
+                <div class="input-containerAforoMaximo" id="salaAforoAgr">
+                    <input type="text" id="salaAforoAgr" class="inputAforoSala" placeholder="Aforo Máximo" required>
+                    <label for="SalaAforoAgr" class="labSalaAforoAgr">Aforo Máximo:</label>
+                </div>
 
 
+                <div class="input-containerSalaIdAgr" id="salaIdAgr">
+                    <input type="text" id="salaIdAgr" class="inputIdAgr" placeholder="Nuevo ID" required>
+                    <label for="SalaIdAgrNuevo" class="labSalaIdAgr">Sala Seleccionada:</label>
+                </div>
 
 
+                <div class="divboton">
+                    <button class="btnConfirmarDatosSala" type="button" id="btnConfirmarSala">Confirmar Datos</button>
+                </div>
 
 
+            </div>
 
 
+        </main>
+    </body>
 
 
+    <footer class="Footer">
 
-
-
-
-
-
-<div class="tituloAgregarSala">
-        <h1 class="agregarSalaCine">Registrar Sala de Cine</h1>
-</div>
-
-
-
-
-<div class="main-container">
-
-
-
-
-    <div class="input-containerSalaSelecAgregar" id="agregarSalaSelect">
-        <input type="text" id="agregarSalaSelect" class="inputSalaSelAgr" placeholder="Número de Sala" required>
-        <label for="SalaSelAgr" class="labSalaSelAgr">Sala Seleccionada:</label>
-    </div>
-
-
-
-    <div class="input-containerTipoDeSala" id="salaTipoAgr">
-        <input type="text" id="salaTipoAgr" class="inputSalaTipoAgr" placeholder="Tipo de Sala" required>
-        <label for="SalaTipo" class="labSalaTipoAgr">Tipo de Sala:</label>
-    </div>
-
-
-    <div class="input-containerEstadoAgregarSala" id="salaEstadoAgr">
-        <input type="text" id="salaEstadoAgr" class="inputsalaEstadoAgr" placeholder="Estado" required>
-        <label for="SalaAforoAgr" class="labSalaEstadoAgr">Estado:</label>
-    </div>
-
-
-
-    <div class="input-containerAforoMaximo" id="salaAforoAgr">
-        <input type="text" id="salaAforoAgr" class="inputAforoSala" placeholder="Aforo Máximo" required>
-        <label for="SalaAforoAgr" class="labSalaAforoAgr">Aforo Máximo:</label>
-    </div>
-
-
-
-    <div class="input-containerSalaIdAgr" id="salaIdAgr">
-        <input type="text" id="salaIdAgr" class="inputIdAgr" placeholder="Nuevo ID" required>
-        <label for="SalaIdAgrNuevo" class="labSalaIdAgr">Sala Seleccionada:</label>
-    </div>
-
-
-
-    <div class="divboton">
-        <button class="btnConfirmarDatosSala" type="button" id="btnConfirmarSala">Confirmar Datos</button>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-
-
-    </main>
-</body>
-
-
-<footer class="Footer">
-
-    <div class="LeftFooter">
-        <ul>
-            <li><a href="#">Acerca de Ticket+</a></li>
-            <li><a href="#">Preguntas Frecuentes</a></li>
-            <li><a href="#">Trabaja con Nosotros</a></li>
-        </ul>
-
-    </div>
-
-    <div class="MiddleFooter">
-        <div>
-        <a href="#">Desarrollado por Klad Technologies</a>
-        </div>
-    </div>
-
-    <div class="RightFooter">
-
-        <div id='tittle' >
-            <h2>Redes Sociales:</h2>
+        <div class="LeftFooter">
+            <ul>
+                <li><a href="/Html/Faq_Tarea_A.html">Preguntas Frecuentes</a></li>
+                <li><a href="/Html/contactenos_Tarea_A.html">Trabaja con Nosotros</a></li>
+            </ul>
 
         </div>
 
-        <div class="ItemList"> 
-            <ul class="social-icons">
-            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
-          </ul>
+        <div class="MiddleFooter">
+            <div>
+            <a href="/Html/kladtech_Tarea_A.html">Desarrollado por Klad Technologies</a>
+            </div>
         </div>
 
+        <div class="RightFooter">
+
+            <div id='tittle' >
+                <h2>Redes Sociales:</h2>
+                
+            </div>
+
+            <div class="ItemList"> 
+                <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+              </ul>
+            </div>
+
+        </div>
+        
 
 
-    </div>
+    </footer>
 
 
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 
-</footer>
-
-
-<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="/JS/RegistrarSalaDeCine_Tarea_A.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/JS/RegistrarSalaDeCine_Tarea_A.js"></script>
 </html>
