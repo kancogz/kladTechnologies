@@ -1,295 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar Horario de Películas</title>
-    <link rel="stylesheet" href="/Css/Editar_Horario_Pelicula.css" />
-    <link rel="stylesheet" href="/Css/Reset.css">
-    <link rel="stylesheet" href="/Css/general.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Editar Horario de Películas</title>
+        <link rel="stylesheet" href="/Css/Editar_Horario_Pelicula.css"/>
+        <link rel="stylesheet" href="/Css/Reset.css">
+        <link rel="stylesheet" href="/Css/general.css">
 
-</head>
-<body>
-
-
+    </head>
+    <body>
 
 
+        <header
+            class="topnav" id="myTopnav">
+            <!-- insertar la imagen del logo dentro del a img -->
+            <div class="logo-container">
+                <a href="/index.html"><img src="/Img/Logo.png" alt=""></a>
+            </div>
+
+            <nav>
+                <a href="/index.html">Inicio</a>
+                <a href="/Html/Cines.html">Cines</a>
+                <a href="/Html/Peliculas.html">Peliculas</a>
+                <a href="/Html/Iniciar_Sesion.html">Ingresar</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+
+        </header>
+        <main>
 
 
+            <div class="tituloAgregarSala">
+                <h1 class="agregarSalaCine">Editar Horario de Películas</h1>
+            </div>
 
 
+            <div class="main-container">
 
 
+                <div class="leftContainer">
 
-    <header class="topnav" id="myTopnav">
-        <!-- insertar la imagen del logo dentro del a img -->
-                    <div class="logo-container">
-                        <a href="/index.html"><img src="/Img/Logo.png" alt=""></a>
+
+                    <label for="peliculaHorarioSelect" class="labHorarioEditarPelicula">Seleccionar Pelicula:</label>
+                    <input type="text" id="peliculaHorarioSelect" class="inputHorarioSelect" placeholder="Película" list="listaPeliculaHorariosEditar" required>
+                    <datalist id="listaPeliculaHorariosEditar">
+                        <option>Venom</option>
+                        <option>Harry Potter</option>
+                        <option>Cruella</option>
+                    </datalist>
+
+
+                    <label for="cineHorarioSelect" class="labHorarioEditarPelicula">Seleccionar cadena de Cine:</label>
+                    <input type="text" id="peliculaHorarioSelect" class="inputHorarioSelect" placeholder="Cine" list="cinesSelecHorariosEditar" required>
+                    <datalist id="cinesSelecHorariosEditar">
+                        <option>Cinepolis</option>
+                        <option>CineMark</option>
+                        <option>CCM Cinemas</option>
+                    </datalist>
+
+
+                    <label for="cineHorarioSelect" class="labHorarioEditarPelicula">Seleccionar Sala:</label>
+                    <input type="number" id="peliculaHorarioSelect" class="inputSalaSelect" placeholder="# Sala" list="SalasSelec" required>
+                    <datalist id="SalasSelec">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                    </datalist>
+
+
+                    <label for="fechas" class="labelSelecFechas">Seleccionar Fechas:</label>
+                    <p class="desdehasta">Desde:</p>
+                    <input class="inputFechas" type="date" id="start" name="emision-start" value="2021-10-22" min="2021-01-01" max="2023-01-01" required>
+                    <p class="desdehasta">Hasta:</p>
+                    <input class="inputFechas" type="date" id="end" name="emision-end" value="2021-10-22" min="2021-01-01" max="2023-01-01" required>
+
+
+                </div>
+
+
+                <div class="rightContainer">
+
+
+                    <div class="horarios">
+                        <div>
+                            <p>Película</p>
+                            <p>Película</p>
+                            <p>Película</p>
+                            <p>Película</p>
+                        </div>
+                        <div>
+                            <p>Desde: --:--</p>
+                            <p>Desde: --:--</p>
+                            <p>Desde: --:--</p>
+                            <p>Desde: --:--</p>
+                        </div>
+                        <div>
+                            <p>Hasta: --:--</p>
+                            <p>Hasta: --:--</p>
+                            <p>Hasta: --:--</p>
+                            <p>Hasta: --:--</p>
+                        </div>
+                        <div>
+                            <p class="eliminarHorario">Eliminar</p>
+                            <p class="eliminarHorario">Eliminar</p>
+                            <p class="eliminarHorario">Eliminar</p>
+                            <p class="eliminarHorario">Eliminar</p>
+                        </div>
                     </div>
-            
-                    <nav>
-                        <a href="/index.html" >Inicio</a>
-                        <a href="/Html/Cines.html">Cines</a>
-                        <a href="/Html/Peliculas.html">Peliculas</a>
-                        <a href="/Html/Iniciar_Sesion.html" >Ingresar</a>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="fa fa-bars"></i>
-                        </a>
-                    </nav>
-            
-                </header>
-    <main>
 
 
+                    <div class="input-containerHorarioEditarH" id="agregarHorarioEditar">
+                        <label for="horarioNuevoEditar" class="labHorarioNuevo">Nuevo Horario:</label>
+                        <p class="desdehasta">Desde:</p>
+                        <input type="time" id="agregarHorarioEditar" class="inputNuevoHorario" placeholder="00:00" required>
+                        <p class="desdehasta">Hasta:</p>
+                        <input type="time" id="agregarHorarioEditar" class="inputNuevoHorario" placeholder="00:00" required>
 
+                    </div>
 
 
+                    <div class="divboton">
+                        <button class="btnGuardarNuevoHorario" type="button" id="btnGuardarHorarioNuevo">Guardar</button>
+                    </div>
 
+                </div>
 
 
+            </div>
 
 
+        </main>
+    </body>
 
+    <footer class="Footer">
 
-
-
-
-
-
-
-
-
-
-<div class="tituloAgregarSala">
-        <h1 class="agregarSalaCine">Editar Horario de Películas</h1>
-</div>
-
-
-
-
-<div class="main-container">
-
-
-
-<div class="leftContainer">
-
-
-
-
-
-    <label for="peliculaHorarioSelect" class="labHorarioEditarPelicula">Seleccionar Pelicula:</label>
-    <input type="text" id="peliculaHorarioSelect" class="inputHorarioSelect" placeholder="Película" list="listaPeliculaHorariosEditar" required>
-    <datalist id="listaPeliculaHorariosEditar" >
-        <option>Venom</option>
-        <option>Harry Potter</option>
-        <option>Cruella</option>
-    </datalist>
-    
-
-
-
-
-
-    <label for="cineHorarioSelect" class="labHorarioEditarPelicula">Seleccionar cadena de Cine:</label>
-    <input type="text" id="peliculaHorarioSelect" class="inputHorarioSelect" placeholder="Cine" list="cinesSelecHorariosEditar" required>
-    <datalist id="cinesSelecHorariosEditar" >
-        <option>Cinepolis</option>
-        <option>CineMark</option>
-        <option>CCM Cinemas</option>
-    </datalist>
-    
-
-
-
-
-
-
-
-
-    <label for="cineHorarioSelect" class="labHorarioEditarPelicula">Seleccionar Sala:</label>
-    <input type="number" id="peliculaHorarioSelect" class="inputSalaSelect" placeholder="# Sala" list="SalasSelec" required>
-    <datalist id="SalasSelec" >
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-        <option>6</option>
-    </datalist>
-    
-
-
-
-
-
-
-    <label for="fechas" class="labelSelecFechas">Seleccionar Fechas:</label>
-     <p class="desdehasta">Desde:</p>
-    <input class="inputFechas" type="date" id="start" name="emision-start"
-           value="2021-10-22"
-           min="2021-01-01" max="2023-01-01" required>
-<p class="desdehasta">Hasta:</p>
-           <input class="inputFechas" type="date" id="end" name="emision-end"
-           value="2021-10-22"
-           min="2021-01-01" max="2023-01-01" required>
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-
-
-
-<div class="rightContainer">
-
-
-
-<div class="horarios">
-    <div>
-    <p>Película</p>
-    <p>Película</p>
-    <p>Película</p>
-    <p>Película</p>
-</div>
-<div>
-    <p>Desde: --:--</p>
-    <p>Desde: --:--</p>
-    <p>Desde: --:--</p>
-    <p>Desde: --:--</p>
-</div>
-<div>
-    <p>Hasta: --:--</p>
-    <p>Hasta: --:--</p>
-    <p>Hasta: --:--</p>
-    <p>Hasta: --:--</p>
-</div>
-<div>
-    <p class="eliminarHorario">Eliminar</p>
-    <p class="eliminarHorario">Eliminar</p>
-    <p class="eliminarHorario">Eliminar</p>
-    <p class="eliminarHorario">Eliminar</p>
-</div>
-</div>
-
-    
-
-
-    <div class="input-containerHorarioEditarH" id="agregarHorarioEditar">
-        <label for="horarioNuevoEditar" class="labHorarioNuevo">Nuevo Horario:</label>
-        <p class="desdehasta">Desde:</p>
-        <input type="time" id="agregarHorarioEditar" class="inputNuevoHorario" placeholder="00:00" required>
-        <p class="desdehasta">Hasta:</p>
-        <input type="time" id="agregarHorarioEditar" class="inputNuevoHorario" placeholder="00:00" required>
-
-    </div>
-
-
-
-
-
-    <div class="divboton">
-        <button class="btnGuardarNuevoHorario" type="button" id="btnGuardarHorarioNuevo">Guardar</button>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-
-
-    </main>
-</body>
-
-
-<footer class="Footer">
-
-    <div class="LeftFooter">
-        <ul>
-            <li><a href="#">Acerca de Ticket+</a></li>
-            <li><a href="#">Preguntas Frecuentes</a></li>
-            <li><a href="#">Trabaja con Nosotros</a></li>
-        </ul>
-
-    </div>
-
-    <div class="MiddleFooter">
-        <div>
-        <a href="#">Desarrollado por Klad Technologies</a>
-        </div>
-    </div>
-
-    <div class="RightFooter">
-
-        <div id='tittle' >
-            <h2>Redes Sociales:</h2>
+        <div class="LeftFooter">
+            <ul>
+                <li><a href="/Html/Faq_Tarea_A.html">Preguntas Frecuentes</a></li>
+                <li><a href="/Html/contactenos_Tarea_A.html">Trabaja con Nosotros</a></li>
+            </ul>
 
         </div>
 
-        <div class="ItemList"> 
-            <ul class="social-icons">
-            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
-          </ul>
+        <div class="MiddleFooter">
+            <div>
+            <a href="/Html/kladtech_Tarea_A.html">Desarrollado por Klad Technologies</a>
+            </div>
         </div>
 
+        <div class="RightFooter">
+
+            <div id='tittle' >
+                <h2>Redes Sociales:</h2>
+                
+            </div>
+
+            <div class="ItemList"> 
+                <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+              </ul>
+            </div>
+
+        </div>
+        
 
 
-    </div>
+    </footer>
 
 
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 
-</footer>
-
-
-<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="/JS/Editar_Horario_Pelicula.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/JS/Editar_Horario_Pelicula.js"></script>
 </html>
