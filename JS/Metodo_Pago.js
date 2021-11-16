@@ -22,9 +22,7 @@ const petsData = [
         tarjeta: "../img/Mc.jpg"
     }
   ];
-  
 
-  
   function petTemplate(pet) {
     return `
       <div class="Tarjetas">
@@ -40,7 +38,7 @@ const petsData = [
       <img src=${pet.tarjeta} alt=""> 
        </div>
 
-      <button type="submit" class="ButtonLightBg" id= "btn-enviar">Eliminar</button>
+      <button  type="submit" class="ButtonLightBg" id= "btn-enviar" >Eliminar</button>
 
       <button type="submit" class="ButtonLightBg" id= "btn-enviar" "> <a href="/Html/Metodo_Pago_Agregar.html">Editar</a></button>
      
