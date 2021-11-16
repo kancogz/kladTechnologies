@@ -12,7 +12,7 @@ const petsData = [
         ExpYear: "10/2027",
         digitos: "4850",
         photo: '../img/cc.jpg',
-        tarjeta: "../img/visa.png"
+        tarjeta: "../img/Mc.jpg"
     },
     {
         name: "Luis Picado",
