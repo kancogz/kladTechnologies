@@ -42,7 +42,8 @@ const petsData = [
 
       <button type="submit" class="ButtonLightBg" id= "btn-enviar">Eliminar</button>
 
-      <button type="submit" class="ButtonLightBg" id= "btn-enviar">Editar</button>
+      <button type="submit" class="ButtonLightBg" id= "btn-enviar" "> <a href="/Html/Metodo_Pago_Agregar.html">Editar</a></button>
+     
 
       </div>
        

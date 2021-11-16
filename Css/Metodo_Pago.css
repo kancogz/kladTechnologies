@@ -118,7 +118,15 @@ img {
     cursor: pointer;
     color: #f5f6fa;
     outline: none;
+
 }
 
+.ButtonLightBg a{
+  
+  text-decoration: none;
+  color: #f5f6fa;
 
+
+}
+ 
   
