@@ -140,6 +140,22 @@
         
       }
 
+      
+    .centrado_boton{
+        display: flex;
+        
+        width: 400px;
+        
+    }
+
+    .centrado_boton div{
+
+        display: flex;
+        justify-content: space-between;
+        margin: 10%;
+        
+    }
+
 
    
 
