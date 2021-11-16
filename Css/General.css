@@ -132,7 +132,6 @@ a{
   /*  estilos de footer */
   /* estilos columa izquierda de footer*/
 .Footer {
-    margin-top: 40px;
     background-color: #2f3640;
     height: 140px;
     width: auto;
@@ -140,7 +139,6 @@ a{
     color: #f5f6fa;
     display: flex;
     width: 100%;
-    bottom: 0px;
   }
 
   .LeftFooter{
@@ -411,6 +409,3 @@ form i {
   border: 2px solid green;
 }
 /*a modo prueba*/
-main{
-  margin-bottom: 200px;
-}
