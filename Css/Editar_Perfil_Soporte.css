@@ -141,7 +141,7 @@
       }
 
       
-    .centrado_boton{
+      .centrado_boton{
         display: flex;
         
         width: 400px;
@@ -152,7 +152,7 @@
 
         display: flex;
         justify-content: space-between;
-        margin: 10%;
+        margin: 20px;
         
     }
 
