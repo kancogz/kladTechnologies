@@ -1,6 +1,6 @@
 'use strict';
 
-const botonIngresar = document.querySelector('#btnConfirmarSala');
+const botonIngresar = document.querySelector('#Confirmarbtn');
 
 
 
@@ -13,11 +13,11 @@ const validar = () => {
 
    if (input.value == '' ) {
        error = true;
-       input.classList.add('input-error');
+       input.classList.add('error');
        
     
    } else {
-    input.classList.remove('input-error');
+    input.classList.remove('error');
     
    }
 

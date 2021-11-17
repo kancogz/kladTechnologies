@@ -94,7 +94,7 @@ body {
   
   .input-container input {
     position: absolute;
-    top: 1px;
+    top: -3px;
     left: 2.5px;
     width: 90%;
     font-size: 16px;
@@ -147,3 +147,11 @@ body {
     margin-left: -9px;
     color: white;
   }
+
+
+  .error  {
+    border: 2px solid #e74c3c;
+    }
+    .success  {
+    border: 2px solid green;
+    }
