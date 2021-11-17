@@ -54,9 +54,7 @@
 
 
 
-.main-container{
- 
-}
+
 
 .div-mision{
     display: flex;
@@ -130,7 +128,7 @@ margin-top: 25px;
 
     .imgtickets{
         background-color:#273c75 ;
-        width: 500px;
+        width: 520px;
       height: 250px;
     
       }
@@ -151,8 +149,8 @@ margin-top: 25px;
 
 
       .pmiembro{
-    width: 400px;
-    height: 50px;
+    width: 360px;
+    height: 25px;
     border-color:#2f3640 ;
     background-color: #2f3640;
     color: #dcdde1;
@@ -167,16 +165,22 @@ margin-top: 25px;
     border-radius: 10px;
     color: white;
     margin-right: 50px;
+    margin-bottom: 50px;
     
 }
 
-
+.pproyecto{
+  margin-left: 50px;
+}
 
 
   .botontickets{
  
     color: transparent;
-    
+    width: 520px;
+      height: 250px;
+      border: transparent;
+      margin-left: 50px;
   }
 
 
@@ -186,7 +190,7 @@ margin-top: 25px;
   
 align-items: flex-start;
 flex-wrap: wrap;
-margin-left: 100px;
+margin-left: 30px;
 }
 
 

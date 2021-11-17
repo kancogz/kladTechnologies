@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    
+    font-family: 'Roboto';
   }
   
   body{
@@ -28,7 +28,7 @@
     align-items: center;
     justify-content: center;
     background-color: #f5f6fa ;
-    width: 60%;
+    width: 100%;
     align-items: center;
     height: 50px;
 }
@@ -43,11 +43,12 @@
 }
 
 
-  .agregarSalaCine{
-    color: #273c75 ;
-    
-   
-  }
+.agregarSalaCine{
+  color: #273c75 ;
+  font-size: 25px;
+  
+ 
+}
 
 /*se elimina position relative, se agrega blur, se elimina top se elimina flex-start se agrega un padding bottom de 540px se elimina margin bottom */
 .BlueGlass{

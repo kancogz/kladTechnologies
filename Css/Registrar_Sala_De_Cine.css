@@ -1,0 +1,157 @@
+
+body {
+    background-image: url(/Img/bg6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aliceblue; */
+  }
+  
+  .WhiteTittleFrame {
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 50px;
+    margin-top: 50px;
+    width: 60%;
+  }
+  
+  .WhiteTittleFrame p {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+    color: #192a56;
+  }
+  
+  .BlueGlass {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 128, 255, 0.5);
+    height: 620px;
+    width: 60%;
+   
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  .FormContainer{
+  
+    display: flex;
+    margin-top: -40px;
+    flex-direction: column;
+    background-color: #f5f6fa;
+    border: 1px solid #353b48;
+    height: 480px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    min-width: 680px;
+  
+  }
+  
+  
+  .Tittle{
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #273c75;
+  
+  }
+  
+  
+  .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  
+  .input-container{
+    position: relative;
+    width: 300px;
+    height: 40px;
+    padding-bottom: 20px;
+  
+  }
+  
+  
+  
+  .input-container input {
+    position: absolute;
+    top: 1px;
+    left: 2.5px;
+    width: 90%;
+    font-size: 16px;
+    color: black;
+    font-family: inherit;
+  
+  
+  }
+  
+
+
+
+
+  .input-container label{
+    position: absolute;
+    top: 0px;
+    left: 6px;
+    display: inline-block;
+    font-size: 16px;
+    color: black;
+    transition: 0.5s;
+    pointer-events: none;
+    font-family: inherit;
+    
+  
+  }
+  
+  .input-container select{
+    height: 25px;
+    font-size: 16px;
+    color: black;
+    font-weight: 300;
+    width: 93.5%;
+  }
+  .input-container input:focus ~  label ,
+  .input-container input:valid ~  label {
+  
+  
+  transform: translateX(-6px) translateY(-24px);
+  color: white;
+  }
+  
+  
+  .section1{
+    margin-top: 80px;
+  }
+  
+  #labelselect{
+    margin-top: -20px;
+    margin-left: -9px;
+    color: white;
+  }
+
+
+  .error  {
+    border: 2px solid #e74c3c;
+    }
+    .success  {
+    border: 2px solid green;
+    }
