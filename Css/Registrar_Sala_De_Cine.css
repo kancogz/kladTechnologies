@@ -94,7 +94,7 @@ body {
   
   .input-container input {
     position: absolute;
-    top: 1px;
+    top: -3px;
     left: 2.5px;
     width: 90%;
     font-size: 16px;

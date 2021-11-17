@@ -1,6 +1,6 @@
 'use strict';
 
-const botonIngresar = document.querySelector('#btnConfirmarSala');
+const botonIngresar = document.querySelector('#Confirmarbtn');
 
 
 
@@ -13,11 +13,11 @@ const validar = () => {
 
    if (input.value == '' ) {
        error = true;
-       input.classList.add('input-error');
+       input.classList.add('error');
        
     
    } else {
-    input.classList.remove('input-error');
+    input.classList.remove('error');
     
    }
 
@@ -26,15 +26,15 @@ const validar = () => {
    if (error == true) {
        Swal.fire({
            'icon': 'warning',
-           'title': 'Porfavor ingrese la información necesaria para actualizar la Sala.',
+           'title': 'Porfavor Ingrese la información de la nueva Sala.',
            'text': 'Revise los campos resaltados.',
        });
 
    }else{
     Swal.fire({
         'icon': 'success',
-        'title': 'Se ha actualizado la sala correctamente.',
-        'text': 'Verá reflejados los cambios en la sala una vez continue.',
+        'title': 'Se ha registrado la sala correctamente.',
+        'text': 'Puede editar la informacíon de esta sala la opción de Modíficar Sala de Cine .',
 
    });
 
