@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    ;
+  }
+  
+  body{
+    background-image: url(/Img/bg6.jpg);
+    background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+     
+  }
+
+/*se agrega un div con clase main container que dentro tiene todos los div desde el titulo hasta el ultimo boton.*/
+  .main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  /*se modifican propiedades ya que no ocupa un left o top una vez dentro del div main container ya que este tiene las propiedades de las distancias. se le agrega una altura de 50 px al div del titulo*/
+.tituloAgregarSala{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f6fa ;
+    width: 100%;
+    align-items: center;
+    height: 50px;
+}
+
+/* Se agrega clase de titulocrearsala que afecte a h1 (el titulo del div) dandole propiedades de tamaño color grosor y posicion. */
+.tituloAgregarSala h1{
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 40px;
+  text-align: center;
+  color: #192a56;
+}
+
+
+.agregarSalaCine{
+  color: #273c75 ;
+  font-size: 25px;
+  
+ 
+}
+
+/*se elimina position relative, se agrega blur, se elimina top se elimina flex-start se agrega un padding bottom de 540px se elimina margin bottom */
+.BlueGlass{
+  /*se agrega effecto blur*/
+    backdrop-filter: blur(10px);
+    background-color:rgba(0, 128, 255, 0.5) ;
+    width: 60%;
+    min-width: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.input-containerSalaSelecAgregar{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/*se elimina inputSalaSelAgr porque no existe en el html*/
+
+
+.labSalaSelAgr{
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color: #273c75 ;
+    color:#f5f6fa ;
+    height: 25px;
+    width: 50%;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+
+
+.top-container{
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.middleContainer1{
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.middleContainer2{
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.bottom-container{
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+.divReportesInputs{
+  display: flex;
+    align-items: center;
+    flex-direction: row;
+   
+    width: 100%;
+
+}
+
+.labelReporte{
+  font-size: 25px;
+  background-color: #273c75 ;
+  color:#f5f6fa ;
+  height: 45px;
+  text-align: center;
+  width: 50%;
+  border-radius: 0px;
+  width: 172px;
+  min-width: 60%;
+}
+
+
+
+
+.divLabelReporte{
+  
+  width: 30%;
+  margin-left: 200px;
+}
+
+.InputDistance{
+  margin-top: 40px;
+}
+/*---------1---------*//*se comenta no hace nada. */
+/* .input-containerCadenadeCIne{
+    display: flex;
+    flex-direction: column-reverse;
+} 
+/*se agrega width de 280px y se elimina la opcion % al padre maincontainer ya poseer un width de min width en pixeles si los inputs son menores al padre en min-width no se distorciona. */
+.inputCadenaCineSelect{
+    width:280px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    
+
+}
+
+/*se agrega width de 280px y se elimina la opcion % al padre maincontainer ya poseer un width de min width en pixeles si los inputs son menores al padre en min-width no se distorciona. */
+
+
+
+/*-----------------------------*/
+
+
+
+
+
+/*-------2-----------*//* no hace nada*/
+/* .input-containerUbicacion{
+    display: flex;
+    flex-direction: column-reverse;
+} */
+
+/*se elimina margin top se cambia width de % a 280px se elimina font size*/
+.inputUbicacionFuncion{
+    width:280px ;
+    margin-bottom: 50px;
+
+}
+
+/*se elimina fontsize*/
+/* .labFuncionUbicacionSelec{
+    margin-bottom: 10px;
+    background-color: #273c75 ;
+    color:#f5f6fa ;
+    height: 25px;
+    width: 280px;
+    border-radius: 4px;
+    margin-top: 15px;
+} */
+
+
+/*-----------------------------*/
+
+
+
+
+/*---------3---------*/
+/* .input-containerNumAsiento{
+    display: flex;
+    flex-direction: column-reverse;
+} */
+
+/*se elimina margin right por el centrado con flex del padre. */
+.inputNumAsientoEnc{
+    width:280px ;
+    margin-top:10px;
+    margin-bottom: 50px;
+
+}
+/*se elimina tamaño de fuente */ /*ya no se usa*/
+/* .labNumeroAsientoEncFunc{
+    background-color: #273c75 ;
+    color:#f5f6fa ;
+    height: 25px;
+    width: 280px;
+    border-radius: 4px;
+    margin-top: 50px;
+} */
+
+
+/*-----------------------------*/
+
+/*se elimina el boton y se cambia la clase a BlueButton que se encuentra en General.css*/
+/* 
+.btnSeleccionarAsientos{
+color:#f5f6fa ;
+    background-color:#0097e6;
+    width: 280px;
+    height: 44px;
+    font-size: 24px;
+    border-radius: 10px;
+} */
+
+/* 
+.btnVerificarCompra{
+  color:#f5f6fa ;
+      background-color:#0097e6;
+      width: 264px;
+      height: 48px;
+      font-size: 20px;
+      border-radius: 10px;
+      margin-top: 10px;
+  
+  } */
+/* 
+/*se cambia la clase a error que se encuentra en General.css*/
+/* .input-error{
+    border: 6px solid #e84118;
+} */
+
+
+
+
+/*estilos para inputs con efecto*/
+.input-container{
+  position: relative;
+  width: 300px;
+  height: 40px;
+  padding-bottom: 20px;
+
+}
+
+
+/*se modifican las distancias del texto*/
+.input-container input {
+  position: absolute;
+  top: -7px;
+  left: 3px;
+  font-size: 16px;
+  color: black;
+  font-family: inherit;
+  
+
+}
+
+.input-container label{
+  position: absolute;
+  top: 7.6px;
+  left: 6px;
+  display:inline-block;
+  font-size: 16px;
+  color: black;
+  transition: 0.5s;
+  pointer-events: none;
+  
+  
+
+}
+
+.input-container select{
+  height: 25px;
+  font-size: 16px;
+  color: black;
+  font-weight: 300;
+}
+.input-container input:focus ~  label ,
+.input-container input:valid ~  label {
+
+
+transform: translateX(-5px) translateY(-24px);
+color: #f5f6fa  ;
+
+}
+.input-container input:focus ~  .InputEffect p ,
+.input-container input:valid ~  .InputEffect p{
+  
+transform: translateX(0px) translateY(0px);
+color: #f5f6fa  ;
+}
+
+
+/**/
+#encontrarFuncUbicacion{
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  font-size: 16px;
+  color: black;
+  font-family: inherit;
+
+}
+
+.InputEffect p{
+  position: absolute;
+  top: 0px;
+  left: 4px;
+  width: 200px;
+  font-size: 16px;
+  color: black;
+  font-family: inherit;
+
+}
+
+
+/*se agrega esta clase para el simbolo de exclamacion rojo. se repite en general.css pero este al estar linkeado de ultimo al html tiene prioridad y se requiere para ajustar la posicion en "Y" */
+
+.input-field.error  ~  i.fa-exclamation-circle{
+  color: #e84118;
+  visibility: visible;
+  margin-top:3px;
+}
