@@ -147,3 +147,16 @@ body {
     height: 600px;
     width: 90%;
 }
+
+.checked {
+    color: orange;
+}
+
+.rating {
+    margin-top: 1%;
+ }
+ 
+ .rating__star {
+    cursor: pointer;
+    color: orange;
+ }
