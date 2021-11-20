@@ -74,6 +74,13 @@ body {
     margin-left: 10.5%;
 }
 
+.filter-container i {
+    visibility: hidden;
+    margin-top: 10px;
+    margin-left: -25px;
+    margin-right: 10px;
+}
+
 .modify-container {
     margin-top: 1.5%;
     margin-left: 10.5%;
