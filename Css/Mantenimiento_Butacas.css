@@ -98,40 +98,21 @@ align-content: space-around;
   }
   
   
+  .inputAsientoNum{
+    font-size: 20px;
+  }
+
   .inputCinesMantx{
     font-size: 20px;
   
   }
 
-
-  .SalaAsientosM{
-  
-    background-color: #273c75;
-    color:#f5f6fa ;
-    font-size: 25px;
-  
-  }
-  
-  
   .inputSalaMant{
     font-size: 20px;
     position: relative;
   
   }
 
-
-  .tipoAsientosM{
-  
-    background-color: #273c75;
-    color:#f5f6fa ;
-    font-size: 25px;
-    position: relative;
-    top: 160px;
-    right: 520px;
-  
-  }
-  
-  
   .inputTiposMant{
     font-size: 20px;
     position: relative;
@@ -141,20 +122,13 @@ align-content: space-around;
   }
 
 
-
-
-  .nuevoAsientosM{
-  
-    background-color: #273c75;
-    color:#f5f6fa ;
-    font-size: 25px;
+  .inputNuevoMant{
+    font-size: 20px;
     position: relative;
-   
     right: 100px;
   
   }
-  
-  
+
   .inputNuevoMant{
     font-size: 20px;
     position: relative;
@@ -163,20 +137,14 @@ align-content: space-around;
   }
 
 
-
-
-  .precioAsientosM{
-  
-    background-color: #273c75;
-    color:#f5f6fa ;
-    font-size: 25px;
+  .inputNuevoMant{
+    font-size: 20px;
     position: relative;
-    right: 340px;
-    top: 80px;
+    right: 100px;
   
   }
-  
-  
+
+
   .inputPrecioMant{
     font-size: 20px;
     position: relative;
@@ -188,6 +156,32 @@ align-content: space-around;
 
 
 
+  .inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+    margin: 10px;
+    margin-top: 50px;
+    margin-left:20px ;
+
+    
+   
+
+}
+
+
+
+
+
+
+.input-container{
+    font-size: 25px;
+   
+  
+    
+    
+}
 
 
 
@@ -205,6 +199,91 @@ align-content: space-around;
     bottom: 80px;
     left: 260px;
 }
+
+
+
+.ejemploAsiento{
+
+  margin: 50px;
+  font-size: 20px;
+
+}
+
+
+  
+.inputSala{
+  font-size: 20px;
+
+}
+
+
+  
+.inputAsientoTipo{
+  font-size: 20px;
+
+}
+
+
+
+
+  .SalaAsientosM{
+  
+    background-color: #273c75;
+    color:#f5f6fa ;
+    font-size: 25px;
+  
+  }
+  
+  
+
+
+
+  .tipoAsientosM{
+  
+    background-color: #273c75;
+    color:#f5f6fa ;
+    font-size: 25px;
+    position: relative;
+    top: 160px;
+    right: 520px;
+  
+  }
+  
+  
+
+
+
+
+
+  .nuevoAsientosM{
+  
+    background-color: #273c75;
+    color:#f5f6fa ;
+    font-size: 25px;
+    position: relative;
+   
+    right: 100px;
+  
+  }
+  
+  
+
+
+
+
+
+  .precioAsientosM{
+  
+    background-color: #273c75;
+    color:#f5f6fa ;
+    font-size: 25px;
+    position: relative;
+    right: 340px;
+    top: 80px;
+  
+  }
+  
+  
 
 
 
@@ -525,87 +604,11 @@ font-size: 40px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .asientosCineSelec{
     display: flex;
     position: relative;
     left: 100px;
 }
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -616,45 +619,11 @@ font-size: 40px;
     margin-top: 50px;
     margin-left:20px ;
 
-    
-    
-    
-
 
 
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#p7600{
-  
-    color: #f5f6fa ;
-    font-size: 20px;
-    background-color:#00a8ff ;
-   
-    
-  }
-  
   
   #silla7600Ej{
     color: #00a8ff;
@@ -662,20 +631,9 @@ font-size: 40px;
  
   }
   
-  
-  #pLibre{
-   
-    color: #f5f6fa ;
-    font-size: 20px;
-    background-color:#7f8fa6 ;
-   
-  }
-  
-  #sillaLibreEj{
-    color: #7f8fa6;
-    font-size: 30px;
-  
-  }
+
+
+ 
   
   #pOcupado{
    
@@ -690,14 +648,14 @@ font-size: 40px;
     font-size: 30px;
 
   }
-  
-  #pVip{
-    
-    color: #f5f6fa ;
-    font-size: 20px;
-    background-color:#e1b12c ;
+
+  #sillaLibreEj{
+    color: #7f8fa6;
+    font-size: 30px;
   
   }
+  
+
   
   #sillaVipEj{
     color: #e1b12c;
@@ -720,32 +678,6 @@ font-size: 40px;
   }
   
 
-.inputs{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-   
-    margin: 10px;
-    margin-top: 50px;
-    margin-left:20px ;
-
-    
-   
-
-}
-
-
-
-
-
-
-.input-container{
-    font-size: 25px;
-   
-  
-    
-    
-}
 
 
 
@@ -778,13 +710,6 @@ font-size: 40px;
 
 
 
-.input-container{
-  
-    font-size: 20px;
-    
-  
-  
-  }
   
   .labSalaS{
   
@@ -794,11 +719,7 @@ font-size: 40px;
   
   }
   
-  
-  .inputSala{
-    font-size: 20px;
-  
-  }
+
   
   
   
@@ -814,12 +735,7 @@ font-size: 40px;
   
 
 
-  
-  .inputAsientoTipo{
-    font-size: 20px;
-  
-  }
-  
+
   
   
 
@@ -838,9 +754,7 @@ font-size: 40px;
   }
   
   
-  .inputAsientoNum{
-    font-size: 20px;
-  }
+
   
   
   .precioT{

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Seleccionar Asientos</title>
+        <link rel="stylesheet" href="/Css/Reset.css">
+        <link rel="stylesheet" href="/Css/General.css">
+        <link rel="stylesheet" href="/Css/graficoAsientos.css">
+
+    </head>
+    <header
+        class="topnav" id="myTopnav">
+        <!-- insertar la imagen del logo dentro del a img -->
+        <div class="logo-container">
+            <a href="/index.html"><img src="/Img/Logo.png" alt=""></a>
+        </div>
+
+        <nav>
+            <a href="/index.html">Inicio</a>
+            <a href="/Html/Cines.html">Cines</a>
+            <a href="/Html/Peliculas.html">Peliculas</a>
+            <a href="/Html/Iniciar_Sesion.html">Ingresar</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+
+    </header>
+
+
+    <body>
+
+
+        <main>
+            <div class="main-container2">
+                <div class="WhiteTittleFrame2">
+                    <p>Seleccionar Asientos</p>
+                </div>
+
+                <!-- <div id="button-box">
+                                <button type="button" id="register-btn">Registrar Usuarios</button>
+                            </div> -->
+                <div class="BlueGlass">
+
+
+                    <div class="opcionesMantenimientoSala">
+
+                        <div class="input-containerCine" id="SelecCineMantAsientos">
+                            <label for="cinesMantAsientos" class="cineAsientosM">Seleccionar cine:</label>
+                            <input type="text" id="inputCinesMantenimiento" class="inputCinesMantx" placeholder="Cine" required>
+    
+                        </div>
+    
+                        <div class="input-containerSala" id="SelecSalaMantAsientos">
+                            <label for="cinesSalaAsientos" class="SalaAsientosM">Seleccionar Sala:</label>
+                            <input type="number" id="SelecSalaMantAsientos" class="inputSalaMant" placeholder="1" required>
+    
+                        </div>
+    
+                        <div class="input-containerSalaTipo" id="SelecTipoMantAsientos">
+                            <label for="tipoMantAsientos" class="tipoAsientosM">Seleccionar Tipo de Sala:</label>
+                            <input type="text" id="SelecTipoeMantAsientos" class="inputTiposMant" placeholder="Tipo de Sala" required>
+    
+                        </div>
+    
+                        <div class="input-container" id="SelecNuevoMantAsientos">
+                            <label for="nuevoMantAsientos" class="nuevoAsientosM">Agregar Sala:</label>
+                            <input type="number" id="SelecNuevoMantAsientos" class="inputNuevoMant" placeholder="Nueva Sala" required>
+    
+                        </div>
+    
+    
+                        <div class="input-container" id="SelecPrecioMantAsientos">
+                            <label for="precioMantAsientos" class="precioAsientosM">Precio:</label>
+                            <input type="number" id="SelecPrecioMantAsientos" class="inputPrecioMant" placeholder="3500" required>
+    
+                        </div>
+    
+                    </div>
+
+                    <div class="GraficoSala">
+
+                        <div class="centradoPantalla">
+
+                            <div class="Pantalla"></div>
+
+                        </div>
+
+                        <div class="row">
+
+
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos occupied"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+
+
+                        </div>
+                        <div class="row">
+
+
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos occupied"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+
+
+                        </div>
+                        <div class="row">
+
+
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+
+
+                        </div>
+                        <div class="row">
+
+
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+
+
+                        </div>
+                        <div class="row">
+
+
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+
+
+                        </div>
+                        <div class="row">
+
+
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+                            <div class="asientos"></div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    
+                <div class="ejemplos">
+                    <div class="ejemploAsiento">
+                        <span class="iconify" id="silla7600Ej" data-icon="mdi:seat-outline"></span>
+                        <p id="p7600">Asiento Ley 7600</p>
+                    </div>
+
+
+                    <div class="ejemploAsiento">
+                        <span class="iconify" id="sillaLibreEj" data-icon="mdi:seat-outline"></span>
+                        <p id="pLibre">Asiento Libre</p>
+                    </div>
+
+
+                    <div class="ejemploAsiento">
+                        <span class="iconify" id="sillaOcupadoEj" data-icon="mdi:seat-outline"></span>
+                        <p id="pOcupado">Asiento Ocupado</p>
+                    </div>
+
+                    <div class="ejemploAsiento">
+                        <span class="iconify" id="sillaVipEj" data-icon="mdi:seat-outline"></span>
+                        <p id="pVip">Asiento VIP</p>
+                    </div>
+
+
+                </div>
+
+
+                <div class="inputs">
+                    <div class="input-container" id="salaSelect">
+                        <label for="SalaS" class="labSalaS">Número de Asientos total:</label>
+                        <input type="text" id="salaSelect" class="inputSala" placeholder="Sala Seleccionada" required>
+
+                    </div>
+
+                    <div class="input-container" id="tipoAsientoSelect">
+                        <label for="asientoS" class="asientoSelec">Número de Asientos ley7600:</label>
+                        <input type="text" id="tipoAsientoSel" class="inputAsientoTipo" placeholder="Tipo de Asiento" required>
+
+                    </div>
+
+                    <div class="input-container" id="numAsiento">
+                        <label for="numSeat" class="numSeat">Número de Asientos VIP</label>
+                        <input type="text" id="numAsiento" class="inputAsientoNum" placeholder="Numero de Asiento" required>
+
+                    </div>
+
+
+                    
+                    <div class="input-container" id="numAsiento">
+                        <label for="numSeat" class="numSeat">Número de Asientos Regular:</label>
+                        <input type="text" id="numAsiento" class="inputAsientoNum" placeholder="Precio Total" required>
+
+                    </div>
+
+                  
+                </div>
+                 
+
+                    <div class="TiposAsiento"></div>
+
+                    <div class="Boton"></div>
+
+
+                </div>
+            </div>
+        </main>
+      
+
+    </body>
+
+
+    <footer class="Footer">
+
+        <div class="LeftFooter">
+            <ul>
+                <li><a href="/Html/Faq_Tarea_A.html">Preguntas Frecuentes</a></li>
+                <li><a href="/Html/contactenos_Tarea_A.html">Trabaja con Nosotros</a></li>
+            </ul>
+
+        </div>
+
+        <div class="MiddleFooter">
+            <div>
+                <a href="/Html/kladtech_Tarea_A.html">Desarrollado por Klad Technologies</a>
+            </div>
+        </div>
+
+        <div class="RightFooter">
+
+            <div id='tittle'>
+                <h2>Redes Sociales:</h2>
+
+            </div>
+
+            <div class="ItemList">
+                <ul class="social-icons">
+                    <li>
+                        <a class="facebook" href="#">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="twitter" href="#">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dribbble" href="#">
+                            <i class="fa fa-dribbble"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="linkedin" href="#">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+    </footer>
+
+
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="/JS/graficoasientos.js"></script>
+    
+
+
+</html>
