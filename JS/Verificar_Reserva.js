@@ -23,7 +23,7 @@ const validar = () => {
    if (error == true) {
        Swal.fire({
            'icon': 'warning',
-           'title': 'Porfavor Ingrese los datos necesarios.',
+           'title': 'Por favor Ingrese los datos necesarios.',
            'text': 'Revise los campos resaltados.',
        });
 
