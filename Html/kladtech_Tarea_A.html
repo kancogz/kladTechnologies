@@ -5,24 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Klad Technologies</title>
-    <link rel="stylesheet" href="/Css/kladtech_Estilos_Tarea_A.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+
     <link rel="stylesheet" href="/Css/Reset.css">
     <link rel="stylesheet" href="/Css/General.css">
+    <link rel="stylesheet" href="/Css/kladtech_Estilos_Tarea_A.css">
+
+   
     
 </head>
 <body>
     
-    <div class="header">
+  <header class="topnav" id="myTopnav">
+    <!-- insertar la imagen del logo dentro del a img -->
+                <div class="logo-container">
+                    <a href="/index.html"><img src="/Img/Logo.png" alt=""></a>
+                </div>
         
-        <img class="logo" src="/Img/Klad logo.png">
-        <div class="header-right">
-          
-          <a href="#c" class="botona" >Nuestros Proyectos</a>
-          <a href="#m" class="botona" >Miembros</a>
-          <a class="active" href="#i">Inicio</a>
-        </div>
-      </div>
+                <nav>
+                    <a href="/index.html" >Inicio</a>
+                    <a href="/Html/Cines.html">Cines</a>
+                    <a href="/Html/Peliculas.html">Peliculas</a>
+                    <a href="/Html/Iniciar_Sesion.html" >Ingresar</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </nav>
+        
+            </header>
+
+  <main>
 <div class="main-container">
 <br>
       <hr>
@@ -195,38 +209,47 @@
 
     </div>
 
-
-
-     <footer>
-       <div class="footerbackground">
-
-<div class="contacto">
-<b>Contacto:</b>
-</div>
-
-<div class="correo">
-  <p>info@kladtechnologies.com</p>
-</div>
-
-<div class="redes">
-<b>Redes Sociales:</b>
-</div>
-
-<div><a href="#" class="fa fa-facebook"></a></div>
-
-<div><a href="#" class="fa fa-instagram"></a></div>
+  </main>
 
 
 
+  <footer class="Footer">
+
+    <div class="LeftFooter">
+        <ul>
+            <li><a href="/Html/Faq_Tarea_A.html">Preguntas Frecuentes</a></li>
+            <li><a href="/Html/contactenos_Tarea_A.html">Trabaja con Nosotros</a></li>
+        </ul>
+
+    </div>
+
+    <div class="MiddleFooter">
+        <div>
+        <a href="/Html/kladtech_Tarea_A.html">Desarrollado por Klad Technologies</a>
+        </div>
+    </div>
+
+    <div class="RightFooter">
+
+        <div id='tittle' >
+            <h2>Redes Sociales:</h2>
+            
+        </div>
+
+        <div class="ItemList"> 
+            <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+
+    </div>
+    
 
 
-
-
-
-
-
-       </div>
-     </footer>
+</footer>
 
 
 
