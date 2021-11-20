@@ -1,391 +1,376 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encontrar Función </title>  
-      <link rel="stylesheet" href="/Css/Reset.css">
-      <link rel="stylesheet" href="/Css/General.css">
-    <link rel="stylesheet" href="/Css/Encontrar_Funcion.css" />
-    <link rel="stylesheet" href="/Css/graficoAsientosA.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encontrar Función
+        </title>
+        <link rel="stylesheet" href="/Css/Reset.css">
+        <link rel="stylesheet" href="/Css/General.css">
+        <link rel="stylesheet" href="/Css/Encontrar_Funcion.css"/>
+        <link rel="stylesheet" href="/Css/graficoAsientosA.css">
 
 
-</head>
-<body>
+    </head>
+    <body>
 
 
+        <header
+            class="topnav" id="myTopnav">
+            <!-- insertar la imagen del logo dentro del a img -->
+            <div class="logo-container">
+                <a href="/index.html"><img src="/Img/Logo.png" alt=""></a>
+            </div>
+
+            <nav>
+                <a href="/index.html">Inicio</a>
+                <a href="/Html/Cines.html">Cines</a>
+                <a href="/Html/Peliculas.html">Películas</a>
+                <a href="/Html/Iniciar_Sesion.html">Ingresar</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+
+        </header>
 
 
-
-
-
-
-
-
-
-    <header class="topnav" id="myTopnav">
-        <!-- insertar la imagen del logo dentro del a img -->
-                    <div class="logo-container">
-                        <a href="/index.html"><img src="/Img/Logo.png" alt=""></a>
-                    </div>
-            
-                    <nav>
-                        <a href="/index.html" >Inicio</a>
-                        <a href="/Html/Cines.html">Cines</a>
-                        <a href="/Html/Peliculas.html">Películas</a>
-                        <a href="/Html/Iniciar_Sesion.html" >Ingresar</a>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="fa fa-bars"></i>
-                        </a>
-                    </nav>
-            
-                </header>
-
-
-    <main>
-
-
-
-
-
-
+        <main>
 
 
             <div class="main-container">
-                
+
                 <div class="tituloAgregarSala">
                     <h1 class="agregarSalaCine">Encontrar Función</h1>
-                </div>  
+                </div>
 
 
-                    
-                    <div class="BlueGlass">
-                        <!-- Se elimina la clase y id y se agregan 2 clases nuevas -->
-                        <div class="input-container InputDistance"  >
-                            <!--   se agrega la clase input-field dentro de input y se agrega el simbolo i luego del input.  -->
-                            <input type="text" id="cadenaCineSelect" class="inputCadenaCineSelect input-field"  list="cinesSelec" required>  <i class="fas fa-exclamation-circle"></i>
-                        <!--   se tiene que cambiar el datalist por un select. al validar da errores porque no esta vacio. o tiene que hacer que haga match con las opciones disponibles.  -->
-                    <!--       que hace el id cinceselec? -->
-                            <datalist id="cinesSelec" >
-                                <option>Cinepolis</option>
-                                <option>CineMark</option>
-                                <option>CCM Cinemas</option>
-                            </datalist>
-                            <label for="CadenaCineEncontrarFuncion" class="labCadenaCineEncFunc" >Seleccionar cadena de Cine:</label>
-                        
-                        </div>
-
-
-                        <div class="input-container InputDistance" >
+                <div
+                    class="BlueGlass">
+                    <!-- Se elimina la clase y id y se agregan 2 clases nuevas -->
+                    <div
+                        class="input-container InputDistance">
                         <!--   se agrega la clase input-field dentro de input y se agrega el simbolo i luego del input.  -->
-                            <input type="text" id="encontrarFuncUbicacion" class="inputUbicacionFuncion input-field "  list="provinciasUbicaciones" required>  <i class="fas fa-exclamation-circle"></i>
-                            <datalist id="provinciasUbicaciones" >
-                                <option>San José</option>
-                                <option>Heredia</option>
-                                <option>Alajuela</option>
-                                <option>Cartago</option>
-                                <option>Limón</option>
-                                <option>Puntarenas</option>
-                                <option>Guanacaste</option>
-                            </datalist>
-                            <label for="ubicacionFuncion" class="labFuncionUbicacionSelec">Seleccionar Ubicación:</label>
-                        </div>
+                        <input type="text" id="cadenaCineSelect" class="inputCadenaCineSelect input-field" list="cinesSelec" required>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <!--   se tiene que cambiar el datalist por un select. al validar da errores porque no esta vacio. o tiene que hacer que haga match con las opciones disponibles.  -->
+                        <!--       que hace el id cinceselec? -->
+                        <datalist id="cinesSelec">
+                            <option>Cinepolis</option>
+                            <option>CineMark</option>
+                            <option>CCM Cinemas</option>
+                        </datalist>
+                        <label for="CadenaCineEncontrarFuncion" class="labCadenaCineEncFunc">Seleccionar cadena de Cine:</label>
+
+                    </div>
 
 
-                    
-                        <div class="divboton">
-                            <button class="BlueButton" type="button" id="btnSelecAsientosFunc" onclick="popup()"><p>Seleccionar Asientos</p></button>
-                        </div>
+                    <div
+                        class="input-container InputDistance">
+                        <!--   se agrega la clase input-field dentro de input y se agrega el simbolo i luego del input.  -->
+                        <input type="text" id="encontrarFuncUbicacion" class="inputUbicacionFuncion input-field " list="provinciasUbicaciones" required>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <datalist id="provinciasUbicaciones">
+                            <option>San José</option>
+                            <option>Heredia</option>
+                            <option>Alajuela</option>
+                            <option>Cartago</option>
+                            <option>Limón</option>
+                            <option>Puntarenas</option>
+                            <option>Guanacaste</option>
+                        </datalist>
+                        <label for="ubicacionFuncion" class="labFuncionUbicacionSelec">Seleccionar Ubicación:</label>
+                    </div>
 
 
-
-                        <div class="input-container InputDistance " id="asientos">
-                            <!--   se agrega la clase input-field dentro de input y se agrega el simbolo i luego del input.  -->
-                            <input type="text"  class="inputNumAsientoEnc input-field" required  id="count">
-                            <i class="fas fa-exclamation-circle"></i>
-                            <label for="numeroDeAsientoFuncion" class="InputEffect" > <p>Asiento:</p> </label>
-                        </div>
+                    <div class="divboton">
+                        <button class="BlueButton" type="button" id="btnSelecAsientosFunc" onclick="popup()">
+                            <p>Seleccionar Asientos</p>
+                        </button>
+                    </div>
 
 
-
-                        <div class="divboton">
-                            <button class="BlueButton" type="button" id="btnVerCompEncFunc"><a href="/Html/Verificar_Reserva.html">Verificar Compra</a></button>
-                        </div>
-
-                        </div>
-            
-
-
-
-
+                    <div
+                        class="input-container InputDistance " id="asientos">
+                        <!--   se agrega la clase input-field dentro de input y se agrega el simbolo i luego del input.  -->
+                        <input type="text" class="inputNumAsientoEnc input-field" required id="count">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <label for="numeroDeAsientoFuncion" class="InputEffect">
+                            <p>Asiento:</p>
+                        </label>
+                    </div>
 
 
+                    <div class="divboton">
+                        <button class="BlueButton" type="button" id="btnVerCompEncFunc">
+                            <a href="/Html/Verificar_Reserva.html">Verificar Compra</a>
+                        </button>
+                    </div>
 
-
-
-                
-
-            <div class="main-container2">
-                <div class="WhiteTittleFrame2">
-                    <p >Seleccionar Asientos</p>
                 </div>
-              
-                <!-- <div id="button-box">
-                    <button type="button" id="register-btn">Registrar Usuarios</button>
-                </div> -->
-                <div class="BlueGlass">
-    
-                    <div class="GraficoSala"> 
-    
-                        <div class="centradoPantalla">
-    
-                            <div class="Pantalla"> 
-    
+
+
+                <div class="main-container2">
+                    <div class="WhiteTittleFrame2">
+                        <p>Seleccionar Asientos</p>
+                    </div>
+
+                    <!-- <div id="button-box">
+                                        <button type="button" id="register-btn">Registrar Usuarios</button>
+                                    </div> -->
+                    <div class="BlueGlass">
+
+                        <div class="GraficoSala">
+
+                            <div class="centradoPantalla">
+
+                                <div class="Pantalla"></div>
+
                             </div>
-                        
-                         </div>
-    
-                        <div class="row"> 
-    
-    
-                            <div class="asientos" > </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos occupied">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            
-    
-                        </div>
-                        <div class="row"> 
-    
-    
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos occupied">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            
-    
-                        </div>
-                        <div class="row"> 
-    
-    
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            
-    
-                        </div>
-                        <div class="row"> 
-    
-    
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            
-    
-                        </div>
-                        <div class="row"> 
-    
-    
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                           
-                            
-    
-                        </div>
-                        <div class="row"> 
-    
-    
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                            <div class="asientos">    </div>
-                           
-                            
-    
+
+                            <div class="row">
+
+
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos occupied"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+
+
+                            </div>
+                            <div class="row">
+
+
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos occupied"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+
+
+                            </div>
+                            <div class="row">
+
+
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+
+
+                            </div>
+                            <div class="row">
+
+
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+
+
+                            </div>
+                            <div class="row">
+
+
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+
+
+                            </div>
+                            <div class="row">
+
+
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+                                <div class="asientos"></div>
+
+
+                            </div>
+
+                            <ul class="showcase">
+                                <li>
+                                    <div class="asientos vacio"></div>
+                                    <small>Vacio</small>
+                                </li>
+
+                                <li>
+                                    <div class="asientos selected vacio"></div>
+                                    <small>Seleccionado</small>
+                                </li>
+
+                                <li>
+                                    <div class="asientos occupied vacio"></div>
+                                    <small>Ocupado</small>
+                                </li>
+                                <li>
+                                    <div class="asientos Ley7600 vacio"></div>
+                                    <small>Ley 7600</small>
+                                </li>
+                            </ul>
+
+
                         </div>
 
-                        <ul class="showcase">
-                            <li>
-                              <div class="asientos vacio"></div>
-                              <small>Vacio</small>
-                            </li>
-                      
-                            <li>
-                              <div class="asientos selected vacio"></div>
-                              <small>Seleccionado</small>
-                            </li>
-                      
-                            <li>
-                              <div class="asientos occupied vacio"></div>
-                              <small>Ocupado</small>
-                            </li>
-                            <li>
-                                <div class="asientos Ley7600 vacio"></div>
-                                <small>Ley 7600</small>
-                              </li>
-                          </ul>
-               
-                   
-    
-    
+                        <div class="DivAsientoPrecio">
+
+
+                            <div class="input-container" id="numAsiento">
+                                <label for="numSeat" class="numSeat" placeholder="numeroAsiento"></label>
+                                <input type="text" id="numAsiento" class="inputAsientoNum" placeholder="Numero de Asiento">
+
+                            </div>
+
+                            <div id="precioTotal">
+
+                                <p class="count">
+                                    El total es de:
+                                    <span id="total">200000</span>
+                                    Colones
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="Boton">
+                            <button type="button" class="BlueButton" onclick="popout()" id="btnConfirmarAsiento">
+                                <p>Confirmar</p>
+                            </button>
+
+                        </div>
+
+
+                    </div>
                 </div>
-                
-<div class="DivAsientoPrecio">
-   
-    
- 
-    <div class="input-container" id="numAsiento">
-        <label for="numSeat" class="numSeat" placeholder="numeroAsiento"></label>
-        <input type="text" id="numAsiento" class="inputAsientoNum"  placeholder="Numero de Asiento" >
-       
-    </div>
-    
-    <div  id="precioTotal">
-      
-        <p class="count">
-            El total es de: <span id="total">200000</span> Colones
-          </p>
-    </div>
-    
-    </div>
-    
-               
-    
-                <div class="Boton">
-                    <button type="button" class="BlueButton" onclick="popout()" id="btnConfirmarAsiento"><p>Confirmar</p></button>
-    
-                </div>
-            
-    
-                    
-                   
-                    
-                </div>
+
+
             </div>
-            
 
 
+        </main>
+    </body>
 
 
+    <footer class="Footer">
 
+        <div class="LeftFooter">
+            <ul>
+                <li><a href="/Html/Faq_Tarea_A.html">Preguntas Frecuentes</a></li>
+                <li><a href="/Html/contactenos_Tarea_A.html">Trabaja con Nosotros</a></li>
+            </ul>
 
+        </div>
 
+        <div class="MiddleFooter">
+            <div>
+                <a href="/Html/kladtech_Tarea_A.html">Desarrollado por Klad Technologies</a>
+            </div>
+        </div>
+
+        <div class="RightFooter">
+
+            <div id='tittle'>
+                <h2>Redes Sociales:</h2>
+
+            </div>
+
+            <div class="ItemList">
+                <ul class="social-icons">
+                    <li>
+                        <a class="facebook" href="#">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="twitter" href="#">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dribbble" href="#">
+                            <i class="fa fa-dribbble"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="linkedin" href="#">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
         </div>
 
 
-    </main>
-</body>
+    </footer>
 
 
-<footer class="Footer">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 
-    <div class="LeftFooter">
-        <ul>
-            <li><a href="/Html/Faq_Tarea_A.html">Preguntas Frecuentes</a></li>
-            <li><a href="/Html/contactenos_Tarea_A.html">Trabaja con Nosotros</a></li>
-        </ul>
-
-    </div>
-
-    <div class="MiddleFooter">
-        <div>
-        <a href="/Html/kladtech_Tarea_A.html">Desarrollado por Klad Technologies</a>
-        </div>
-    </div>
-
-    <div class="RightFooter">
-
-        <div id='tittle' >
-            <h2>Redes Sociales:</h2>
-            
-        </div>
-
-        <div class="ItemList"> 
-            <ul class="social-icons">
-            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
-          </ul>
-        </div>
-
-    </div>
-    
-
-
-</footer>
-
-
-
-<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="/JS/Encontrar_Funcion.js"></script>
-<script src="/JS/graficoasientos.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/JS/Encontrar_Funcion.js"></script>
+    <script src="/JS/graficoasientos.js"></script>
 </html>
