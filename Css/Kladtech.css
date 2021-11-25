@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto';
+    font-size: 25px;
+}
+
+    body{
+      
+          background-repeat: no-repeat;
+          background-position: center;
+          background-attachment: fixed;
+         
+      }
+  
+      
+  
+  
+  .header {
+      overflow: hidden;
+      background-color: #273c75;
+      padding: 20px 10px;
+    }
+    
+  
+    .header a {
+      float: left;
+      color: #f5f6fa;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 25px;
+      line-height: 25px;
+      border-radius: 4px;
+    }
+  
+    .botona{
+        background-color:#273c75 ;
+        padding: 20px 10px;
+        height: 40px;
+  
+    }
+    
+  
+    .logo{
+      width: 250px;
+    }
+   
+    
+    
+    .header-right {
+      float: right;
+    }
+
+
+
+
+
+.div-mision{
+    display: flex;
+    margin-left: 50px;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.div-vision{
+    display: flex;
+    margin-left: 50px;
+    flex-direction: column;
+    justify-content: center;
+
+    
+}
+.div-valores{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    
+}
+
+.subtitleV{
+    width: 100%;
+    color:#dcdde1;
+    background-color: #273c75;
+}
+#a{
+    
+    text-align: left;
+    width: 900px;
+}
+
+
+
+#b{
+    
+    
+    text-align: left;
+    width: 900px;
+   
+   
+  }
+
+  #c{
+
+    
+    text-align:left;
+    width: 900px;
+    margin-bottom: 100px;
+
+ }
+
+
+ .p1{
+     margin-left: 650px;
+
+margin-top: 25px;
+    
+    
+  }
+
+  .fotoperfil{
+      height: 300px;
+      width: 300px;
+  }
+
+    .imgtickets{
+        background-color:#273c75 ;
+        width: 520px;
+      height: 250px;
+    
+      }
+
+
+      .subtitle{
+        color: #dcdde1;
+        text-align: center;
+        font-size: 35px;
+        
+      
+      width: 100%;
+      height: 80px;
+      border-color: #7f8fa6 ;
+      background-color: #7f8fa6;
+      border-radius: 30px;
+      }
+
+
+      .pmiembro{
+    width: 300px;
+    height: 10px;
+    border-color:#2f3640 ;
+    background-color: #2f3640;
+    color: #dcdde1;
+    text-align: center;
+  
+  padding: 50px 0 50px;
+  margin: 20px;
+    
+  }
+
+
+  .infomiembro{
+    margin-bottom: 20px;
+  }
+
+.pproyecto{
+  margin-left: 50px;
+}
+
+.titulosFotos{
+  display: flex;
+  height: 400px;
+  margin-top: 100px;
+  justify-content: center;
+  align-content: space-around;
+}
+
+
+
+  .botontickets{
+ 
+    color: transparent;
+    width: 520px;
+      height: 250px;
+      border: transparent;
+      margin-left: 50px;
+  }
+
+
+
+
+ 
+
+
+
+
+  .imgmision{
+ 
+    width: 500px;
+    height: 250px;
+  
+    
+  
+    
+  }
+
+
+
+  .imgvision{
+
+    width: 500px;
+    height: 250px;
+
+   
+   
+    
+  
+    
+  }
+
+
+
+
+
+    .footerbackground{
+        height: 200px;
+        width: 100%;
+        background-color:#2f3640 ;
+        border-color: #2f3640;
+        font-size: 30px;
+        color: #f5f6fa;
+      
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        
+      }
+      
+      
+     
+      
+      
+      
+      
+   

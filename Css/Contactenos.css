@@ -1,0 +1,190 @@
+
+form{
+  margin-top: 50px;
+}
+
+.input-container{
+    font-size: 25px;
+    margin: 5px;
+}
+
+
+
+
+
+
+
+
+.input-error{
+    border: 2px solid #e84118;
+}
+
+footer{
+  position: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  background-image: url(/Img/bg6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: aliceblue; */
+}
+
+.WhiteTittleFrame {
+  background-color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 50px;
+  margin-top: 50px;
+  width: 60%;
+}
+
+.WhiteTittleFrame p {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 40px;
+  text-align: center;
+  color: #192a56;
+}
+
+.BlueGlass {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 128, 255, 0.5);
+  height: 630px;
+  width: 60%;
+}
+
+#mensaje{
+  width: 480px;
+  height: 200px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-section{
+  display: flex;
+  justify-content: center;
+  margin-left: -200px;
+}
+
+
+/*estilos para inputs con efecto*/
+.input-container{
+  position: relative;
+  width: 300px;
+  height: 40px;
+  padding-bottom: 20px;
+
+}
+
+
+
+.input-container input {
+  position: absolute;
+  top: 1px;
+  left: 2.5px;
+  width: 90%;
+  font-size: 16px;
+  color: black;
+  font-family: inherit;
+
+
+}
+
+.input-container label{
+  position: absolute;
+  top: 7.6px;
+  left: 6px;
+  display: inline-block;
+  font-size: 16px;
+  color: black;
+  transition: 0.5s;
+  pointer-events: none;
+  
+  
+
+}
+
+.input-container select{
+  height: 25px;
+  font-size: 16px;
+  color: black;
+  font-weight: 300;
+  width: 93.5%;
+}
+.input-container input:focus ~  label ,
+.input-container input:valid ~  label {
+
+
+transform: translateX(-6px) translateY(-30px);
+color: whitesmoke;
+
+}
+
+.input-container textarea:focus ~  label,
+.input-container textarea:valid ~  label {
+
+
+transform: translateX(-6px) translateY(-30px);
+color: whitesmoke;
+
+}
+
+/*fin efectos de input container*/
+
+.btnCenter{
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  margin-left: 200px;
+}
+#btnconfirm{
+  margin-top: 90px;
+
+}
+
+#nombre{
+width: 480px; 
+
+}
+
+#correo{
+  width: 480px; 
+  
+  }
