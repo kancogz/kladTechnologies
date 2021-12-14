@@ -3,6 +3,10 @@
     padding: 0;
     
   }
+
+main {
+  height: 618px;
+}
   
   body{
     background-image: url(/Img/bg6.jpg);
@@ -100,27 +104,8 @@
     flex-flow: column wrap;
     justify-content: center;
     width: 100%;
+    height: 150px;
 }
-
-
-.middleContainer2{
-  display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-}
-
-
-.bottom-container{
-  display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-flow: column wrap;
-    justify-content: center;
-    width: 100%;
-}
-
-
 
 .divReportesInputs{
   display: flex;
@@ -353,4 +338,25 @@ color: #f5f6fa  ;
   color: #e84118;
   visibility: visible;
   margin-top:3px;
+}
+
+.tabla-ganancias {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+.tabla-ganancias th {
+  font-weight: bold;
+}
+
+.tabla-ganancias td, th {
+  background-color: white;
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.tabla-ganancias tr:nth-child(even) {
+  background-color: #dddddd;
 }

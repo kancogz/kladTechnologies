@@ -51,8 +51,8 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    justify-content: space-around;
     background-color: white;
     height: auto;
     width: 90%;
@@ -86,7 +86,7 @@ body {
     text-align: center;
 }
 
-.input-data input {
+.input-data input, select {
     display: flex;
     flex-direction: column;
     height: 25px;

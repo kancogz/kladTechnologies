@@ -3,12 +3,23 @@
 const btnConfirmar = document.querySelector('#btn-confirmar')
 
 let inputsRequeridos = document.querySelectorAll('input:required');
+let textareaRequeridos = document.querySelectorAll('textarea:required');
 
 const validar = () => {
     let error = false;
     let inputsRequeridos = document.querySelectorAll('input:required');
 
     inputsRequeridos.forEach(input=>{
+        if (input.value == '') {
+            error = true;
+            input.classList.add('error');
+        } 
+        else {
+            input.classList.remove('error');
+        }
+    });
+
+    textareaRequeridos.forEach(input=>{
         if (input.value == '') {
             error = true;
             input.classList.add('error');

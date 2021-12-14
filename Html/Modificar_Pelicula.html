@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Css/Reset.css">
     <link rel="stylesheet" href="../Css/General.css">
-    <link rel="stylesheet" href="../Css/Agregar_Pelicula.css">
+    <link rel="stylesheet" href="../Css/Modificar_Pelicula.css">
     <link rel="stylesheet" href="../Css/Perfil_Pelicula.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <title>Modificar Película</title>
@@ -61,8 +61,21 @@
                         <input type="text" value="Subtitulada" class="input-field" required><i class="fas fa-exclamation-circle"></i>
                     </div>
                     <div class="input-data">
+                        <h1>Cine</h1>
+                        <select name="cine" id="cine" class="input-field" required><i class="fas fa-exclamation-circle"></i>
+                            <option value="Cinemark">Cinemark</option>
+                            <option value="Cinepolis">Cinépolis</option>
+                            <option value="CCM Cinemas">CCM Cinemas</option>
+                        </select>
+                    </div>
+                    <div class="input-data">
                         <h1>Imagen de Película</h1>
                         <input type="file" id="img" name="img" accept="image/*"  class="input-field" required><i class="fas fa-exclamation-circle"></i>
+                    </div>
+                    <div class="input-data">
+                        <h1>Sinopsis</h1>
+                        <textarea name="sinopsis-textarea" id="sinopsis-textarea" class="input-field" cols="100" rows="5" required>El periodista Eddie Brock (Tom Hardy) comienza a investigar la Fundación Vida, dirigida por el científico Carlton Drake (Riz Ahmed). ... 
+                            Así que, tratando de obtener evidencias de un extraño organismo independiente llamado simbionte, una de las criaturas escapa, tomando a Eddie como huésped.</textarea><i class="fas fa-exclamation-circle"></i>
                     </div>
                     <div class="input-data">
                         <button class="BlueButton" id="btn-confirmar"> Confirmar Datos</button>

@@ -63,8 +63,20 @@
                             <input type="text" placeholder="Ejemplo: Subtitulada" class="input-field" required><i class="fas fa-exclamation-circle"></i>
                         </div>
                         <div class="input-data">
+                            <h1>Cine</h1>
+                            <select name="cine" id="cine" class="input-field" required><i class="fas fa-exclamation-circle"></i>
+                                <option value="Cinemark">Cinemark</option>
+                                <option value="Cinepolis">Cinépolis</option>
+                                <option value="CCM Cinemas">CCM Cinemas</option>
+                            </select>
+                        </div>
+                        <div class="input-data">
                             <h1>Imagen de Película</h1>
                             <input type="file" id="img" name="img" accept="image/*"  class="input-field" required><i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <div class="input-data">
+                            <h1>Sinopsis</h1>
+                            <textarea name="sinopsis-textarea" id="sinopsis-textarea" class="input-field" cols="100" rows="5" required></textarea><i class="fas fa-exclamation-circle"></i>
                         </div>
                         <div class="input-data">
                             <button class="BlueButton" id="btn-confirmar">Confirmar Datos</button>
