@@ -91,6 +91,13 @@
     }
 
 
+
+    .input-field{
+
+        height: 70%;
+
+    }
+
     .FormContainer1{
         margin-top: 20px;
         grid-column-end: -1;

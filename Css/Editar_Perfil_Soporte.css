@@ -54,6 +54,13 @@
     }
 
 
+    .input-field{
+
+        height: 70%;
+
+    }
+
+
     #container2 {
 
         display: grid;
