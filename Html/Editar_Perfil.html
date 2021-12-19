@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato|Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/Css/Reset.css">
   <link rel="stylesheet" href="/Css/General.css">
+  <link rel="stylesheet" href="/Css/Registrar_Usuario.css">
   <link rel="stylesheet" href="/Css/Editar_Perfil.css">
 
 </head>
@@ -65,61 +66,85 @@
 
       <div id="container2">
 
+  
+        <div class="FormContainer1">
+          <form class="form">
+  
+              <div class="input-container">
+                  <input type="text" id="Input-Nombre" class="input-field" required><i
+                      class="fas fa-exclamation-circle"></i>
+  
+                  <label for="Input-Nombre">Nombre Completo</label>
+              </div>
+              <div class="input-container">
+                  <input type="text" id="Input-Apellidos" class="input-field" required><i
+                      class="fas fa-exclamation-circle"></i>
+  
+                  <label for="Input-Apellidos">Apellidos</label>
+              </div>
+              <div class="input-container">
+  
+                  <input type="email" id="input-correo" class="input-field" onkeydown="labelFunction()"
+                      required><i class="fas fa-exclamation-circle"></i>
+                  <label for="input-correo">Correo Electrónico</label>
+              </div>
+              <div class="input-container">
+                  <Select name="input-id" id="input-id" class="input-field" required>
+                      <option value="">Seleccione el tipo de Id</option>
+                      <option value="cedula">Cédula Nacional</option>
+                      <option value="Pasaporte">Pasaporte</option>
+  
+  
+                  </Select>
+  
+              </div>
+  
+              <div class="input-container">
+  
+                  <input type="text" id="Input-Numero-Id" class="input-field" required><i
+                      class="fas fa-exclamation-circle"></i>
+                  <label for="Input-Numero-Id">Numero de Id</label>
+              </div>
 
-        <form action="" id="container4" class="container4">
 
-          <h1 id="lista"> <input type="text" id="Input-Nombre" class="input-field" required autocomplete="off"
-              placeholder="Nombre"> </h1>
-
-          <h1 id="lista"> <input type="text" id="inputApellido" maxlength="10" required autocomplete="off"
-              placeholder="Apellidos"> </h1>
-
-          <h1 id="lista">
-
-            <select name="TipoId" id="TipoId" required>
-              <option value="">Tipo Id:</option>
-              <option value="1">Nacional</option>
-              <option value="2">Extranjero</option>
-              <option value="3">Residente</option>
-
-            </select>
-          </h1>
-
-          <div id="lista"> <input type="text" id="Input-Numero-Id" required placeholder="Numero de ID"></div>
-
-          <h1 id="lista">
+           <div class="input-container">
+  
+                  <input type="email" id="input-contraseña" class="input-field" onkeydown="labelFunction()"
+                      required><i class="fas fa-exclamation-circle"></i>
+                  <label for="input-correo">Contraseña</label>
+              </div>
 
 
-            <input type="email" id="input-correo" class="input-field" onkeydown="myFunction()" required
-              placeholder="Correo electronico">
+              <div class="input-container">
+  
+                <input type="email" id="input-contraseña" class="input-field" onkeydown="labelFunction()"
+                    required><i class="fas fa-exclamation-circle"></i>
+                <label for="input-correo">Confirmar contraseña</label>
+            </div>
 
-          </h1>
 
-          <h1 id="lista"> <input type="text" id="inputContraseña" maxlength="8" required autocomplete="off"
-              placeholder="Contraseña"></h1>
+             
 
-          <h1 id="lista"> <input type="text" id="inputConfirmarContraseña" maxlength="8" required autocomplete="off"
-              placeholder="Confirmar contraseña"></h1>
-
+         
           <div id="enlace">
             <a href="/Html/Metodo_Pago.html">Editar métodos de pago</a>
           </div>
 
-          <div id="botones">
+       
 
 
+          
+          <div class="centrado_boton" id="botones">
 
-            <div class="caja">
+            <div>
               <a href="/Html/Ver_Perfil_Cliente.html"><button type="button" class="btnGuard"
-                  id="btnCancelar">Cancelar</button></a>
-
-            </div>
-
-            <button type="button" class="btnGuard" id="btnGuard">Guardar</button>
-
-
-
-          </div>
+                id="btnCancelar">Cancelar</button></a>
+           </div>
+           <div>
+             <button type="button" class="btnGuard" id="btnGuard">Guardar</button>
+           </div>
+             
+           </div>
 
         </form>
 
