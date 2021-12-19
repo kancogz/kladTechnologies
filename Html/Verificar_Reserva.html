@@ -22,6 +22,7 @@
                             <a href="/Html/Cines.html">Cines</a>
                             <a href="/Html/Peliculas.html">Películas</a>
                             <a href="/Html/Iniciar_Sesion.html" >Ingresar</a>
+                            <link rel="stylesheet" href="/Css/Registrar_Usuario.css">
                             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                                 <i class="fa fa-bars"></i>
                             </a>
@@ -31,7 +32,7 @@
         <main>
             <div class="main-container">
                 <div class="WhiteTittleFrame">
-                    <p>Verificar Reserva</p> 
+                    <p>Verificar reserva</p> 
                 </div>           
                 <!-- <div id="button-box">
                     <button type="button" id="register-btn">Registrar Usuarios</button>
@@ -43,7 +44,7 @@
                             <div class="input-container" >
                                 
                                 <input type="text" class="input-field" placeholder="Cinemark">
-                                <label for="CadenaCine"  >Cadena de Cine:</label>
+                                <label for="CadenaCine"  >Cadena de cine:</label>
                                 
                             </div>
                             <div class="input-container" >
@@ -55,13 +56,13 @@
                             <div class="input-container" >
                                 
                                 <input type="text"  class="input-field" placeholder="45,20"  >
-                                <label for="CadenaCine"  >Número de Asiento</label>
+                                <label for="CadenaCine"  >Número de asiento</label>
                                 
                             </div>
                             <div class="input-container" >
                                 
-                                <input type="text" class="input-field" placeholder="888888 Colones"  >
-                                <label for="CadenaCine"  ><p>Monto a Cancelar</p></label>
+                                <input type="text" class="input-field" placeholder="2000 Colones"  >
+                                <label for="CadenaCine"  ><p>Monto a cancelar</p></label>
                                 
                             </div>
                             <div class="input-container input-field" >
@@ -72,12 +73,15 @@
 
 
                                 </Select><i class="fas fa-exclamation-circle"></i>
-                                <label for="CadenaCine" id="labelselect"  >Seleccione Método de Pago:</label>
+                                <label for="CadenaCine" id="labelselect"  >Seleccione método de pago:</label>
 
                             </div>
 
                             <div class="ConfirmButton">
-                                <button type="button" class="BlueButton">Confirmar</button>
+                                
+
+                                <a href="/Html/Detalle_Reserva.html"><button type="button" class="BlueButton"
+                                    id="btnCancelar">Confirmar</button></a>
                             </div>
 
                         </form>                     
@@ -89,8 +93,8 @@
     <footer class="Footer">
         <div class="LeftFooter">
             <ul>
-                <li><a href="/Html/Faq.html">Preguntas Frecuentes</a></li>
-                <li><a href="/Html/Contactenos.html">Trabaja con Nosotros</a></li>
+                <li><a href="/Html/Faq.html">Preguntas frecuentes</a></li>
+                <li><a href="/Html/Contactenos.html">Trabaja con nosotros</a></li>
             </ul>
 
         </div>
@@ -103,7 +107,7 @@
 
         <div class="RightFooter">
             <div id='tittle' >
-                <h2>Redes Sociales:</h2>
+                <h2>Redes sociales:</h2>
             </div>
 
             <div class="ItemList"> 
