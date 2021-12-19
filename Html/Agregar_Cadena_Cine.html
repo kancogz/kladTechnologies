@@ -43,19 +43,19 @@
                     <div class="theater-data">
                         <div class="input-data">
                             <h1>Nombre Cadena</h1>
-                            <input type="text" placeholder="Ejemplo: Cinemark" class="input-field" required><i class="fas fa-exclamation-circle"></i>
+                            <input type="text" id="input-nombre" placeholder="Ejemplo: Cinemark" class="input-field" required><i class="fas fa-exclamation-circle"></i>
                         </div>
                         <div class="input-data">
                             <h1>Ubicación de Cadena</h1>
-                            <input type="text" placeholder="Ejemplo: Alajuela" class="input-field" required><i class="fas fa-exclamation-circle"></i>
+                            <input type="text" id="input-ubicacion" placeholder="Ejemplo: Alajuela" class="input-field" required><i class="fas fa-exclamation-circle"></i>
                         </div>
                         <div class="input-data">
                             <h1>Código de Cadena</h1>
-                            <input type="text" placeholder="Ejemplo: C-15" class="input-field" required><i class="fas fa-exclamation-circle"></i>
+                            <input type="text" id="input-codigo" placeholder="Ejemplo: C-15" class="input-field" required><i class="fas fa-exclamation-circle"></i>
                         </div>
                         <div class="input-data">
                             <h1>Logo de Cadena</h1>
-                            <input type="file" id="img" name="img" accept="image/*"  class="input-field" required><i class="fas fa-exclamation-circle"></i>
+                            <input type="button" value="Subir archivo" id="input-foto" name="" class="cloudinary-button" required><i class="fas fa-exclamation-circle"></i>
                         </div>
                         <div class="input-data">
                             <button class="BlueButton" id="btn-confirmar">Confirmar Datos</button>
@@ -103,6 +103,10 @@
 
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://widget.cloudinary.com/v2.0/global/all.js"></script>
+    <script src="../JS/Servicio-General.js"></script>
     <script src="../JS/Agregar_Cadena_Cine.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
