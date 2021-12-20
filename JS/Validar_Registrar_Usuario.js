@@ -90,6 +90,7 @@ inputEmail.classList.remove('error');
             correo : inputEmail.value,
             tipoId : inputId.value,
             numeroId : InputNumeroId.value,
+            contrasena : "temporal",
             rol : 1
         }
 
