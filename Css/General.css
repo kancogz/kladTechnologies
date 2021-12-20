@@ -41,7 +41,9 @@ a{
 }
 /*fin de contenedor del logo*/
 
-
+.ocultar{
+  display: none !important;
+}
 
 .topnav nav  { 
     width: 50%;

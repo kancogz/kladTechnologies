@@ -100,7 +100,7 @@
 
     }
 
-    #lista, #name{
+    .lista {
         margin-top: 10%;
         font-size: 20px;
        
@@ -108,7 +108,6 @@
         height: 40px;
         background-color: #dcdde1;
         grid-gap: 10%;
-        
     }
 
     #botones{
