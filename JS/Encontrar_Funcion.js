@@ -29,7 +29,7 @@ const validar = () => {
    if (error == true) {
        Swal.fire({
            'icon': 'warning',
-           'title': 'Porfavor Ingrese la información necesaria para verificar su compra.',
+           'title': 'Porfavor ingrese la información necesaria para verificar su compra.',
            'text': 'Revise los campos resaltados.',
        });
 

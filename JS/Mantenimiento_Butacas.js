@@ -26,14 +26,14 @@ const validar = () => {
    if (error == true) {
        Swal.fire({
            'icon': 'warning',
-           'title': 'Porfavor Ingrese la informacion a Modificar.',
+           'title': 'Porfavor ingrese la informacion a modificar.',
            'text': 'Revise los campos resaltados.',
        });
 
    }else{
     Swal.fire({
         'icon': 'success',
-        'title': 'Se ha Modificado su Sala exitosamente.',
+        'title': 'Se ha modificado su sala exitosamente.',
         'text': 'Puede volver a editar la Sala en cualquier momento.',
 
    });

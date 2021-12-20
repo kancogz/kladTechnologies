@@ -66,7 +66,7 @@ const ValidateEmail=()=>
     if (error==true) {
         Swal.fire({
             'icon':'warning',
-            'title':'Ha Ocurrido un Error',
+            'title':'Ha ocurrido un error',
             'text':'Por favor revise los campos resaltados'
         });
     
@@ -75,8 +75,8 @@ const ValidateEmail=()=>
        
         Swal.fire({
             'icon':'success',
-            'title':'Recuperacion de Contraseña Solicitada',
-            'text':'Revise Su Correo Electrónico Para Confirmar'
+            'title':'Recuperacion de contraseña solicitada',
+            'text':'Revise su correo electrónico para confirmar'
         });
        
       

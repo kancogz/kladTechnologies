@@ -1,6 +1,6 @@
 'use strict';
 
-const botonIngresar = document.querySelector('#btnGuardarNuevoHorario');
+const botonIngresar = document.querySelector('#btnGuardarHorarioNuevo');
 
 
 
@@ -26,7 +26,7 @@ const validar = () => {
    if (error == true) {
        Swal.fire({
            'icon': 'warning',
-           'title': 'Porfavor Ingrese la información del horario.',
+           'title': 'Porfavor ingrese la información del horario.',
            'text': 'Revise los campos resaltados.',
        });
 

@@ -47,7 +47,7 @@ const validar = () => {
    }else{
     Swal.fire({
         'icon': 'success',
-        'title': 'Se Ha enviado el mensje correctamente.',
+        'title': 'Se ha enviado el mensje correctamente.',
         'text': 'Te contactaremos lo antes posible, gracias por usar Tickets+.',
 
    });

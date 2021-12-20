@@ -33,7 +33,7 @@ const validar = () => {
     if (error == true) {
         Swal.fire({
             'icon':'warning',
-            'title':'Ha Ocurrido un Error',
+            'title':'Ha ocurrido un error',
             'text':'Por favor revise los campos resaltados'
         });
     

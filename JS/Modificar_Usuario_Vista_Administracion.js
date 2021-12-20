@@ -26,14 +26,14 @@ const validar = () => {
    if (error == true) {
        Swal.fire({
            'icon': 'warning',
-           'title': 'Porfavor Ingrese la información correspondiente para actualizar los datos del Usuario.',
+           'title': 'Porfavor ingrese la información correspondiente para actualizar los datos del usuario.',
            'text': 'Revise los campos resaltados.',
        });
 
    }else{
     Swal.fire({
         'icon': 'success',
-        'title': 'Se ha editado la información del Usuario correctamente.',
+        'title': 'Se ha editado la información del usuario correctamente.',
         'text': 'Puede volver a editar los datos del Usuario .',
 
    });

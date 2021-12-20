@@ -60,6 +60,13 @@ if (error==true) {
 
     
 } else {
+   
+    Swal.fire({
+        'icon':'success',
+        'title':'Ha ingresado con exito'
+       
+    });
+   
   
 
 }
@@ -78,7 +85,7 @@ if (error==true) {
         if (usuarioAceptado){
             Swal.fire({
                 'icon':'success',
-                'title':'Ha Ingresado con Exito'
+                'title':'Ha ingresado con exito'
                
             }).then((usuarioConfirma) => {
                 if (usuarioConfirma.isConfirmed) {

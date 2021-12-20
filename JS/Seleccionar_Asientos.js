@@ -26,7 +26,7 @@ const validar = () => {
    if (error == true) {
        Swal.fire({
            'icon': 'warning',
-           'title': 'Porfavor Ingrese la informacion del Asiento a Seleccionar.',
+           'title': 'Porfavor Ingrese la informacion del asiento a seleccionar.',
            'text': 'Revise los campos resaltados.',
        });
 
