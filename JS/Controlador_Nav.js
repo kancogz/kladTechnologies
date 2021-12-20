@@ -11,7 +11,7 @@ if (conectado) {
     switch(rolUsuario){
         case "1": //Usuario
             console.log(enlaces[4].href)
-            enlaces[4].classList.add('ocultar');
+            // enlaces[4].classList.add('ocultar');
         break;
         case "2": //Soporte
 
@@ -24,6 +24,7 @@ if (conectado) {
 }else{
     enlaces[4].classList.add('ocultar');
     enlaces[1].classList.add('ocultar');
+    enlaces[5].classList.add('ocultar');
 }
 
 const cerrarSesion = () =>{
