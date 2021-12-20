@@ -26,7 +26,7 @@ const validar = () => {
    if (error == true) {
        Swal.fire({
            'icon': 'warning',
-           'title': 'Porfavor Ingrese la información de la nueva Sala.',
+           'title': 'Porfavor ingrese la información de la nueva sala.',
            'text': 'Revise los campos resaltados.',
        });
 
@@ -34,7 +34,7 @@ const validar = () => {
     Swal.fire({
         'icon': 'success',
         'title': 'Se ha registrado la sala correctamente.',
-        'text': 'Puede editar la informacíon de esta sala la opción de Modíficar Sala de Cine .',
+        'text': 'Puede editar la informacíon de esta sala la opción de modíficar sala de cine .',
 
    });
 

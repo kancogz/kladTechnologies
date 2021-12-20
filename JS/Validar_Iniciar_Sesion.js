@@ -60,7 +60,7 @@ if (error==true) {
    
     Swal.fire({
         'icon':'success',
-        'title':'Ha Ingresado con Exito'
+        'title':'Ha ingresado con exito'
        
     });
    

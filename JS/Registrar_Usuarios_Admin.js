@@ -66,7 +66,7 @@ inputEmail.classList.remove('error');
     if (error==true) {
         Swal.fire({
             'icon':'warning',
-            'title':'Ha Ocurrido un Error',
+            'title':'Ha ocurrido un error',
             'text':'Por favor revise los campos resaltados'
         });
     
@@ -75,8 +75,8 @@ inputEmail.classList.remove('error');
        
         Swal.fire({
             'icon':'success',
-            'title':'Registro de Usuario Completado',
-            'text':'Revise Su Correo Electrónico Para Confirmar'
+            'title':'Registro de usuario completado',
+            'text':'Revise su correo electrónico para confirmar'
         });
        
       
