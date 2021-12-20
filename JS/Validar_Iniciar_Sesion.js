@@ -1,4 +1,7 @@
 'use strict'
+
+const inputCorreo = document.querySelector('#input-correo');
+const inputContrasena = document.querySelector('#Password');
 const btnConfirm= document.querySelector('#btn-confirm');
 const inputEmail=document.querySelector('#input-correo');
 let inputRequeridos=document.querySelectorAll('input:required');
@@ -9,7 +12,7 @@ const labelFunction=()=>{
     /*esta funcion se encuentra en generalcss */
 }
 
-const validar =()=>{
+const validar = async ()=>{
     let error=false;
     let inputRequeridos=document.querySelectorAll('input:required');
 
@@ -51,8 +54,8 @@ inputEmail.classList.remove('error');
 if (error==true) {
     Swal.fire({
         'icon':'warning',
-        'title':'Ha Ocurrido un Error',
-        'text':'Por favor revise los campos resaltados'
+        'title':'¡Ha ocurrido un error!',
+        'text':'Por favor revise los campos resaltados.'
     });
 
     
@@ -69,8 +72,35 @@ if (error==true) {
 }
 /* termina swal */
 
+    let usuarioAceptado = false;
 
+    if (!error) {
+        let usuario = {
+            correo : inputCorreo.value,
+            contrasena : inputContrasena.value,
+        }
 
+        usuarioAceptado = await validarSesion(usuario, '/validar-sesion');
+
+        if (usuarioAceptado){
+            Swal.fire({
+                'icon':'success',
+                'title':'Ha ingresado con exito'
+               
+            }).then((usuarioConfirma) => {
+                if (usuarioConfirma.isConfirmed) {
+                    window.location.href = '../index.html';
+                }
+            });    
+
+        }else{
+            Swal.fire({
+                'icon':'warning',
+                'title':'¡Ha ocurrido un error!',
+                'text':'Correo electrónico o contraseña no válidos.'
+            });
+        }
+    }
 
 };
 
