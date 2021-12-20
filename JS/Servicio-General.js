@@ -11,16 +11,6 @@ const registrarDatos = async(pdatos, pendPoint) => {
     });
 };
 
-const obtenerUsuario = async(pdatos, pendPoint) => {
-    let url = `http://localhost:3000/api${pendPoint}`;
-
-    let peticion = await axios({
-        method : 'post',
-        url : url,
-        data : pdatos
-    });
-};
-
 const validarSesion = async(pdatos, pendPoint) => {
     let url = `http://localhost:3000/api${pendPoint}`;
     let respuesta = false;
@@ -48,10 +38,14 @@ const modificarDatos = async(pdatos, pendPoint, pUrlRedireccion) => {
 
     let url = `http://localhost:3000/api${pendPoint}`;
 
-    await axios({
+    let peticion = await axios({
         method : 'put',
         url : url,
         data : pdatos
     });
+
+    if (peticion.data) {
+        sessionStorage.setItem('usuarioDatos', JSON.stringify(peticion.data));
+    }
 
 }

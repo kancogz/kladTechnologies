@@ -1,3 +1,16 @@
+'use strict';
+
+let data = JSON.parse(sessionStorage.getItem('usuarioDatos'));
+console.log(data);
+let id = data.usuario._id;
+document.querySelector('#titulo1 h1').innerHTML = "Hola, " + data.usuario.nombre;
+document.getElementById('Input-Nombre').value = data.usuario.nombre;
+document.getElementById('Input-Apellidos').value = data.usuario.apellidos;
+document.getElementById('input-correo').value = data.usuario.correo;
+document.querySelector('#input-id').value = data.usuario.tipoId;
+document.getElementById('Input-Numero-Id').value = data.usuario.numeroId;
+let rol = data.usuario.rol;
+
 function cambiar (sw) {
     var pic;
 
@@ -23,11 +36,8 @@ function cambiar (sw) {
     }
 
     
-    document.getElementById('contenedorfoto').src = pic;
+    let inputFoto = document.getElementById('contenedorfoto').src = pic;
    }
-
-
-   'use strict';
 
 const botonIngresar = document.querySelector('#btnGuard');
 
@@ -87,6 +97,22 @@ const validar = () => {
         'text': 'Puede volver a editar el perfil en cualquier momento.',
 
    });
+
+   if (!error) {
+       let usuario = {
+           _id : id,
+           foto : '',
+           nombre : document.getElementById('Input-Nombre').value,
+           apellidos : document.getElementById('Input-Apellidos').value,
+           correo : document.getElementById('input-correo').value,
+           tipoId : document.querySelector('#input-id').value,
+           numeroId : document.getElementById('Input-Numero-Id').value,
+           contrasena : document.getElementById('input-contrasena').value,
+           rol : rol
+       }
+
+       modificarDatos(usuario, '/actualizar-usuario');
+   }
 
 }   
 }

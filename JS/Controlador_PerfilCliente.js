@@ -1,12 +1,5 @@
 'use strict';
 
-let usuarioActivo = sessionStorage.getItem('usuarioConectado');
-let usuario = {
-    correo : usuarioActivo
-}
-
-obtenerUsuario(usuario, '/obtener-usuario');
-
 if (sessionStorage.getItem('usuarioDatos')) {
     let data = JSON.parse(sessionStorage.getItem('usuarioDatos'));
     console.log(data.usuario.nombre);
