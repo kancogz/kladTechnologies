@@ -219,7 +219,12 @@
 
 
         #enlace{
-          margin-top: 50px;
+          margin-top: 50px ;
+          color: #dcdde1;
+          background-color: #46A2FD;
+          width: 300px;
+          height: 30px;
+          margin-right: 20px;
                
             }
 

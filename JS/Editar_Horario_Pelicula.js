@@ -1,6 +1,6 @@
 'use strict';
 
-const botonIngresar = document.querySelector('#btnGuardarNuevoHorario');
+const botonIngresar = document.querySelector('#btnGuardarHorarioNuevo');
 
 
 
